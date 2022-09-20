@@ -22,10 +22,13 @@ Coneixer els sitemes CENTOS i Rocky Linux, i valorar quin dels 2 ens interessa m
  
 ***Que he consultat?***
 
-https://www.ionos.es/digitalguide/servidores/configuracion/rocky-linux/
-https://geekland.eu/fingerprint-servidor-ssh/
-https://blog.trescomatres.com/2020/01/saber-los-puertos-abiertos-en-servidor/
-https://www.tecmint.com/fix-failed-to-set-locale-defaulting-to-c-utf-8-in-centos/
+- https://www.ionos.es/digitalguide/servidores/configuracion/rocky-linux/
+
+- https://geekland.eu/fingerprint-servidor-ssh/
+
+- https://blog.trescomatres.com/2020/01/saber-los-puertos-abiertos-en-servidor/
+
+- https://www.tecmint.com/fix-failed-to-set-locale-defaulting-to-c-utf-8-in-centos/
 
 
 ***Quines preguntes m'han sorgit?***
