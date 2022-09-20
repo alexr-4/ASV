@@ -27,10 +27,21 @@ https://geekland.eu/fingerprint-servidor-ssh/
 https://blog.trescomatres.com/2020/01/saber-los-puertos-abiertos-en-servidor/
 https://www.tecmint.com/fix-failed-to-set-locale-defaulting-to-c-utf-8-in-centos/
 
+
+***Quines preguntes m'han sorgit?***
+ 
+Com puc atacar a una maquina per SSH? Quina comanda he de fer servir?
+Com podem separar en maquines diferents els serveis (sql, web, ...)?
+Que es un CPD i servidor?
+Que es el que fa realment un administrador?
+
 # Week 01
 
 ***Que he aprés?***
 
 ***Que he consultat?***
+
+***Quines preguntes m'han sorgit?***
+
 
 
