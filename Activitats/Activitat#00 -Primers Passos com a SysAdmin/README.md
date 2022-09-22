@@ -52,6 +52,8 @@ localectl set-locale LANG=en_US.UTF-8
 
 Pregunta 5
 
-El cambio se ha realizado desde la propia máquina virtual:
-![image](https://user-images.githubusercontent.com/79162978/191787096-ed70729a-e047-4c8b-9a4c-0e4e0b922649.png)
+El cambio se realiza desde la terminal con el comando hostname [nombre nuevo]. Seguidamente, para verificar que el cambio se ha realizado correctamente, lanzamos hostname o hostnamectl para ver más detalles. 
+
+![image](https://user-images.githubusercontent.com/79162978/191810208-541e4167-f4ce-4c1a-9a21-a4f56bd4fad1.png)
+
 
