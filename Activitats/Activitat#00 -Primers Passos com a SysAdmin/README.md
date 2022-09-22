@@ -1,12 +1,12 @@
-###@Autors:
+###### @Autors:
 Paula Uber,
 Alex Ramon,
 Samantha Roldán
 
 
-#1 Part teòrica
+# 1 Part teòrica
 
-##Pregunta 1
+## Pregunta 1
 
 CENTOS 7 es el sistema operativo padre de RockyLinux. RockyLinux nace tras la necesidad que deja CENTOS 7 al dejar de actualizarse. La comunidad crea RockyLinux para poder trabajar de forma gratuita, estable, fiable y fácil de usar.
 
@@ -16,7 +16,7 @@ Pero, investigando, hemos podido ver que RockyLinux como hemos comentado, tiene 
 
 https://www.ionos.es/digitalguide/servidores/configuracion/rocky-linux/
 
-##Pregunta 2
+## Pregunta 2
 
 El Fingerprint sirve para generar tanto las claves públicas como privadas en el momento de crear un servidor SSH. Esto genera una huella digital que nos permite registrarnos y usar el servidor SSH. A esta huella se le llama fingerprint y su principal función es identificar de forma inequívoca un servidor.
 
@@ -24,9 +24,9 @@ Los problemas que intenta solucionar son principalmente dos: que no nos conectem
 
 https://geekland.eu/fingerprint-servidor-ssh/
 
-2 Part pràctica
+# 2 Part pràctica
 
-##Pregunta 3
+## Pregunta 3
 
 Los puertos que tenemos abiertos son:
 - 22/tcp   open  ssh     OpenSSH 8.0 (protocol 2.0)
@@ -41,7 +41,7 @@ Los pasos que hemos seguido han sido:
 3- Ver el mapeado: nmap -A -T4 localhost
 4- Fijarse en los servidores abiertos (open).
 
-##Pregunta 4
+## Pregunta 4
 
 Para resolver esta pregunta, hemos investigado en Google y hemos encontrado este artículo:
 https://www.tecmint.com/fix-failed-to-set-locale-defaulting-to-c-utf-8-in-centos/
@@ -50,13 +50,14 @@ El comando que hemos utilizado para solucionar el problema de idioma del usuario
 
 localectl set-locale LANG=en_US.UTF-8
 
-##Pregunta 5
+## Pregunta 5
 
 El cambio se realiza desde la terminal con el comando hostname [nombre nuevo]. Seguidamente, para verificar que el cambio se ha realizado correctamente, lanzamos hostname o hostnamectl para ver más detalles. 
 
 ![image](https://user-images.githubusercontent.com/79162978/191810208-541e4167-f4ce-4c1a-9a21-a4f56bd4fad1.png)
 
-##Pregunta 6
+## Pregunta 6
 
 ![image](https://user-images.githubusercontent.com/79162978/191810819-6dbed02d-96b8-4c0b-ad3f-9440ff64a478.png)
 
+## Pregunta 7
