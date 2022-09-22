@@ -52,3 +52,6 @@ localectl set-locale LANG=en_US.UTF-8
 
 Pregunta 5
 
+El cambio se ha realizado desde la propia máquina virtual:
+![image](https://user-images.githubusercontent.com/79162978/191787096-ed70729a-e047-4c8b-9a4c-0e4e0b922649.png)
+
