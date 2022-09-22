@@ -33,13 +33,14 @@ Los puertos que tenemos abiertos son:
 - 80/tcp   open  http    Apache httpd 2.4.37 ((rocky))
 - 3306/tcp open  mysql   MySQL 5.5.5-10.3.35-MariaDB
 
-Los hemos identificado leyendo el siguiente artículo: https://blog.trescomatres.com/2020/01/saber-los-puertos-abiertos-en-servidor/
+Los hemos identificado leyendo el siguiente artículo: 
+https://blog.trescomatres.com/2020/01/saber-los-puertos-abiertos-en-servidor/
 
 Los pasos que hemos seguido han sido:
-1- Instalar: dnf install nmap
-2- Detectar el servidor: localhost
-3- Ver el mapeado: nmap -A -T4 localhost
-4- Fijarse en los servidores abiertos (open).
+1. Instalar: dnf install nmap
+2. Detectar el servidor: localhost
+3. Ver el mapeado: nmap -A -T4 localhost
+4. Fijarse en los servidores abiertos (open).
 
 ## Pregunta 4
 
@@ -52,7 +53,8 @@ localectl set-locale LANG=en_US.UTF-8
 
 ## Pregunta 5
 
-El cambio se realiza desde la terminal con el comando hostname [nombre nuevo]. Seguidamente, para verificar que el cambio se ha realizado correctamente, lanzamos hostname o hostnamectl para ver más detalles. 
+El cambio se realiza desde la terminal con el comando hostname [nombre nuevo]. 
+Seguidamente, para verificar que el cambio se ha realizado correctamente, lanzamos hostname o hostnamectl para ver más detalles. 
 
 ![image](https://user-images.githubusercontent.com/79162978/191810208-541e4167-f4ce-4c1a-9a21-a4f56bd4fad1.png)
 
