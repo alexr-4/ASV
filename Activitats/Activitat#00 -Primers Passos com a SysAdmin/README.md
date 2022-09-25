@@ -80,3 +80,11 @@ Hem creat al directori /etc/bin a la maquina .84 el següent script amb el nom `
 Dins de la maquina .83, per donar permisos a la BD amb aquest nou usuari que ve de la .84, iniciem bbdd i executem la següent comanda:
 
 <img width="973" alt="Captura de Pantalla 2022-09-22 a las 23 20 52" src="https://user-images.githubusercontent.com/38278207/192158216-610e402b-7d0b-4bad-8b5b-aaea32264c60.png">
+
+Finalment hem tingut que installar firewalld i realizar múltiples comandes per obrir ports com:
+
+``` firewall-cmd --permanent --zone=public --add-rich-rule='rule family="ipv4" source address="192.168.101.0/24" service name="ssh" accept' ```
+
+i reiniciar el servei:
+
+``` systemctl restart sshd ```
