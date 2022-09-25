@@ -63,3 +63,18 @@ Seguidamente, para verificar que el cambio se ha realizado correctamente, lanzam
 ![image](https://user-images.githubusercontent.com/79162978/191810819-6dbed02d-96b8-4c0b-ad3f-9440ff64a478.png)
 
 ## Pregunta 7
+
+Generat la clau publica a la maquina .84 (la que és servidor web).
+
+``` ssh-keygen -t ed25519 ```
+
+I introduint aquesta clau al fitxer authorized keys (.ssh/authorized_keys) de la maquina .83 (la que te la bbdd)
+
+<img width="1017" alt="Captura de Pantalla 2022-09-25 a las 19 56 51" src="https://user-images.githubusercontent.com/38278207/192158036-8be3e3f4-02bc-4b59-b065-17e32c5f3410.png">
+
+
+Hem creat al directori /etc/bin el següent script amb el nom db-server, que es converteix en una comanda que ataca per ssh a la maquina .83 
+
+<img width="497" alt="Captura de Pantalla 2022-09-25 a las 19 53 09" src="https://user-images.githubusercontent.com/38278207/192157844-d2548e98-11b7-481c-934e-cd6cd4c88822.png">
+
+
