@@ -73,18 +73,18 @@ I introduint aquesta clau al fitxer authorized keys (.ssh/authorized_keys) de la
 <img width="1017" alt="Captura de Pantalla 2022-09-25 a las 19 56 51" src="https://user-images.githubusercontent.com/38278207/192158036-8be3e3f4-02bc-4b59-b065-17e32c5f3410.png">
 
 
-Hem creat al directori /etc/bin a la maquina .84 el següent script amb el nom ``` db-server ```, que es converteix en una comanda que ataca per ssh a la maquina .83 i no ens demana contrassenya.
-
-<img width="1017" alt="Captura de Pantalla 2022-09-25 a las 19 59 22" src="https://user-images.githubusercontent.com/38278207/192158146-4fd8209a-1675-42c9-8c1f-020527346805.png">
-
 Dins de la maquina .83, per donar permisos a la BD amb aquest nou usuari que ve de la .84, iniciem bbdd i executem la següent comanda:
 
 <img width="973" alt="Captura de Pantalla 2022-09-22 a las 23 20 52" src="https://user-images.githubusercontent.com/38278207/192158216-610e402b-7d0b-4bad-8b5b-aaea32264c60.png">
 
-Finalment hem tingut que installar firewalld i realizar múltiples comandes per obrir ports com:
+Hem tingut que installar firewalld i realizar múltiples comandes per obrir ports com:
 
 ``` firewall-cmd --permanent --zone=public --add-rich-rule='rule family="ipv4" source address="192.168.101.0/24" service name="ssh" accept' ```
 
 i reiniciar el servei:
 
 ``` systemctl restart sshd ```
+
+I finalment,  Hem creat al directori /etc/bin a la maquina .84 el següent script amb el nom ``` db-server ```, que es converteix en una comanda que ataca per ssh a la maquina .83 i no ens demana contrassenya.
+
+<img width="1017" alt="Captura de Pantalla 2022-09-25 a las 19 59 22" src="https://user-images.githubusercontent.com/38278207/192158146-4fd8209a-1675-42c9-8c1f-020527346805.png">
