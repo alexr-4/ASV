@@ -1,10 +1,10 @@
 # Preparant el Servidor
 
-Instanciar una MV amb nom middle-earth amb el SO base Rocky Linux. (1 CPU, 500MB de RAM, 8GB de disc).
-Actualitzeu totes les llibreries dnf update -y.
-Instal·leu un editor de text (vim o nano). dnf install vim -y.
-Instal·leu la shell tcsh. dnf install tcsh -y.
-Actualitzeu el hostname: hostnamectl set-hostname middlearth.asv01.udl.cat on XX és el vostre identificador.
+- Instanciar una MV amb nom middle-earth amb el SO base Rocky Linux. (1 CPU, 500MB de RAM, 8GB de disc).
+- Actualitzeu totes les llibreries dnf update -y.
+- Instal·leu un editor de text (vim o nano). dnf install vim -y.
+- Instal·leu la shell tcsh. dnf install tcsh -y.
+- Actualitzeu el hostname: hostnamectl set-hostname middlearth.asv01.udl.cat on XX és el vostre identificador.
 
 ## Primeres comandes 
 
