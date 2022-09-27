@@ -117,3 +117,17 @@ Preparar bústies: echo 'export MAIL=$HOME/Maildir' >> /etc/profile.d/mail.sh
 
 ![image](https://user-images.githubusercontent.com/79162978/192591029-4f045e0a-0270-4f3d-8133-c3807a43d672.png)
 
+## Afeguir un nasgul:
+adduser nasgul
+
+## Canviar contrasenya a Hawkings:
+![image](https://user-images.githubusercontent.com/79162978/192594844-137922d1-6c31-4178-b9cd-ee207d3fc226.png)
+
+## Demanar que canvii la contrasenya en el proper inici: 
+sudo passwd --expire frodo
+
+## Actualitzant l'equip:
+
+- Actualitzar username de legolas a glorfindel: *usermod -l glorfindel legolas*
+- Actualitzar el UID de Gimli a 800: *usermod -u 800 gimli*
+- L'usuari gandalf ha de poder invocar a l'usuari root: 
