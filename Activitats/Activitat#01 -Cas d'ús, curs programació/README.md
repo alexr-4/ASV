@@ -40,6 +40,6 @@ Alternativa per posar permisos:
 Creació usuari Jaimito:
 
 ``` sudo useradd jaimito ```
-``` passwd jaimito 
+``` passwd jaimito ```
 
 ## Pregunta 2: Investigar eina psactt
