@@ -142,18 +142,18 @@ sudo passwd --expire frodo
 - Crear el directori de l'anell: 
 ![image](https://user-images.githubusercontent.com/79162978/193081230-47fc18cb-0f1e-4c94-bcc0-f635820da901.png)
 
--Els fitxers d’aquest directori únicament podran ser executats/editats per l’usuari Frodo, la resta d’usuaris no ha de tenir cap permís ni de lectura, a excepció del grup d’usuari del grup portadors que han de poder llegir el directori.
-Agegim permisos de execució, lectura i escriptura: 
+- Els fitxers d’aquest directori únicament podran ser executats/editats per l’usuari Frodo, la resta d’usuaris no ha de tenir cap permís ni de lectura, a excepció del grup d’usuari del grup portadors que han de poder llegir el directori.
+- Agegim permisos de execució, lectura i escriptura: 
 chmod u+x /home/anell
 chmod u+r /home/anell
 chmod u+w /home/anell
-Fem que el frodo sigui l'usuari que tingui aquests permissos. 
+- Fem que el frodo sigui l'usuari que tingui aquests permissos. 
 chown frodo /home/anell
 ls -la /home/anell
 ![image](https://user-images.githubusercontent.com/79162978/193085935-e533c2c8-12aa-4c2f-8c85-bc8243f364e5.png)
-Creem el grup de portadors:
+- Creem el grup de portadors:
 nano /etc/group
-Fem que el frodo junt amb els portadors tinguin accés al directori anell i treiem permisos al grup d'escriptura i d'execució: 
+- Fem que el frodo junt amb els portadors tinguin accés al directori anell i treiem permisos al grup d'escriptura i d'execució: 
 ![image](https://user-images.githubusercontent.com/79162978/193087056-549b4268-45da-4f2c-9e9a-974158666630.png)
 
 
