@@ -17,6 +17,7 @@ exit
 
 nano /etc/ssh/sshd_config
 #Banner /etc/issue.net
+
 ![image](https://user-images.githubusercontent.com/79162978/193089032-788b7c58-1e0c-4c54-bd4e-bf79e2c9d75e.png)
 
 systemctl restart sshd
