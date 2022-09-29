@@ -37,4 +37,9 @@ Alternativa per posar permisos:
 ``` chmod 777 ``` 
 
 
+Creació usuari Jaimito:
+
+``` sudo useradd jaimito ```
+``` passwd jaimito 
+
 ## Pregunta 2: Investigar eina psactt
