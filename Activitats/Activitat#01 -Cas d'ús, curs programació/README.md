@@ -27,11 +27,11 @@ Hem fet que el propietari del directori alumne sigui el grup professorat, de man
 
 comanda interessant per veure permissos:
 
-```ls -la ``
+```ls -la ```
 
 Alternativa per posar permisos:
 
-https://www.google.com/url?sa=i&url=https%3A%2F%2Fayudalinux.com%2Fcomando-chmod-que-es-como-usarlo%2F&psig=AOvVaw1CQ35sXc2niHGzGTxN-Mhb&ust=1664564643269000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCOjOqNTYuvoCFQAAAAAdAAAAABAD![image](https://user-images.githubusercontent.com/38278207/193120164-86008861-9be6-4b8b-9d75-3f5a0ba91d6c.png)
+![image](https://user-images.githubusercontent.com/38278207/193120164-86008861-9be6-4b8b-9d75-3f5a0ba91d6c.png)
 
 
 ``` chmod 777 ``` 
