@@ -17,6 +17,8 @@ exit
 
 nano /etc/ssh/sshd_config
 #Banner /etc/issue.net
+![image](https://user-images.githubusercontent.com/79162978/193089032-788b7c58-1e0c-4c54-bd4e-bf79e2c9d75e.png)
+
 systemctl restart sshd
 
 ## Creació de grups 
@@ -40,7 +42,7 @@ useradd gimli -g 800 -u 801 -c "Gimli" -m -d\
 useradd gandalf -g 900 -u 901 -c "Gandalf" -m -d\
  /home/gandalf
 
-## Canviar Pass usuaris: 
+## Canviar Pass usuaris 
 
 passwd frodo
 Tolkien2LOR
@@ -48,35 +50,35 @@ Tolkien2LOR
 *fer per cada user*
 
 
-## Afegir el root al grup mags:
+## Afegir el root al grup mags
 sudo usermod -a -G mags root
 
-## Per veure que el root està al grup:
+## Per veure que el root està al grup
 root mags
 
-## Per canviar el home del Gollum:
+## Per canviar el home del Gollum
 usermod -d /home/smeagol gollum
 
-## Perq el Legolas tingui per defecte la shell tcsh:
+## Perq el Legolas tingui per defecte la shell tcsh
 usermod -s "/bin/tcsh" legolas
 
-## Per eliminar la pass de gimli:
+## Per eliminar la pass de gimli
 passwd -d gimli
 
 - Article d'interés: https://nebul4ck.wordpress.com/comandos-para-modificar-cuentas-de-usuarios-y-grupos/
 
-## Per entrar com a Frodo:
+## Per entrar com a Frodo
 su frodo
 
-## Per cambiar el home del frodo:
+## Per cambiar el home del frodo
 cd home
 cd frodo
 
-## Per instalar mail:
+## Per instalar mail
 dnf -y install postfix
 dnf -y install mailx
 
-## Configurar fitxer:
+## Configurar fitxer
 Editeu el fitxer /etc/postfix/main.cf:
 
 myhostname = mail.middlearth.asv00.udl.cat
@@ -88,7 +90,7 @@ mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
 mynetworks = 127.0.0.0/8
 home_mailbox = Maildir/
 
-Ficar això al final:
+- Ficar això al final
 #hide the kind or version of SMTP software
 smtpd_banner = $myhostname ESMTP
 
@@ -111,22 +113,22 @@ smtpd_sasl_security_options = noanonymous
 smtpd_sasl_local_domain = $myhostname
 smtpd_recipient_restrictions = permit_mynetworks, permit_auth_destination,permit_sasl_authenticated, reject
 
-## Configurar dimoni:
+## Configurar dimoni
 Arrancar: systemctl enable --now postfix
 Preparar bústies: echo 'export MAIL=$HOME/Maildir' >> /etc/profile.d/mail.sh
 
 ![image](https://user-images.githubusercontent.com/79162978/192591029-4f045e0a-0270-4f3d-8133-c3807a43d672.png)
 
-## Afeguir un nasgul:
+## Afegir un nasgul
 adduser nasgul
 
-## Canviar contrasenya a Hawkings:
+## Canviar contrasenya a Hawkings
 ![image](https://user-images.githubusercontent.com/79162978/192594844-137922d1-6c31-4178-b9cd-ee207d3fc226.png)
 
-## Demanar que canvii la contrasenya en el proper inici: 
+## Demanar que canvii la contrasenya en el proper inici 
 sudo passwd --expire frodo
 
-## Actualitzant l'equip:
+## Actualitzant l'equip
 
 - Actualitzar username de legolas a glorfindel: *usermod -l glorfindel legolas*
 - Actualitzar el UID de Gimli a 800: *usermod -u 800 gimli*
@@ -156,5 +158,21 @@ nano /etc/group
 - Fem que el frodo junt amb els portadors tinguin accés al directori anell i treiem permisos al grup d'escriptura i d'execució: 
 ![image](https://user-images.githubusercontent.com/79162978/193087056-549b4268-45da-4f2c-9e9a-974158666630.png)
 
+## Final del viatge
 
+- Que no li aparegi al Gimli el missatge: 
+![image](https://user-images.githubusercontent.com/79162978/193093093-1b16f210-0b9d-4eb6-8c2d-640acf333796.png)
+
+- Article interés: https://www.cyberciti.biz/howto/turn-off-the-login-banner-in-linux-unix-with-hushlogin-file/
+
+- Ens logem i no veiem cap missatge: 
+![image](https://user-images.githubusercontent.com/79162978/193092926-2a96c5ef-b871-46b6-b952-82bbf34fcd59.png)
+
+- Treure permisos del home al gimli: setfacl -x gimli /home/gimli
+![image](https://user-images.githubusercontent.com/79162978/193094003-4c1342e3-2087-46a8-ad01-682b5dcc083e.png)
+
+- Article interés: https://blog.alcancelibre.org/staticpages/index.php/uso-getfacl-getfacl
+
+- Borrar a Samwise: userdel samwise
+![image](https://user-images.githubusercontent.com/79162978/193094877-a169f97e-304f-4099-b870-94946e2682e8.png)
 
