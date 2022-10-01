@@ -117,7 +117,7 @@ Ens dona últim accessos al sistema, indicant la data i hora, es molt concret:
 
 <img width="1017" alt="Captura de Pantalla 2022-10-01 a las 17 14 23" src="https://user-images.githubusercontent.com/38278207/193416101-aa6a237c-80ac-46b5-837f-feaccce938ee.png">
 
-### Comanda accton on
+#### Comanda accton on
 
 Ens permet habilitar o des-habilitat processos d'usuari
 
