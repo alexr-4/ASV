@@ -40,6 +40,27 @@ Creació usuari Jaimito:
 
 ``` passwd jaimito ```
 
+FALTA FER:
+
+- Els professors han de tenir el seu directori inicial a /home/professorat/nom_professor.
+
+- Els alumnes han de tenir el seu directori inicial a /home/alumne/nom_alumne.
+
+Creats els directoris pero fa falta especificar que siguin directoris inicials
+
+- Els alumnes únicament han de poder utilitzar els seus directoris inicial
+
+No se a que es refereix
+
+- Creareu un estudiant jaimito i li bloquejareu l’accés al jupyterlab.
+ 
+- Configureu un servidor jupyterlab per poder accedir a un entorn per a treballar.
+
+El jupyterlab Diria que es fer un servidor web wordpress. Jaimito creat.
+
+- Tots els alumnes/professors han de poder accedir al servei via web, però no fer login al sistema per terminal.
+
+
 ## Pregunta 2: Investigar eina psacct
 
 ``` psacct ``` es una eina de codi obert que serveix per monitoritzar les activitats que tenen els usuaris sobre un sistema, entrades i surtides, activitat... ens permet obtenir info com:
