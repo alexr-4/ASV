@@ -90,15 +90,15 @@ Si executem la comanda ``` sa ```
 
 De cada columna, podem extreure que que:
 
-1a: Quantitat de vegades que s'ha executat l'ordre.
+- 1a: Quantitat de vegades que s'ha executat l'ordre.
 
-2a: Temps real en minuts.
+- 2a: Temps real en minuts.
 
-3a: És el total dels minuts en format de CPU del sistema de cada usuari.
+- 3a: És el total dels minuts en format de CPU del sistema de cada usuari.
 
-4a: Quantitat de nucli usat.
+- 4a: Quantitat de nucli usat.
 
-5a: A la darrera columna veiem l'ordre executada.
+- 5a: A la darrera columna veiem l'ordre executada.
 
 Per veure la info de manera individual, podem fer ``` sa - u ```:
 
@@ -123,7 +123,21 @@ Ens permet habilitar o des-habilitat processos d'usuari
 
 <img width="1017" alt="Captura de Pantalla 2022-10-01 a las 17 15 59" src="https://user-images.githubusercontent.com/38278207/193416167-705bca79-f0ed-453c-a69c-06b62fec22e0.png">
 
+#### Comanda aureport
+
+Resum general del sistema, ens dona moltissima info:
+
+<img width="1017" alt="Captura de Pantalla 2022-10-01 a las 17 26 36" src="https://user-images.githubusercontent.com/38278207/193416571-18e81c32-0d16-45a1-8e4c-0bf86e2cb639.png">
+
+Podem perfilar molt més la comanda amb els parametres:
+
+- ``` aureport -l ``` : Si tenim servidor gràfic veurem entrades corresponents a les sessions iniciades a gdm3, kde, etc
+
+- ``` aureport -n ``` : Ens dona un resum d'anomalies 
+
 Links de interés utilitzats:
 
 - https://www.solvetic.com/tutoriales/article/2940-monitorear-actividad-de-usuario-con-acct-o-psacct/
+- https://www.elarraydejota.com/supervision-del-sistema-con-psacct-acct-y-audit/
+- https://www.unixmen.com/monitoring-users-activity-using-psacct-or-acct-tools-in-linux/
 
