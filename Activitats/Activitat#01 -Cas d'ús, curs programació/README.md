@@ -56,6 +56,51 @@ Creació usuari Jaimito:
 
 De manera que com a sysadmin o profes del grup, ens pot servir per saber "qui esta a classe" i quanta estona, des de quan esta connectat l'alumne, que ha fet, etc. En general, tenir un control absolut sobre la asistencia de l'alumnat
 
+### Com instal·lar-lo?
+
+``` yum install psacct ```
+
+```chkconfig psacct on ```
+
+### Com fer-lo servir?
+
+#### Comanda ac
+
+La comanda ``` ac ``` ens dona el temps total en hores d'inici i tancaments de sessió dels usuaris.
+
+I podem refinar més la comanda posant-li paràmetres:
+
+``` ac -d ``` ens dona el temps total per dia 
+
+``` ac -p ``` ens dona el temps per usuari, una comanda molt interessant com a "profe"
+
+<img width="1017" alt="Captura de Pantalla 2022-10-01 a las 17 07 01" src="https://user-images.githubusercontent.com/38278207/193415839-41979726-f689-4d01-a1d8-0de22eacf42a.png">
+
+(Amb el curs en marxa i alumnes a classe, la sortida de les comandes seria molt mes representativa 😁)
+
+#### Comanda sa
+
+Eina molt interessant que ens permet veure totes les comandes que han utilitzat els usuaris, ideal per "veure que han fet els alumnes a classe"
+
+Foto exemple:
+
+![image](https://user-images.githubusercontent.com/38278207/193415952-85451850-fdb8-4649-9d03-1708d7908e57.png)
+
+De la primera fila, podem extreure de cada columna que:
+
+- 544: Quantitat de vegades que s'ha executat l'ordre.
+
+- 4.16: Temps real en minuts.
+
+- 0.34: És el total dels minuts en format de CPU del sistema de cada usuari.
+
+- 764 k: Quantitat de nucli usat.
+
+- A la darrera columna veiem l'ordre executada.
+
+
+Per veure-ho de manera individual, podem fer servir ```sa -u ``
+
 Links de interés utilitzats:
 
 - https://www.solvetic.com/tutoriales/article/2940-monitorear-actividad-de-usuario-con-acct-o-psacct/
