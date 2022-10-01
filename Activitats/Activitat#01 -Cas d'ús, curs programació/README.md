@@ -62,6 +62,8 @@ De manera que com a sysadmin o profes del grup, ens pot servir per saber "qui es
 
 ```chkconfig psacct on ```
 
+Cal esperar una mica i anar jugant amb diversos usuaris fent comandes, segons quina comanda posteriorment fem servir, no veurem resultat 😅
+
 ### Com fer-lo servir?
 
 #### Comanda ac
@@ -80,26 +82,46 @@ I podem refinar més la comanda posant-li paràmetres:
 
 #### Comanda sa
 
-Eina molt interessant que ens permet veure totes les comandes que han utilitzat els usuaris, ideal per "veure que han fet els alumnes a classe"
+Eina molt interessant ja que ens resumeix les comandes que han utilitzat els usuaris, ideal per "veure que han fet els alumnes a classe"
 
-Foto exemple:
+Si executem la comanda ``` sa ```
 
-![image](https://user-images.githubusercontent.com/38278207/193415952-85451850-fdb8-4649-9d03-1708d7908e57.png)
+<img width="1017" alt="Captura de Pantalla 2022-10-01 a las 17 19 06" src="https://user-images.githubusercontent.com/38278207/193416280-f53851f5-7a54-4c4f-8cd6-1e484bfed85e.png">
 
-De la primera fila, podem extreure de cada columna que:
+De cada columna, podem extreure que que:
 
-- 544: Quantitat de vegades que s'ha executat l'ordre.
+1a: Quantitat de vegades que s'ha executat l'ordre.
 
-- 4.16: Temps real en minuts.
+2a: Temps real en minuts.
 
-- 0.34: És el total dels minuts en format de CPU del sistema de cada usuari.
+3a: És el total dels minuts en format de CPU del sistema de cada usuari.
 
-- 764 k: Quantitat de nucli usat.
+4a: Quantitat de nucli usat.
 
-- A la darrera columna veiem l'ordre executada.
+5a: A la darrera columna veiem l'ordre executada.
+
+Per veure la info de manera individual, podem fer ``` sa - u ```:
+
+<img width="1017" alt="Captura de Pantalla 2022-10-01 a las 17 19 40" src="https://user-images.githubusercontent.com/38278207/193416309-a15b2ea7-e086-425f-9eec-4ed8fcb6ed78.png">
 
 
-Per veure-ho de manera individual, podem fer servir ```sa -u ``
+### Comanda lastcomm
+
+Semblant a l'anterior, més concret, ens dona les comandes utilitzades segons l'usuari que li passem per paràmetre. 
+
+<img width="1017" alt="Captura de Pantalla 2022-10-01 a las 17 18 23" src="https://user-images.githubusercontent.com/38278207/193416249-f24e65f4-7da7-4c70-94f1-ed350f61d927.png">
+
+#### Comanda lastb
+
+Ens dona últim accessos al sistema, indicant la data i hora, es molt concret:
+
+<img width="1017" alt="Captura de Pantalla 2022-10-01 a las 17 14 23" src="https://user-images.githubusercontent.com/38278207/193416101-aa6a237c-80ac-46b5-837f-feaccce938ee.png">
+
+### Comanda accton on
+
+Ens permet habilitar o des-habilitat processos d'usuari
+
+<img width="1017" alt="Captura de Pantalla 2022-10-01 a las 17 15 59" src="https://user-images.githubusercontent.com/38278207/193416167-705bca79-f0ed-453c-a69c-06b62fec22e0.png">
 
 Links de interés utilitzats:
 
