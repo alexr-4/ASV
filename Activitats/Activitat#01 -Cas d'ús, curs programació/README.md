@@ -2,11 +2,9 @@
 
 ## Pregunta 1: Configurar servidor
 
-Hem creat una maquina nova anomenada: curs-coding-asv01-server:
+Hem creat una maquina rocky linux nova anomenada: curs-coding-asv01-server. Amb la IP .109:
 
-<img width="1436" alt="Captura de Pantalla 2022-09-29 a las 20 44 32" src="https://user-images.githubusercontent.com/38278207/193116431-20bca797-a7f1-4696-866a-4b3df97f26a3.png">
-
-Edit: hem refet tot pero amb una nova màquina rocky linux 😄
+<img width="1436" alt="Captura de Pantalla 2022-10-01 a las 16 38 10" src="https://user-images.githubusercontent.com/38278207/193414642-8c76eb30-1c34-4689-857c-de1b1df9bd54.png">
 
 Creació usuari admin. password: adminadmin.
 
