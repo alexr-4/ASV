@@ -6,6 +6,8 @@ Hem creat una maquina nova anomenada: curs-coding-asv01-server:
 
 <img width="1436" alt="Captura de Pantalla 2022-09-29 a las 20 44 32" src="https://user-images.githubusercontent.com/38278207/193116431-20bca797-a7f1-4696-866a-4b3df97f26a3.png">
 
+Edit: hem refet tot pero amb una nova màquina rocky linux 😄
+
 Creació usuari admin. password: adminadmin.
 
 <img width="1017" alt="Captura de Pantalla 2022-09-29 a las 20 49 47" src="https://user-images.githubusercontent.com/38278207/193117424-40391aaf-e53e-4b99-9fbf-22ff2472cdb6.png">
