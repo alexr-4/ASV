@@ -53,10 +53,17 @@ Alternativa per posar permisos:
   enllaç d'interés: https://jupyterhub.readthedocs.io/en/stable/quickstart.html
   ![image](https://user-images.githubusercontent.com/79162978/193466625-58208203-d242-4707-93d2-c84f019d4aae.png)
 
-- A continuació, farem les següents comandes: python3 
-``` m pip install jupyterhub ```
+- A continuació, farem les següents comandes:  
+
+``` python3 m pip install jupyterhub ```
+
 ``` npm install -g configurable-http-proxy ```
+
 ``` python3 -m pip install jupyterlab notebook ```
+
+- Arrencarem el jupiterlab amb la comanda: ``` jupiterhub ``` 
+  ![image](https://user-images.githubusercontent.com/79162978/193467167-4ed9bfcb-145a-44f2-b704-e95723d38460.png)
+
 
 
 * Tots els alumnes/professors han de poder accedir al servei via web, però no fer login al sistema per terminal. *
