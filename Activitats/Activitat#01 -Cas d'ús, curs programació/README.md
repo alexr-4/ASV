@@ -65,6 +65,11 @@ Alternativa per posar permisos:
 - Arrencarem el jupiterlab amb la comanda: ``` jupiterhub ``` 
   ![image](https://user-images.githubusercontent.com/79162978/193467167-4ed9bfcb-145a-44f2-b704-e95723d38460.png)
 
+- Crearem el fitxer de config: ``` jupyterhub --generate-config ```
+- Arrencarem el jupiterhub amb el config: ``` ``` 
+  ![image](https://user-images.githubusercontent.com/79162978/193467745-f41af1a8-22fd-4b00-8aaa-406c378a4391.png)
+- Intentem ficar la nostra ip amb el nostre proxy amb la comanda ``` jupyterhub --ip 192.168.101.109 --port 8744 --ssl-key my_ssl.key --ssl-cert my_ssl.cert ```
+  ![image](https://user-images.githubusercontent.com/79162978/193468178-46f1bc6c-d6da-4db3-9a59-7e87fb764538.png)
 
 
 *Tots els alumnes/professors han de poder accedir al servei via web, però no fer login al sistema per terminal.*
