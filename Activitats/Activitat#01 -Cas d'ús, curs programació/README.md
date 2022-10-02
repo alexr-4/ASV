@@ -16,8 +16,8 @@ Li donem permissos de superusuari dins del ``` sudo visudo ```:
 
 <img width="1017" alt="Captura de Pantalla 2022-09-29 a las 20 50 43" src="https://user-images.githubusercontent.com/38278207/193117725-fa9bcf3f-8966-4077-b069-0236fea589e8.png">
 
-* - Els professors han de tenir el seu directori inicial a /home/professorat/nom_professor. *
-* - Els alumnes han de tenir el seu directori inicial a /home/alumne/nom_alumne. *
+* Els professors han de tenir el seu directori inicial a /home/professorat/nom_professor. *
+* Els alumnes han de tenir el seu directori inicial a /home/alumne/nom_alumne. *
 
 
 <img width="527" alt="Captura de Pantalla 2022-09-29 a las 20 54 58" src="https://user-images.githubusercontent.com/38278207/193118418-94762ea7-b545-4ffc-b4c1-a762d2e55d09.png">
