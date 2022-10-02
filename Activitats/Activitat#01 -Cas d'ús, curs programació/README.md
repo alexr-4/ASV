@@ -43,6 +43,22 @@ Alternativa per posar permisos:
 ``` chmod 777 ```
 
 * Configureu un servidor jupyterlab per poder accedir a un entorn per a treballar. *
+
+- Primer de tot farem la comanda de:  ``` sudo dnf -y update ``` 
+- Seguidament, instal·larem python 3.9 al servidor: ``` sudo dnf install python39 ``` 
+- Verificarem la versió que se'ns ha instal·lat al server: ``` python3.9 --version ``` 
+ ![image](https://user-images.githubusercontent.com/79162978/193466517-b30fc9e8-dbc2-4aa9-92d8-dd0652779d2c.png)
+
+- Instal·larem per poder fer servir pip i jupiterlab: sudo dnf install nodejs npm
+  enllaç d'interés: https://jupyterhub.readthedocs.io/en/stable/quickstart.html
+  ![image](https://user-images.githubusercontent.com/79162978/193466625-58208203-d242-4707-93d2-c84f019d4aae.png)
+
+- A continuació, farem les següents comandes: python3 
+``` m pip install jupyterhub ```
+``` npm install -g configurable-http-proxy ```
+``` python3 -m pip install jupyterlab notebook ```
+
+
 * Tots els alumnes/professors han de poder accedir al servei via web, però no fer login al sistema per terminal. *
 * Creareu un estudiant jaimito i li bloquejareu l’accés al jupyterlab. *
 
@@ -53,16 +69,6 @@ Creació usuari Jaimito:
 ``` passwd jaimito ```
 
 FALTA FER:
-
-- Els professors han de tenir el seu directori inicial a /home/professorat/nom_professor.
-
-- Els alumnes han de tenir el seu directori inicial a /home/alumne/nom_alumne.
-
-Creats els directoris pero fa falta especificar que siguin directoris inicials
-
-- Els alumnes únicament han de poder utilitzar els seus directoris inicial
-
-No se a que es refereix
 
 - Creareu un estudiant jaimito i li bloquejareu l’accés al jupyterlab.
  
