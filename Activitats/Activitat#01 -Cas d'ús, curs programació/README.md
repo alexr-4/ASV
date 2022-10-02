@@ -6,7 +6,7 @@ Hem creat una maquina rocky linux nova anomenada: curs-coding-asv01-server. Amb 
 
 <img width="1436" alt="Captura de Pantalla 2022-10-01 a las 16 38 10" src="https://user-images.githubusercontent.com/38278207/193414642-8c76eb30-1c34-4689-857c-de1b1df9bd54.png">
 
-* Creareu un usuari admin que pugui esdevenir root i SIGUI l’únic usuari que pot entrar al sistema de forma remota per SSH. * 
+*Creareu un usuari admin que pugui esdevenir root i SIGUI l’únic usuari que pot entrar al sistema de forma remota per SSH.* 
 
 Creació usuari admin amb password: adminadmin.
 
@@ -16,19 +16,20 @@ Li donem permissos de superusuari dins del ``` sudo visudo ```:
 
 <img width="1017" alt="Captura de Pantalla 2022-09-29 a las 20 50 43" src="https://user-images.githubusercontent.com/38278207/193117725-fa9bcf3f-8966-4077-b069-0236fea589e8.png">
 
-* Els professors han de tenir el seu directori inicial a /home/professorat/nom_professor. *
-* Els alumnes han de tenir el seu directori inicial a /home/alumne/nom_alumne. *
+*Els professors han de tenir el seu directori inicial a /home/professorat/nom_professor.*
+*Els alumnes han de tenir el seu directori inicial a /home/alumne/nom_alumne.*
 
 
 <img width="527" alt="Captura de Pantalla 2022-09-29 a las 20 54 58" src="https://user-images.githubusercontent.com/38278207/193118418-94762ea7-b545-4ffc-b4c1-a762d2e55d09.png">
 
-* Els professors han de poder (rwx) a tots els directoris /home/alumne/ *
+*Els professors han de poder (rwx) a tots els directoris /home/alumne/*
 
 Per donar permisos máxims al directori /home/alumne/, directament em fet que el propietari del directori alumne sigui el grup professorat, de manera que aquest grup ja tindra permissos: 
 
 <img width="1017" alt="Captura de Pantalla 2022-09-29 a las 21 01 53" src="https://user-images.githubusercontent.com/38278207/193119741-e894209e-b0fb-43fa-bd92-d8c591b98591.png">
 
-* Els alumnes únicament han de poder utilitzar els seus directoris inicials. *
+*Els alumnes únicament han de poder utilitzar els seus directoris inicials.*
+
 #TODO
 
 Comanda interessant per veure permissos:
@@ -42,7 +43,7 @@ Alternativa per posar permisos:
 
 ``` chmod 777 ```
 
-* Configureu un servidor jupyterlab per poder accedir a un entorn per a treballar. *
+*Configureu un servidor jupyterlab per poder accedir a un entorn per a treballar.*
 
 - Primer de tot farem la comanda de:  ``` sudo dnf -y update ``` 
 - Seguidament, instal·larem python 3.9 al servidor: ``` sudo dnf install python39 ``` 
@@ -66,8 +67,8 @@ Alternativa per posar permisos:
 
 
 
-* Tots els alumnes/professors han de poder accedir al servei via web, però no fer login al sistema per terminal. *
-* Creareu un estudiant jaimito i li bloquejareu l’accés al jupyterlab. *
+*Tots els alumnes/professors han de poder accedir al servei via web, però no fer login al sistema per terminal.*
+*Creareu un estudiant jaimito i li bloquejareu l’accés al jupyterlab.*
 
 Creació usuari Jaimito:
 
