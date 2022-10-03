@@ -16,12 +16,9 @@ Li donem permissos de superusuari dins del ``` sudo visudo ```:
 
 <img width="1017" alt="Captura de Pantalla 2022-09-29 a las 20 50 43" src="https://user-images.githubusercontent.com/38278207/193117725-fa9bcf3f-8966-4077-b069-0236fea589e8.png">
 
- - Els professors han de tenir el seu directori inicial a /home/professorat/nom_professor.
-# TODO
+- Els professors han de tenir el seu directori inicial a /home/professorat/nom_professor.
 
 - Els alumnes han de tenir el seu directori inicial a /home/alumne/nom_alumne.
-
-# TODO
 
 <img width="527" alt="Captura de Pantalla 2022-09-29 a las 20 54 58" src="https://user-images.githubusercontent.com/38278207/193118418-94762ea7-b545-4ffc-b4c1-a762d2e55d09.png">
 
@@ -49,13 +46,16 @@ Alternativa per posar permisos:
 - Configureu un servidor jupyterlab per poder accedir a un entorn per a treballar.
 
 - Primer de tot farem la comanda de:  ``` sudo dnf -y update ``` 
+
 - Seguidament, instal·larem python 3.9 al servidor: ``` sudo dnf install python39 ``` 
+
 - Verificarem la versió que se'ns ha instal·lat al server: ``` python3.9 --version ``` 
+
  ![image](https://user-images.githubusercontent.com/79162978/193466517-b30fc9e8-dbc2-4aa9-92d8-dd0652779d2c.png)
 
-- Instal·larem per poder fer servir pip i jupiterlab: sudo dnf install nodejs npm
-  enllaç d'interés: https://jupyterhub.readthedocs.io/en/stable/quickstart.html
-  ![image](https://user-images.githubusercontent.com/79162978/193466625-58208203-d242-4707-93d2-c84f019d4aae.png)
+- Instal·larem per poder fer servir pip i jupiterlab: ``` sudo dnf install nodejs npm ```
+    
+![image](https://user-images.githubusercontent.com/79162978/193466625-58208203-d242-4707-93d2-c84f019d4aae.png)
 
 - A continuació, farem les següents comandes:  
 
@@ -66,6 +66,7 @@ Alternativa per posar permisos:
  ``` python3 -m pip install jupyterlab notebook ```
 
 - Arrencarem el jupiterlab amb la comanda: ``` jupiterhub ``` 
+
   ![image](https://user-images.githubusercontent.com/79162978/193467167-4ed9bfcb-145a-44f2-b704-e95723d38460.png)
 
 - Crearem el fitxer de config: ``` jupyterhub --generate-config -f jupyterhub_config.py ```
@@ -98,6 +99,7 @@ Creació usuari Jaimito:
 ## Links de interés:
 
 - https://jupyterhub.readthedocs.io/en/stable/getting-started/security-basics.html
+- https://jupyterhub.readthedocs.io/en/stable/quickstart.html
 
 ## Pregunta 2: Investigar eina psacct
 
@@ -164,7 +166,7 @@ Per veure la info de manera individual, podem fer ``` sa - u ```:
 <img width="1017" alt="Captura de Pantalla 2022-10-01 a las 17 19 40" src="https://user-images.githubusercontent.com/38278207/193416309-a15b2ea7-e086-425f-9eec-4ed8fcb6ed78.png">
 
 
-### Comanda lastcomm
+#### Comanda lastcomm
 
 Semblant a l'anterior, més concret, ens dona les comandes utilitzades segons l'usuari que li passem per paràmetre. 
 
