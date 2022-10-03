@@ -64,13 +64,13 @@ Per donar permisos máxims al directori /home/alumne/, directament em fet que el
 
  ``` python3 -m pip install jupyterlab notebook ```
 
-- Arrencarem el jupiterlab amb la comanda: ``` jupiterhub ``` 
+- Arrencarem el jupiterlab amb la comanda: ``` jupyterhub ``` 
 - I ens logeem amb admin adminadmin
   ![image](https://user-images.githubusercontent.com/79162978/193617157-926d0089-acb8-405a-a01a-35e1c6cb69dc.png)
 
 - Crearem el fitxer de config (aquest pas és innecesari): ``` jupyterhub --generate-config -f jupyterhub_config.py ```
 
-- Arrencarem el jupiterhub amb el config (aquest pas és innecesari): 
+- Arrencarem el jupyterhub amb el config (aquest pas és innecesari): 
 
   ![image](https://user-images.githubusercontent.com/79162978/193467745-f41af1a8-22fd-4b00-8aaa-406c378a4391.png)
 
