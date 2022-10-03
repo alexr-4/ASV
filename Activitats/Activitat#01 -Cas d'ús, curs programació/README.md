@@ -2,11 +2,11 @@
 
 ## Pregunta 1: Configurar servidor
 
-Hem creat una maquina rocky linux nova anomenada: curs-coding-asv01-server. Amb la IP .109:
+Hem creat una maquina rocky linux nova anomenada: curs-coding-asv01. Amb la IP .109:
 
 <img width="1436" alt="Captura de Pantalla 2022-10-01 a las 16 38 10" src="https://user-images.githubusercontent.com/38278207/193414642-8c76eb30-1c34-4689-857c-de1b1df9bd54.png">
 
-*Creareu un usuari admin que pugui esdevenir root i SIGUI l’únic usuari que pot entrar al sistema de forma remota per SSH.* 
+- Creareu un usuari admin que pugui esdevenir root i SIGUI l’únic usuari que pot entrar al sistema de forma remota per SSH.
 
 Creació usuari admin amb password: adminadmin.
 
@@ -16,19 +16,22 @@ Li donem permissos de superusuari dins del ``` sudo visudo ```:
 
 <img width="1017" alt="Captura de Pantalla 2022-09-29 a las 20 50 43" src="https://user-images.githubusercontent.com/38278207/193117725-fa9bcf3f-8966-4077-b069-0236fea589e8.png">
 
-*Els professors han de tenir el seu directori inicial a /home/professorat/nom_professor.*
-*Els alumnes han de tenir el seu directori inicial a /home/alumne/nom_alumne.*
+ - Els professors han de tenir el seu directori inicial a /home/professorat/nom_professor.
+# TODO
 
+- Els alumnes han de tenir el seu directori inicial a /home/alumne/nom_alumne.
+
+# TODO
 
 <img width="527" alt="Captura de Pantalla 2022-09-29 a las 20 54 58" src="https://user-images.githubusercontent.com/38278207/193118418-94762ea7-b545-4ffc-b4c1-a762d2e55d09.png">
 
-*Els professors han de poder (rwx) a tots els directoris /home/alumne/*
+- Els professors han de poder (rwx) a tots els directoris /home/alumne/
 
 Per donar permisos máxims al directori /home/alumne/, directament em fet que el propietari del directori alumne sigui el grup professorat, de manera que aquest grup ja tindra permissos: 
 
 <img width="1017" alt="Captura de Pantalla 2022-09-29 a las 21 01 53" src="https://user-images.githubusercontent.com/38278207/193119741-e894209e-b0fb-43fa-bd92-d8c591b98591.png">
 
-*Els alumnes únicament han de poder utilitzar els seus directoris inicials.*
+- Els alumnes únicament han de poder utilitzar els seus directoris inicials
 
 #TODO
 
@@ -76,12 +79,12 @@ Alternativa per posar permisos:
 
 
 
-*Tots els alumnes/professors han de poder accedir al servei via web, però no fer login al sistema per terminal.*
+- Tots els alumnes/professors han de poder accedir al servei via web, però no fer login al sistema per terminal.
 
 #TODO
 
 
-*Creareu un estudiant jaimito i li bloquejareu l’accés al jupyterlab.*
+- Creareu un estudiant jaimito i li bloquejareu l’accés al jupyterlab.
 
 Creació usuari Jaimito:
 
@@ -89,10 +92,10 @@ Creació usuari Jaimito:
 
 ``` passwd jaimito ```
 
-* I el posem al fitxer de configuració:
+- Hem editat el fitxer de configuració ``` vim jupyterhub_config.py ```:
 
 
-<img width="1017" alt="Captura de Pantalla 2022-10-03 a las 12 02 26" src="https://user-images.githubusercontent.com/38278207/193551433-1b394f27-503b-4963-9fc2-607855cf212d.png">
+<img width="1017" alt="Captura de Pantalla 2022-10-03 a las 12 07 48" src="https://user-images.githubusercontent.com/38278207/193552456-0da684d8-e067-4307-a344-86850e2a2c2d.png">
 
 
 ## Pregunta 2: Investigar eina psacct
