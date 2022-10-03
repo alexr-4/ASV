@@ -176,5 +176,6 @@ nano /etc/group
 - Article interés: https://blog.alcancelibre.org/staticpages/index.php/uso-getfacl-getfacl
 
 - Borrar a Samwise: userdel samwise
-![image](https://user-images.githubusercontent.com/79162978/193094877-a169f97e-304f-4099-b870-94946e2682e8.png)
+
+ ![image](https://user-images.githubusercontent.com/79162978/193094877-a169f97e-304f-4099-b870-94946e2682e8.png)
 
