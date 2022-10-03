@@ -102,6 +102,8 @@ Creació usuari Jaimito:
 - https://jupyterhub.readthedocs.io/en/stable/getting-started/security-basics.html
 - https://jupyterhub.readthedocs.io/en/stable/quickstart.html
 
+<hr>
+
 ## Pregunta 2: Investigar eina psacct
 
 ``` psacct ``` es una eina de codi obert que serveix per monitoritzar les activitats que tenen els usuaris sobre un sistema, entrades i surtides, activitat... ens permet obtenir info com:
