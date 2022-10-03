@@ -28,20 +28,21 @@ Per donar permisos máxims al directori /home/alumne/, directament em fet que el
 
 <img width="1017" alt="Captura de Pantalla 2022-09-29 a las 21 01 53" src="https://user-images.githubusercontent.com/38278207/193119741-e894209e-b0fb-43fa-bd92-d8c591b98591.png">
 
-- Els alumnes únicament han de poder utilitzar els seus directoris inicials
-
-# TODO
-
-Comanda interessant per veure permissos:
+- Comanda interessant per veure permissos:
 
 ```ls -la ```
 
-Alternativa per posar permisos:
+- Alternativa per posar permisos:
 
 ![image](https://user-images.githubusercontent.com/38278207/193120164-86008861-9be6-4b8b-9d75-3f5a0ba91d6c.png)
 
 
 ``` chmod 777 ```
+
+
+- Els alumnes únicament han de poder utilitzar els seus directoris inicials
+
+# TODO
 
 - Configureu un servidor jupyterlab per poder accedir a un entorn per a treballar.
 
@@ -196,7 +197,7 @@ Podem perfilar molt més la comanda amb els parametres:
 
 - ``` aureport -n ``` : Ens dona un resum d'anomalies 
 
-Links de interés utilitzats:
+## Links de interés:
 
 - https://www.solvetic.com/tutoriales/article/2940-monitorear-actividad-de-usuario-con-acct-o-psacct/
 - https://www.elarraydejota.com/supervision-del-sistema-con-psacct-acct-y-audit/
