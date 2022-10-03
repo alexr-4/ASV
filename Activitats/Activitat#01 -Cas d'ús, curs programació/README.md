@@ -36,9 +36,7 @@ Per donar permisos máxims al directori /home/alumne/, directament em fet que el
 
 ![image](https://user-images.githubusercontent.com/38278207/193120164-86008861-9be6-4b8b-9d75-3f5a0ba91d6c.png)
 
-
 ``` chmod 777 ```
-
 
 - Els alumnes únicament han de poder utilitzar els seus directoris inicials
 
@@ -82,7 +80,6 @@ Per donar permisos máxims al directori /home/alumne/, directament em fet que el
 - Tots els alumnes/professors han de poder accedir al servei via web, però no fer login al sistema per terminal.
 
 # TODO
-
 
 - Creareu un estudiant jaimito i li bloquejareu l’accés al jupyterlab.
 
