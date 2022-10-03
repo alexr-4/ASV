@@ -65,9 +65,7 @@ Per donar permisos máxims al directori /home/alumne/, directament em fet que el
  ``` python3 -m pip install jupyterlab notebook ```
 
 - Arrencarem el jupiterlab amb la comanda: ``` jupiterhub ``` 
-
-  ![image](https://user-images.githubusercontent.com/79162978/193467167-4ed9bfcb-145a-44f2-b704-e95723d38460.png)
-  
+- I ens logeem amb admin adminadmin
   ![image](https://user-images.githubusercontent.com/79162978/193617157-926d0089-acb8-405a-a01a-35e1c6cb69dc.png)
 
 - Crearem el fitxer de config (aquest pas és innecesari): ``` jupyterhub --generate-config -f jupyterhub_config.py ```
@@ -76,10 +74,7 @@ Per donar permisos máxims al directori /home/alumne/, directament em fet que el
 
   ![image](https://user-images.githubusercontent.com/79162978/193467745-f41af1a8-22fd-4b00-8aaa-406c378a4391.png)
 
-
-- Tots els alumnes/professors han de poder accedir al servei via web, però no fer login al sistema per terminal.
-
-# TODO
+- #TODO Tots els alumnes/professors han de poder accedir al servei via web, però no fer login al sistema per terminal.
 
 - Creareu un estudiant jaimito i li bloquejareu l’accés al jupyterlab.
 
