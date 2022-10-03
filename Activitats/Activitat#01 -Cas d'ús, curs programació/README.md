@@ -1,36 +1,57 @@
-# ACTIVITAT 01 - CURS DE PROGRAMACIÓ
+# ACTIVITAT 01 - Cas d'ús: Curs de programació
 
-## Pregunta 1: Configurar servidor
+## 1 Part pràctica: Configuració del servidor
 
-Hem creat una maquina rocky linux nova anomenada: curs-coding-asv01. Amb la IP .109:
+Primerament, hem creat una maquina rocky linux nova anomenada: curs-coding-asv01 i que finalitza amb la IP .109:
 
 <img width="1436" alt="Captura de Pantalla 2022-10-01 a las 16 38 10" src="https://user-images.githubusercontent.com/38278207/193414642-8c76eb30-1c34-4689-857c-de1b1df9bd54.png">
 
 ### Creareu un usuari admin que pugui esdevenir root i SIGUI l’únic usuari que pot entrar al sistema de forma remota per SSH.
 
-Creació usuari admin amb password: adminadmin.
+- Usuari: admin 
+- Password: adminadmin.
 
 <img width="1017" alt="Captura de Pantalla 2022-09-29 a las 20 49 47" src="https://user-images.githubusercontent.com/38278207/193117424-40391aaf-e53e-4b99-9fbf-22ff2472cdb6.png">
 
-Li donem permissos de superusuari dins del ``` sudo visudo ```:
+Li assignem permissos de superusuari dins del ``` sudo visudo ```:
 
 <img width="1017" alt="Captura de Pantalla 2022-09-29 a las 20 50 43" src="https://user-images.githubusercontent.com/38278207/193117725-fa9bcf3f-8966-4077-b069-0236fea589e8.png">
 
 ### Els professors han de tenir el seu directori inicial a /home/professorat/nom_professor.
 
+Afeguirem dos professors al home de professorat: 
+
+- groupadd -g 2 professorat
+- useradd -d/home/professorat/jordi -m jordi
+- useradd -d/home/professorat/jesus -m jesus
+
+ ![image](https://user-images.githubusercontent.com/79162978/193696747-3acf2f55-bc21-4a41-a7b3-c11fb5ba5fdd.png)
+
+ 
 ### Els alumnes han de tenir el seu directori inicial a /home/alumne/nom_alumne.
 
-<img width="527" alt="Captura de Pantalla 2022-09-29 a las 20 54 58" src="https://user-images.githubusercontent.com/38278207/193118418-94762ea7-b545-4ffc-b4c1-a762d2e55d09.png">
+- useradd -d/home/alumne/samantha -m samantha
+- useradd -d/home/alumne/paula -m paula
+- useradd -d/home/alumne/alex -m alex
+- useradd -d/home/alumne/jaimito -m jaimito
+
+ ![image](https://user-images.githubusercontent.com/79162978/193696833-f15c9f60-21f2-4104-9751-a480adcbe2fa.png)
+ 
 
 ### Els professors han de poder (rwx) a tots els directoris /home/alumne/
 
-Per donar permisos máxims al directori /home/alumne/, directament em fet que el propietari del directori alumne sigui el grup professorat, de manera que aquest grup ja tindra permissos: 
+S'ha donat el máxim dels permisos al grup de professorat: 
 
-<img width="1017" alt="Captura de Pantalla 2022-09-29 a las 21 01 53" src="https://user-images.githubusercontent.com/38278207/193119741-e894209e-b0fb-43fa-bd92-d8c591b98591.png">
+ ![image](https://user-images.githubusercontent.com/79162978/193698089-f1f5603f-7033-4e7d-8b76-d7ad0b351219.png)
 
-- Comanda interessant per veure permissos:
+Seguidament, amb les següents comandes hem establit a les carpetes dels alumnes permisos als professors: 
 
-```ls -la ```
+ ![image](https://user-images.githubusercontent.com/79162978/193698265-1a07823f-2894-4a4c-a786-83a2e22fa6d0.png)
+
+A continuació, hem fet la comanda ```ls -la ``` per veure els permissos: 
+
+ ![image](https://user-images.githubusercontent.com/79162978/193698417-a7cfa5a5-bbc4-44d8-80a0-8437f99fcfac.png)
+
 
 - Alternativa per posar permisos:
 
@@ -39,6 +60,11 @@ Per donar permisos máxims al directori /home/alumne/, directament em fet que el
 ``` chmod 777 ```
 
 ### Els alumnes únicament han de poder utilitzar els seus directoris inicials
+
+Perque els alumnes no puguin accedir al grup dels professors: 
+
+ ![image](https://user-images.githubusercontent.com/79162978/193698702-8b42335c-f598-4861-9a97-1f14fd23edf8.png)
+ 
 
 # JupiterLab
 
