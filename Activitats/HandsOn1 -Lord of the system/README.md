@@ -116,6 +116,7 @@ smtpd_recipient_restrictions = permit_mynetworks, permit_auth_destination,permit
 
 ## Configurar dimoni
 Arrancar: systemctl enable --now postfix
+
 Preparar bústies: echo 'export MAIL=$HOME/Maildir' >> /etc/profile.d/mail.sh
 
 ![image](https://user-images.githubusercontent.com/79162978/192591029-4f045e0a-0270-4f3d-8133-c3807a43d672.png)
