@@ -65,14 +65,22 @@ Alternativa per posar permisos:
 - Arrencarem el jupiterlab amb la comanda: ``` jupiterhub ``` 
   ![image](https://user-images.githubusercontent.com/79162978/193467167-4ed9bfcb-145a-44f2-b704-e95723d38460.png)
 
-- Crearem el fitxer de config: ``` jupyterhub --generate-config ```
-- Arrencarem el jupiterhub amb el config: ``` ``` 
+- Crearem el fitxer de config: ``` jupyterhub --generate-config -f jupyterhub_config.py ```
+
+- Arrencarem el jupiterhub amb el config: 
+
   ![image](https://user-images.githubusercontent.com/79162978/193467745-f41af1a8-22fd-4b00-8aaa-406c378a4391.png)
 - Intentem ficar la nostra ip amb el nostre proxy amb la comanda ``` jupyterhub --ip 192.168.101.109 --port 8744 --ssl-key my_ssl.key --ssl-cert my_ssl.cert ```
+
   ![image](https://user-images.githubusercontent.com/79162978/193468178-46f1bc6c-d6da-4db3-9a59-7e87fb764538.png)
 
 
+
 *Tots els alumnes/professors han de poder accedir al servei via web, però no fer login al sistema per terminal.*
+
+#TODO
+
+
 *Creareu un estudiant jaimito i li bloquejareu l’accés al jupyterlab.*
 
 Creació usuari Jaimito:
@@ -81,15 +89,10 @@ Creació usuari Jaimito:
 
 ``` passwd jaimito ```
 
-FALTA FER:
+* I el posem al fitxer de configuració:
 
-- Creareu un estudiant jaimito i li bloquejareu l’accés al jupyterlab.
- 
-- Configureu un servidor jupyterlab per poder accedir a un entorn per a treballar.
 
-El jupyterlab Diria que es fer un servidor web wordpress. Jaimito creat.
-
-- Tots els alumnes/professors han de poder accedir al servei via web, però no fer login al sistema per terminal.
+<img width="1017" alt="Captura de Pantalla 2022-10-03 a las 12 02 26" src="https://user-images.githubusercontent.com/38278207/193551433-1b394f27-503b-4963-9fc2-607855cf212d.png">
 
 
 ## Pregunta 2: Investigar eina psacct
