@@ -102,7 +102,7 @@ Creació usuari Jaimito:
 - https://jupyterhub.readthedocs.io/en/stable/getting-started/security-basics.html
 - https://jupyterhub.readthedocs.io/en/stable/quickstart.html
 
-<hr>
+***
 
 ## Pregunta 2: Investigar eina psacct
 
