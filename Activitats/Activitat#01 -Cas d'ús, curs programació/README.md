@@ -100,18 +100,11 @@ Perque els alumnes no puguin accedir al grup dels professors:
 
   ![image](https://user-images.githubusercontent.com/79162978/193467745-f41af1a8-22fd-4b00-8aaa-406c378a4391.png)
 
-- #TODO Tots els alumnes/professors han de poder accedir al servei via web, però no fer login al sistema per terminal.
+- Tots els alumnes/professors han de poder accedir al servei via web, però no fer login al sistema per terminal.
 
-- Creareu un estudiant jaimito i li bloquejareu l’accés al jupyterlab.
-
-Creació usuari Jaimito:
-
-``` sudo useradd jaimito ```
-
-``` passwd jaimito ```
+- Bloquejarem l’accés al jupyterlab al Jaimito: 
 
 - Hem editat el fitxer de configuració ``` vim jupyterhub_config.py ``` tenint en compte tot el que es demana de la següent manera:
-
 
 <img width="1017" alt="Captura de Pantalla 2022-10-03 a las 12 07 48" src="https://user-images.githubusercontent.com/38278207/193552456-0da684d8-e067-4307-a344-86850e2a2c2d.png">
 
