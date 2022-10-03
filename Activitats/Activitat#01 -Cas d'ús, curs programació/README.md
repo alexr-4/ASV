@@ -33,7 +33,7 @@ Per donar permisos máxims al directori /home/alumne/, directament em fet que el
 
 - Els alumnes únicament han de poder utilitzar els seus directoris inicials
 
-#TODO
+# TODO
 
 Comanda interessant per veure permissos:
 
@@ -46,7 +46,7 @@ Alternativa per posar permisos:
 
 ``` chmod 777 ```
 
-*Configureu un servidor jupyterlab per poder accedir a un entorn per a treballar.*
+- Configureu un servidor jupyterlab per poder accedir a un entorn per a treballar.
 
 - Primer de tot farem la comanda de:  ``` sudo dnf -y update ``` 
 - Seguidament, instal·larem python 3.9 al servidor: ``` sudo dnf install python39 ``` 
@@ -77,11 +77,9 @@ Alternativa per posar permisos:
 
   ![image](https://user-images.githubusercontent.com/79162978/193468178-46f1bc6c-d6da-4db3-9a59-7e87fb764538.png)
 
-
-
 - Tots els alumnes/professors han de poder accedir al servei via web, però no fer login al sistema per terminal.
 
-#TODO
+# TODO
 
 
 - Creareu un estudiant jaimito i li bloquejareu l’accés al jupyterlab.
@@ -92,11 +90,14 @@ Creació usuari Jaimito:
 
 ``` passwd jaimito ```
 
-- Hem editat el fitxer de configuració ``` vim jupyterhub_config.py ```:
+- Hem editat el fitxer de configuració ``` vim jupyterhub_config.py ``` tenint en compte tot el que es demana de la següent manera:
 
 
 <img width="1017" alt="Captura de Pantalla 2022-10-03 a las 12 07 48" src="https://user-images.githubusercontent.com/38278207/193552456-0da684d8-e067-4307-a344-86850e2a2c2d.png">
 
+## Links de interés:
+
+- https://jupyterhub.readthedocs.io/en/stable/getting-started/security-basics.html
 
 ## Pregunta 2: Investigar eina psacct
 
