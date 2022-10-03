@@ -42,7 +42,7 @@ Per donar permisos máxims al directori /home/alumne/, directament em fet que el
 
 - Els alumnes únicament han de poder utilitzar els seus directoris inicials
 
-# TODO
+# JupiterLab
 
 - Configureu un servidor jupyterlab per poder accedir a un entorn per a treballar.
 
