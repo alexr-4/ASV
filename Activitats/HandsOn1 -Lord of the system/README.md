@@ -32,14 +32,19 @@ groupadd -g 900 mags
 ## Afegir usuaris 
 useradd frodo -g 600 -u 601 -c "Frodo" -m -d\
  /home/frodo
+ 
 useradd gollum -g 600 -u 602 -c "Smeagol" -m -d\
  /home/smeagol
+ 
 useradd samwise -g 600 -u 603 -c "Samwise" -m -d\
  /home/samwise
+ 
 useradd legolas -g 700 -u 701 -c "Legolas" -m -d\
  /home/legolas
+ 
 useradd gimli -g 800 -u 801 -c "Gimli" -m -d\
  /home/gimli
+ 
 useradd gandalf -g 900 -u 901 -c "Gandalf" -m -d\
  /home/gandalf
 
