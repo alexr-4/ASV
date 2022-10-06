@@ -79,13 +79,13 @@ En definitiva, crec que cada cop anem consolidant més els nostres coneixements 
 
 ***Que he consultat?***
 
-- https://blog.desdelinux.net/permisos-y-derechos-en-linux/
+-  https://blog.desdelinux.net/permisos-y-derechos-en-linux/
 
-- https://jupyterhub.readthedocs.io/en/stable/
+-  https://jupyterhub.readthedocs.io/en/stable/
 
-_ https://atareao.es/como/gestion-de-usuarios-y-grupos-en-linux/
+_  https://atareao.es/como/gestion-de-usuarios-y-grupos-en-linux/
 
-- https://www.linuxtotal.com.mx/index.php?cont=info_admon_013
+-  https://www.linuxtotal.com.mx/index.php?cont=info_admon_013
 
 ***Quines preguntes m'han sorgit?***
 
