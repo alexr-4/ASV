@@ -41,13 +41,55 @@ Coneixer els sitemes CENTOS i Rocky Linux, i valorar quin dels 2 ens interessa m
 
 - Que es el que fa realment un administrador?
 
-# Week 01
+# Week 02
 
 ***Que he aprés?***
 
+Hem acabat de consolidar coneixements més especifics de client-servidor i aprés a configurar un servidor didactic per alumnes, un curs de programació. En aquest servidor gran, hem aprés a configurar especificament, a base d'uns requeriments, un servidor linux. Crear usuaris, definir contrassenyes, especificar permisos, crear grups i rols, servidors, ... tot això englobat dins d'un jupyter hub, un servidor gran que dona servei als alumnes.
+
+Entendre els conceptes de:
+
+- R: Permís de lectura
+
+- W: Escriptura
+
+- X: Execució
+
+Que sovintment fem servir quan executem comandes de ``` chmod 777 ``` (permisos maxims a usuari local, grup local, i els altres)
+
+Relacionar que moltissimes utilitats que podem instal·lar a linux, tenen un fitxer de configuració acabat en ``` .conf ``` i que aquest sempre el podem editar amb el vim o nano, i treure'ns la por de no voler-lo tocar per "trencar algo"
+
+
+
+Destacar fitxers profunds de linux que ens han resultat interessants com:
+
+- ```/etc/group/ ``` Conté les definicions dels grups
+
+- ``` /etc/shadow/ ``` Conté contrassenyes dels usuaris, sol pot accedir root
+
+- ``` /etc/group ``` Conté definicions dels grups
+
+- ``` /etc/passwd ``` Conté la base de dades d’usuaris del sistema.
+
+- ```psacct ``` Aquesta eina de gestió tant potent ens permet tenir un control total dels esdeveniments que ocorren dins del nostre SO
+
+Destacar el concepte d'enginyeria social, que es basa en trobar relació social entre les persones de la persona afectada, per arribar a la nostra finalitat
+
+En definitiva, crec que cada cop anem consolidant més els nostres coneixements per a ser un administrador de linux, al final també entenem que es impossible saber-se tots els racons de linux i comandes, pero tenir una base forta i poder relacionar conceptes per aprendre a trobar-los crec que es un camí que podrem anar asssolint
+
 ***Que he consultat?***
 
+- https://blog.desdelinux.net/permisos-y-derechos-en-linux/
+
+- https://jupyterhub.readthedocs.io/en/stable/
+
+_ https://atareao.es/como/gestion-de-usuarios-y-grupos-en-linux/
+
+- https://www.linuxtotal.com.mx/index.php?cont=info_admon_013
+
 ***Quines preguntes m'han sorgit?***
+
+- Que es un servidor jupyterlab?
 
 
 
