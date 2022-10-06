@@ -62,6 +62,22 @@ Seguidamente, para verificar que el cambio se ha realizado correctamente, lanzam
 
 ![image](https://user-images.githubusercontent.com/79162978/191810819-6dbed02d-96b8-4c0b-ad3f-9440ff64a478.png)
 
+Correcció:
+
+Amb l'open nebula, que es la plataforma de cloud computing que estem fent servir per depositar maquines, hem instanciat 2 maquines noves. Hem realitzat una creació del tipus:
+
+<img width="1436" alt="Captura de Pantalla 2022-09-29 a las 20 17 34" src="https://user-images.githubusercontent.com/38278207/193111557-706b8f0b-e34e-43f7-9b0d-002a41d5f917.png">
+
+Dins del rang de IPS 101:
+
+- Maquina .83: Conté servei de BD (Maria BD), pero NO servei d'allotjament web.
+- Màquina .84: Conté servei Web (Wordpress), no servei BBDD
+
+La idea de fer això es separar la lògica en maquines diferents per tenir-ho tot més estructurat, de manera que una màquina únicament tingui el wordpress allotjat i l'altra el servei BBDD, pero que sigui coherent i òptim la connexió entre elles, i això ho aconseguim aprofitant el servei SSH, que es podran atacar entre elles per IP, amb comandes del tipus:
+
+``` ssh root@192.168.101.83 ```
+
+
 ## Pregunta 7
 
 Generat la clau publica a la maquina .84 (la que és servidor web), amb la comanda:
