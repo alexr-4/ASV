@@ -1,0 +1,3 @@
+#Activitat 2
+
+TODO: buscar plugin php para ldap
