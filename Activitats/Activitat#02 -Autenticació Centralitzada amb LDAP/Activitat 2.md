@@ -41,7 +41,7 @@ En el moment d'iniciar sessió, et dona la opció de generar una contrassenya se
 
 <img width="1450" alt="Captura de Pantalla 2022-10-16 a las 14 51 32" src="https://user-images.githubusercontent.com/38278207/196036404-fed896fc-70f7-4191-88ed-aebc799a90c7.png">
 
-``` vevmiV-hidgo5-cokdan 
+``` vevmiV-hidgo5-cokdan ```
 
 
 ### Fonts consultades
