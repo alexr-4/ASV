@@ -5,7 +5,19 @@
 TODO: buscar plugin php para ldap
 
 
-![image](https://user-images.githubusercontent.com/79162978/195657063-f911baaf-1742-4033-afe8-215b2b59b3fb.png)
+![image](https://user-images.githubusercontent.com/79162978/195657063-f911baaf-1742-4033-afe8-215b2b59b3fb.png)+
+
+- Instal·lació d’un servei web apache.(0,5 punts)
+
+- Instal·lació de la versió 7.4 de php. (0,5 punts)
+
+- Instal·lació i configuració del paquet. (2 punts)
+
+- Protegiu el servei LAM, eliminant els comptes per defecte. (1 punt)
+
+- L’únic usuari que pot iniciar sessió al servei ha de ser l’osproxy. (1 punt)
+
+- Afegiu a l’usuari el mòdul SSH publickey. (1 punt)
 
 ## Part teòrica
 
