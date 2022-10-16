@@ -11,6 +11,9 @@ TODO: buscar plugin php para ldap
 
 ### Que es kerberos?
 
+![image](https://user-images.githubusercontent.com/38278207/196037245-84458df1-3d7c-43d4-b43b-4c1e2d199c2d.png)
+
+
 **Kerberos**, donat una xarxa de comunicacions insegura, es un protocol d'autenticació que permet als ordinadors, mitjançant una identificació mutua, validar la seva identitat. Tant el client com el servidor, validen la identitat un de l'altre. Kerberos treballa amb sistema de xifrat simètric que requereix un 3r de confiança.  Uitlitza un **algoritme de xifrat molt fort**
 
 Kerberos té una base de dades de claus secretes; cada entitat de la xarxa té una clau secreta, coneguda únicament per ella i Kerberos, amb què demostra la seva identitat. Per a una comunicació entre dues entitats, Kerberos genera una clau de sessió que poden utilitzar per xifrar les comunicacions.
@@ -21,8 +24,14 @@ S'empra especialment en sistemes segurs que depenen de funcions d'auditoria i d'
 
 ### Com funciona?
 
+Utilitza sistema de clau simètrica, de manera que cal un 3r de confiança.
+
 Un client actua amb nom d'usuari per accedir a uns determinats serveis d'un servidor. El servidor realitza aquesta autentificació que exigeix el client. Quan l'autentificació es realitza correctament, el servidor genera un **ticket**, aquest ticket es enviat al client, i quan el client el té, ja està assegurat, per la resta de servidors, que el client esta autenticat.
 
+Una explicació més tècnica: 
+
+<img width="812" alt="Captura de Pantalla 2022-10-16 a las 14 56 37" src="https://user-images.githubusercontent.com/38278207/196036629-ace92337-
+                                                                          A672f-4dab-bd17-61bc130fef83.png">
 El servidor d'autentificació es separa en 3 parts:
 
 - Base de dades
@@ -31,9 +40,12 @@ El servidor d'autentificació es separa en 3 parts:
 
 Totes elles englobades dins del **centre de distribució de claus**
 
+![image](https://user-images.githubusercontent.com/38278207/196037193-6f041289-07ec-4569-9f2a-217c012137ce.png)
+
+
 ## Historia
 
-Tot i que es un sistema segur i fiable, kerberos ha rebut atacs amb el pas del temps. Els hackers han trobat metodes per falsificar els tickets, esbrinar contrassenyes o directament saltar-se el protocol.
+Kerberos ja fa dècades que esta en funcionament i, tot i que es un sistema segur i fiable, kerberos ha rebut atacs amb el pas del temps. Els hackers han trobat metodes per falsificar els tickets, esbrinar contrassenyes o directament saltar-se el protocol.
 
 Per norma general, per a que funcioni be aquest protocol de seguretat, caldria fer servir contrassenyes segures. Un exemple de sistema que genera claus fiables, son les contrassenyes que et genera un MAC. 
 
@@ -43,9 +55,36 @@ En el moment d'iniciar sessió, et dona la opció de generar una contrassenya se
 
 ``` vevmiV-hidgo5-cokdan ```
 
+Mètodes per vulnerar Kerberos:
+
+- Pass the ticket:  Amb aquest mètode, un atacant falsifica la clau de sessió i fa servir credencials falses. Els pirates informàtics falsificaran una butlleta daurada o platejada per obtenir accés al domini o accés a un servei.
+- Atac de força bruta: Anar provant contrassenyes per esbrinar la usada 
+- Degradació del xifrat: Es realitza una degradació de xifratge amb codi maliciós de clau mestra, un tipus de codi maliciós que passa per alt Kerberos si el ciberatacant té accés d'administrador.
+- Dc shadow attack: Aquest atac té lloc quan els pirates informàtics obtenen l'accés necessari per configurar el propi controlador de domini (DC) que s'utilitzarà per a una infiltració més gran
+
+Actualment Kerberos es la solucio back-end mes optima, i a priori no sembla que tinguem una solucio futura inminent millor que aquest protocol 😁
+
+### En que ens beneficia utilitzar Kerberos?
+
+- Control d'accés
+- Autenticació mutual
+- Duració concreta del ticket
+- Autentificació reutilitzable
+- Seguretat
+
+### Kerberos vs LDAP
+
+LDAP. Kerberos i LDAP s'uneixen comunament (fins i tot a Active Directory) per proporcionar un directori d'usuaris centralitzat (LDAP) i serveis d'autenticació (Kerberos).
+
+LDAP conté els usuaris, grups, i demés metadata sobre aquests. El principal punt feble es que introdueixen la contrassenya a través de xarxa, de manera que una combinació molt òptima es juntar-los tots 2.
+
+Kerberos proporciona la funcionalitat d'inici de sessió única. Quan un usuari s'ha autenticat al KDC, cap altre servei (com ara un lloc d'intranet o un recurs compartit de fitxers) no necessita la contrasenya de l'usuari. El KDC, aquest tercer de confiança, és responsable d'emetre tickets en què confia cada servei. 
+
+La combinació de LDAP i Kerberos proporciona autenticació i administració d'usuaris centralitzades, i en xarxes grans es fonamental tenir aquest valor de seguretat que ens dona Kerberos.
 
 ### Fonts consultades
 
 - https://es.wikipedia.org/wiki/Kerberos
 - https://www.redeszone.net/tutoriales/redes-cable/kerberos-protocolo-seguridad-redes/
-
+- https://ciberseguridad.com/guias/prevencion-proteccion/kerberos/ (molt recomanable)
+ 
