@@ -30,8 +30,9 @@ Un client actua amb nom d'usuari per accedir a uns determinats serveis d'un serv
 
 Una explicació més tècnica: 
 
-<img width="812" alt="Captura de Pantalla 2022-10-16 a las 14 56 37" src="https://user-images.githubusercontent.com/38278207/196036629-ace92337-
-                                                                          A672f-4dab-bd17-61bc130fef83.png">
+<img width="1436" alt="Captura de Pantalla 2022-10-16 a las 15 12 21" src="https://user-images.githubusercontent.com/38278207/196037344-ec166b5c-b665-4df4-93ae-aa09c75cd5e6.png">
+
+
 El servidor d'autentificació es separa en 3 parts:
 
 - Base de dades
