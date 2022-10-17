@@ -7,13 +7,13 @@ TODO: buscar plugin php para ldap
 
 - Instal·lació d’un servei web apache.(0,5 punts)
 
-`` Instal·lem el dimoni httpd:
-dnf install httpd -y
+Instal·lem el dimoni httpd:
+```` dnf install httpd -y ´´´´
 Activem el dimoni per iniciar cada cop que el sistema arranqui:
-systemctl enable httpd
+```` systemctl enable httpd ´´´´
 Arranquem i comprovem l’estat del dimoni:
-systemctl start httpd
-systemctl status httpd ´´
+```` systemctl start httpd ´´´´
+```` systemctl status httpd ´´´´
 
 - Instal·lació de la versió 7.4 de php. (0,5 punts)
 
