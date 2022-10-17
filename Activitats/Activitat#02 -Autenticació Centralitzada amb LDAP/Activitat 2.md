@@ -5,8 +5,6 @@
 TODO: buscar plugin php para ldap
 
 
-![image](https://user-images.githubusercontent.com/79162978/195657063-f911baaf-1742-4033-afe8-215b2b59b3fb.png)+
-
 - Instal·lació d’un servei web apache.(0,5 punts)
 
 `` Instal·lem el dimoni httpd:
@@ -30,7 +28,16 @@ dnf install php-curl php-zip -y
 php -v ´´
 
 - Instal·lació i configuració del paquet. (2 punts)
-``  ´´
+ANTES DE INSTALAR LOS PAQUETES: 
+![image](https://user-images.githubusercontent.com/79162978/195657063-f911baaf-1742-4033-afe8-215b2b59b3fb.png)
+
+INSTALAMOS LOS PAQUETES: 
+`` dnf install php-gd php-ldap php-gmp -y ´´
+
+DESPUÉS DE INSTALAR PAQUETES:
+
+![image](https://user-images.githubusercontent.com/79162978/196219768-82ac20ab-4169-4798-b91f-b379e4fdfc98.png)
+
 
 - Protegiu el servei LAM, eliminant els comptes per defecte. (1 punt)
 
