@@ -51,6 +51,15 @@
 
 https://www.ldap-account-manager.org/lamcms/
 
+- Introducir contraseña: lam
+cd /var/lib/
+
+![image](https://user-images.githubusercontent.com/79162978/196227764-30bb129b-8ccf-4985-9edf-6dc734677e95.png)
+
+
+ ![image](https://user-images.githubusercontent.com/79162978/196223430-991760a2-bafc-48c2-bb02-fa9b46ef8a42.png)
+
+
 ### Protegiu el servei LAM, eliminant els comptes per defecte. (1 punt)
 
 ### L’únic usuari que pot iniciar sessió al servei ha de ser l’osproxy. (1 punt)
