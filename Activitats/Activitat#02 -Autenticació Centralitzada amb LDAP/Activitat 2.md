@@ -49,6 +49,7 @@
 
  ![image](https://user-images.githubusercontent.com/79162978/196219768-82ac20ab-4169-4798-b91f-b379e4fdfc98.png)
 
+https://www.ldap-account-manager.org/lamcms/
 
 ### Protegiu el servei LAM, eliminant els comptes per defecte. (1 punt)
 
