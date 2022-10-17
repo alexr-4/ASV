@@ -9,9 +9,28 @@ TODO: buscar plugin php para ldap
 
 - Instal·lació d’un servei web apache.(0,5 punts)
 
+`` Instal·lem el dimoni httpd:
+dnf install httpd -y
+Activem el dimoni per iniciar cada cop que el sistema arranqui:
+systemctl enable httpd
+Arranquem i comprovem l’estat del dimoni:
+systemctl start httpd
+systemctl status httpd ´´
+
 - Instal·lació de la versió 7.4 de php. (0,5 punts)
 
+`` dnf module list php
+# PHP 7.2 és el per defecte
+# Per modificar-ho
+dnf module reset php
+dnf module install php:7.4 -y
+# Per instal·lar extensions de PHP
+dnf install php-curl php-zip -y
+# Comprovem la versió instal·lada
+php -v ´´
+
 - Instal·lació i configuració del paquet. (2 punts)
+``  ´´
 
 - Protegiu el servei LAM, eliminant els comptes per defecte. (1 punt)
 
