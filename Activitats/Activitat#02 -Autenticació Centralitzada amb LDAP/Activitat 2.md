@@ -2,58 +2,59 @@
 
 ## Part pràctica
 
-#### Instal·lació d’un servei web apache.(0,5 punts)
+### Instal·lació d’un servei web apache.(0,5 punts)
 
 - Instal·lem el dimoni httpd:
 
-```` dnf install httpd -y ````
+ ```` dnf install httpd -y ````
 
 - Activem el dimoni per iniciar cada cop que el sistema arranqui:
 
-```` systemctl enable httpd ````
+ ```` systemctl enable httpd ````
 
 - Arranquem i comprovem l’estat del dimoni:
 
-```` systemctl start httpd ````
+ ```` systemctl start httpd ````
 
-```` systemctl status httpd ````
+ ```` systemctl status httpd ````
 
-#### Instal·lació de la versió 7.4 de php. (0,5 punts)
+### Instal·lació de la versió 7.4 de php. (0,5 punts)
 
-```` dnf module list php ````
+ ```` dnf module list php ````
 
 - PHP 7.2 és el per defecte
 
 - Per modificar-ho
 
-```` dnf module reset php ````
-```` dnf module install php:7.4 -y ````
+ ```` dnf module reset php ````
+ ```` dnf module install php:7.4 -y ````
 
 - Per instal·lar extensions de PHP
 
-```` dnf install php-curl php-zip -y ````
+ ```` dnf install php-curl php-zip -y ````
 
 - Comprovem la versió instal·lada
 
-```` php -v ````
+ ```` php -v ````
 
-- Instal·lació i configuració del paquet. (2 punts)
-ANTES DE INSTALAR LOS PAQUETES: 
-![image](https://user-images.githubusercontent.com/79162978/195657063-f911baaf-1742-4033-afe8-215b2b59b3fb.png)
+### Instal·lació i configuració del paquet. (2 punts)
 
-INSTALAMOS LOS PAQUETES: 
-```` dnf install php-gd php-ldap php-gmp -y ````
+- ANTES DE INSTALAR LOS PAQUETES: 
+ ![image](https://user-images.githubusercontent.com/79162978/195657063-f911baaf-1742-4033-afe8-215b2b59b3fb.png)
 
-DESPUÉS DE INSTALAR PAQUETES:
+- INSTALAMOS LOS PAQUETES: 
+ ```` dnf install php-gd php-ldap php-gmp -y ````
 
-![image](https://user-images.githubusercontent.com/79162978/196219768-82ac20ab-4169-4798-b91f-b379e4fdfc98.png)
+- DESPUÉS DE INSTALAR PAQUETES:
+
+ ![image](https://user-images.githubusercontent.com/79162978/196219768-82ac20ab-4169-4798-b91f-b379e4fdfc98.png)
 
 
-- Protegiu el servei LAM, eliminant els comptes per defecte. (1 punt)
+### Protegiu el servei LAM, eliminant els comptes per defecte. (1 punt)
 
-- L’únic usuari que pot iniciar sessió al servei ha de ser l’osproxy. (1 punt)
+### L’únic usuari que pot iniciar sessió al servei ha de ser l’osproxy. (1 punt)
 
-- Afegiu a l’usuari el mòdul SSH publickey. (1 punt)
+### Afegiu a l’usuari el mòdul SSH publickey. (1 punt)
 
 ## Part teòrica
 
