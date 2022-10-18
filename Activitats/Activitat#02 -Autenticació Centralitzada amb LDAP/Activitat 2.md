@@ -58,6 +58,10 @@ cd /var/lib/
  
  ![image](https://user-images.githubusercontent.com/79162978/196227764-30bb129b-8ccf-4985-9edf-6dc734677e95.png)
 
+- Cambiar contraseña i configurar el paquet:
+
+![Captura](https://user-images.githubusercontent.com/83337658/196234664-f4a499de-5e64-47ac-afb0-0d39e60af929.PNG)
+![Captura2](https://user-images.githubusercontent.com/83337658/196234693-c6d5283b-835a-4256-acf3-a9e617155a52.PNG)
 
 ### Protegiu el servei LAM, eliminant els comptes per defecte. (1 punt)
 
