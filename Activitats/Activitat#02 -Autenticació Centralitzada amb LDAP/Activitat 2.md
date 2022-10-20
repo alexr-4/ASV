@@ -74,9 +74,9 @@
 
 ### Protegiu el servei LAM, eliminant els comptes per defecte. (1 punt)
 
-Per fer aquest punt. No ens queda clar si, dins d'aquesta llista de serveis, cal eliminar el primer, el de Personal. No ho hem aplicat per si de cas...
+- Canviem la contrasenya del server ldap 192.168.101.77 que conté la bbdd: 
+ ![image](https://user-images.githubusercontent.com/79162978/196996583-21fde96a-a62f-43fc-9a66-e2f7907234af.png)
 
-<img width="1436" alt="Captura de Pantalla 2022-10-20 a las 12 04 23" src="https://user-images.githubusercontent.com/38278207/196919893-e81c7162-4ef0-4556-bda3-0664959b33db.png">
 
 
 ### L’únic usuari que pot iniciar sessió al servei ha de ser l’osproxy. (1 punt)
