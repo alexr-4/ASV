@@ -80,7 +80,15 @@
  ![image](https://user-images.githubusercontent.com/79162978/196996583-21fde96a-a62f-43fc-9a66-e2f7907234af.png)
  
  - Si intentem accedir amb 1234 ens sortirà aquest error: 
+ 
   ![image](https://user-images.githubusercontent.com/79162978/196997670-30262425-7f19-45d4-b920-d80e94872cfe.png)
+  
+ -Modifiquem el password de les següents seccions de lam a asv01:
+ 
+  ![image](https://user-images.githubusercontent.com/79162978/196998357-d7b7e284-c83c-4456-b4af-0e84ba9796f2.png)
+  ![image](https://user-images.githubusercontent.com/79162978/196998268-7d337dd0-487e-49dd-a4ef-7a539b9ef589.png)
+  ![image](https://user-images.githubusercontent.com/79162978/196998661-71e86637-26a6-4ddd-927d-d562bc2f577f.png)
+
 
 
 ### L’únic usuari que pot iniciar sessió al servei ha de ser l’osproxy. (1 punt)
