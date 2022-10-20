@@ -87,9 +87,6 @@ Per configurar això, entenem que hem de modificar parametres del següent apart
 
 <img width="1436" alt="Captura de Pantalla 2022-10-20 a las 11 55 49" src="https://user-images.githubusercontent.com/38278207/196918011-10039f3f-e75f-42d0-a3b7-b2483d36b514.png">
 
-També hem trobat que pot ser acertat configurar el següent desplegable de l'apartat logging
-
-<img width="1321" alt="Captura de Pantalla 2022-10-20 a las 12 07 55" src="https://user-images.githubusercontent.com/38278207/196920725-1ff06f9f-6e7d-4fc4-80af-39b124d12780.png">
 
 
 ### Afegiu a l’usuari el mòdul SSH publickey. (1 punt)
