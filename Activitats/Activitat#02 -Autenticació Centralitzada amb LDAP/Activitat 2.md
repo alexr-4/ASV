@@ -108,13 +108,10 @@ Per configurar això, entenem que hem de modificar parametres del següent apart
 
 ### Afegiu a l’usuari el mòdul SSH publickey. (1 punt)
 
-En aquest apartat cal especificar la clau publica de l'usuari en qüestió:
+- Afegir el servei SSH public key (ldapPublicKey) amb un sol click: 
 
-<img width="1436" alt="Captura de Pantalla 2022-10-20 a las 12 00 06" src="https://user-images.githubusercontent.com/38278207/196918919-8e2609c0-41ca-4d25-a015-9bc064e65d4f.png">
+ ![image](https://user-images.githubusercontent.com/79162978/197000832-a1a25d7c-d0af-4114-b077-341b512715b1.png)
 
-I afegir el servei SSH public key (ldapPublicKey). (Afegit despres de fer la foto)
-
-<img width="1436" alt="Captura de Pantalla 2022-10-20 a las 12 03 02" src="https://user-images.githubusercontent.com/38278207/196919588-413a1bfc-ac93-48bd-8d84-80fa27259644.png">
 
 ### Seccions de configuració rellevants:
 
