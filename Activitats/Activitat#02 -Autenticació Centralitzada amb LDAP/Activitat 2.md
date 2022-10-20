@@ -51,17 +51,19 @@
 
 https://www.ldap-account-manager.org/lamcms/
 
-- Introducir contraseña: lam
+- Introduïr contrassenya: lam
 cd /var/lib/
 
  ![image](https://user-images.githubusercontent.com/79162978/196223430-991760a2-bafc-48c2-bb02-fa9b46ef8a42.png)
  
  ![image](https://user-images.githubusercontent.com/79162978/196227764-30bb129b-8ccf-4985-9edf-6dc734677e95.png)
 
-- Cambiar contraseña i configurar el paquet:
+- Configurar el paquet:
 
 ![Captura](https://user-images.githubusercontent.com/83337658/196234664-f4a499de-5e64-47ac-afb0-0d39e60af929.PNG)
 ![Captura2](https://user-images.githubusercontent.com/83337658/196234693-c6d5283b-835a-4256-acf3-a9e617155a52.PNG)
+
+- Canviar la contrasenya per cmd: ```` ldappasswd -H ldapi:/// -Y EXTERNAL -S \ "cn=osproxy,ou=system,dc=curs,dc=asv,dc=udl,dc=cat" ````
 
 ### Protegiu el servei LAM, eliminant els comptes per defecte. (1 punt)
 
