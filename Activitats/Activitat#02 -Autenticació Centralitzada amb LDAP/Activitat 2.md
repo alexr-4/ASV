@@ -39,20 +39,27 @@
 
 ### Instal·lació i configuració del paquet. (2 punts)
 
-- ANTES DE INSTALAR LOS PAQUETES: 
+- Abans d'instal·lar paquets: 
  ![image](https://user-images.githubusercontent.com/79162978/195657063-f911baaf-1742-4033-afe8-215b2b59b3fb.png)
 
-- INSTALAMOS LOS PAQUETES: 
+- Fem instal·lació dels paquets: 
  ```` dnf install php-gd php-ldap php-gmp -y ````
 
-- DESPUÉS DE INSTALAR PAQUETES:
+- Després d'instal·lar:
 
  ![image](https://user-images.githubusercontent.com/79162978/196219768-82ac20ab-4169-4798-b91f-b379e4fdfc98.png)
+ 
+ - Ldap el tenim a la màquina 192.168.101.77 que és el que allotja la bbdd
+ - Lam el tenim a la màquina 192.168.101.61 que és el que té el servei lam.
+ - Client el tenim a la màquina 192.168.101.72. 
 
-https://www.ldap-account-manager.org/lamcms/
+ Per apuntar a la bbdd hem hagut de modificar en la configuració la següent adreça: 
+ ![image](https://user-images.githubusercontent.com/79162978/196994504-f582c746-eb60-4b56-92bc-4c7b7c4f8006.png)
+
+ https://www.ldap-account-manager.org/lamcms/
 
 - Introduïr contrassenya: lam
-cd /var/lib/
+  cd /var/lib/
 
  ![image](https://user-images.githubusercontent.com/79162978/196223430-991760a2-bafc-48c2-bb02-fa9b46ef8a42.png)
  
@@ -83,11 +90,6 @@ Per configurar això, entenem que hem de modificar parametres del següent apart
 També hem trobat que pot ser acertat configurar el següent desplegable de l'apartat logging
 
 <img width="1321" alt="Captura de Pantalla 2022-10-20 a las 12 07 55" src="https://user-images.githubusercontent.com/38278207/196920725-1ff06f9f-6e7d-4fc4-80af-39b124d12780.png">
-
-I aquesta secció:
-
-<img width="1436" alt="Captura de Pantalla 2022-10-20 a las 12 11 49" src="https://user-images.githubusercontent.com/38278207/196921546-d36e5d34-559c-417d-9b12-52ec25c65823.png">
-
 
 
 ### Afegiu a l’usuari el mòdul SSH publickey. (1 punt)
