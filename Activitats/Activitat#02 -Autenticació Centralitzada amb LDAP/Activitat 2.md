@@ -75,6 +75,8 @@
 ### Protegiu el servei LAM, eliminant els comptes per defecte. (1 punt)
 
 - Canviem la contrasenya del server ldap 192.168.101.77 que conté la bbdd: 
+- La nova pass serà: asv01
+
  ![image](https://user-images.githubusercontent.com/79162978/196996583-21fde96a-a62f-43fc-9a66-e2f7907234af.png)
 
 
