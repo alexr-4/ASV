@@ -113,9 +113,6 @@ Per configurar això, entenem que hem de modificar parametres del següent apart
  ![image](https://user-images.githubusercontent.com/79162978/197000832-a1a25d7c-d0af-4114-b077-341b512715b1.png)
 
 
-### Seccions de configuració rellevants:
-
-
 ## Part teòrica
 
 ### Que es kerberos?
