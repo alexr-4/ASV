@@ -65,6 +65,10 @@ cd /var/lib/
 
 ### Protegiu el servei LAM, eliminant els comptes per defecte. (1 punt)
 
+Per fer aquest punt. No ens queda clar si, dins d'aquesta llista de serveis, cal eliminar el primer, el de Personal. No ho hem aplicat per si de cas...
+
+<img width="1436" alt="Captura de Pantalla 2022-10-20 a las 12 04 23" src="https://user-images.githubusercontent.com/38278207/196919893-e81c7162-4ef0-4556-bda3-0664959b33db.png">
+
 
 ### L’únic usuari que pot iniciar sessió al servei ha de ser l’osproxy. (1 punt)
 
@@ -74,12 +78,22 @@ Per configurar això, entenem que hem de modificar parametres del següent apart
 
 <img width="1436" alt="Captura de Pantalla 2022-10-20 a las 11 55 49" src="https://user-images.githubusercontent.com/38278207/196918011-10039f3f-e75f-42d0-a3b7-b2483d36b514.png">
 
+També hem trobat que pot ser acertat configurar el següent desplegable de l'apartat logging
+
+<img width="1321" alt="Captura de Pantalla 2022-10-20 a las 12 07 55" src="https://user-images.githubusercontent.com/38278207/196920725-1ff06f9f-6e7d-4fc4-80af-39b124d12780.png">
+
 
 ### Afegiu a l’usuari el mòdul SSH publickey. (1 punt)
 
 En aquest apartat cal especificar la clau publica de l'usuari en qüestió:
 
 <img width="1436" alt="Captura de Pantalla 2022-10-20 a las 12 00 06" src="https://user-images.githubusercontent.com/38278207/196918919-8e2609c0-41ca-4d25-a015-9bc064e65d4f.png">
+
+I afegir el servei SSH public key (ldapPublicKey). (Afegit despres de fer la foto)
+
+<img width="1436" alt="Captura de Pantalla 2022-10-20 a las 12 03 02" src="https://user-images.githubusercontent.com/38278207/196919588-413a1bfc-ac93-48bd-8d84-80fa27259644.png">
+
+### Seccions de configuració rellevants:
 
 
 ## Part teòrica
