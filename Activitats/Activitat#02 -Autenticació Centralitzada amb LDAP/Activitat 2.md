@@ -78,7 +78,9 @@
 - La nova pass serà: asv01
 
  ![image](https://user-images.githubusercontent.com/79162978/196996583-21fde96a-a62f-43fc-9a66-e2f7907234af.png)
-
+ 
+ - Si intentem accedir amb 1234 ens sortirà aquest error: 
+  ![image](https://user-images.githubusercontent.com/79162978/196997670-30262425-7f19-45d4-b920-d80e94872cfe.png)
 
 
 ### L’únic usuari que pot iniciar sessió al servei ha de ser l’osproxy. (1 punt)
