@@ -92,7 +92,7 @@
   - Si intentem accedir amb la pass de lam, sortiran els següents errors: 
    
     ![image](https://user-images.githubusercontent.com/79162978/196999020-86ea022e-f9bb-414a-a37c-9847602242e9.png)
-
+    ![image](https://user-images.githubusercontent.com/79162978/196999319-8bc06fd0-9c13-4d56-b2a6-db8c487e3845.png)
 
 
 
