@@ -65,9 +65,22 @@ cd /var/lib/
 
 ### Protegiu el servei LAM, eliminant els comptes per defecte. (1 punt)
 
+
 ### L’únic usuari que pot iniciar sessió al servei ha de ser l’osproxy. (1 punt)
 
+<img width="1436" alt="Captura de Pantalla 2022-10-20 a las 11 52 52" src="https://user-images.githubusercontent.com/38278207/196917239-48e0cf5b-566b-45db-ad8e-6a6dfccbbb28.png">
+
+Per configurar això, entenem que hem de modificar parametres del següent apartat
+
+<img width="1436" alt="Captura de Pantalla 2022-10-20 a las 11 55 49" src="https://user-images.githubusercontent.com/38278207/196918011-10039f3f-e75f-42d0-a3b7-b2483d36b514.png">
+
+
 ### Afegiu a l’usuari el mòdul SSH publickey. (1 punt)
+
+En aquest apartat cal especificar la clau publica de l'usuari en qüestió:
+
+<img width="1436" alt="Captura de Pantalla 2022-10-20 a las 12 00 06" src="https://user-images.githubusercontent.com/38278207/196918919-8e2609c0-41ca-4d25-a015-9bc064e65d4f.png">
+
 
 ## Part teòrica
 
