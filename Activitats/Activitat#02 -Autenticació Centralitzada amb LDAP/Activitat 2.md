@@ -88,6 +88,11 @@
   ![image](https://user-images.githubusercontent.com/79162978/196998357-d7b7e284-c83c-4456-b4af-0e84ba9796f2.png)
   ![image](https://user-images.githubusercontent.com/79162978/196998268-7d337dd0-487e-49dd-a4ef-7a539b9ef589.png)
   ![image](https://user-images.githubusercontent.com/79162978/196998661-71e86637-26a6-4ddd-927d-d562bc2f577f.png)
+  
+  - Si intentem accedir amb la pass de lam, sortiran els següents errors: 
+   
+    ![image](https://user-images.githubusercontent.com/79162978/196999020-86ea022e-f9bb-414a-a37c-9847602242e9.png)
+
 
 
 
