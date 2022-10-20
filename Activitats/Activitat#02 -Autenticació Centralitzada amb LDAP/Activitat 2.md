@@ -47,7 +47,7 @@
 
 - Després d'instal·lar:
 
- ![image](https://user-images.githubusercontent.com/79162978/196219768-82ac20ab-4169-4798-b91f-b379e4fdfc98.png)
+  ![image](https://user-images.githubusercontent.com/79162978/196219768-82ac20ab-4169-4798-b91f-b379e4fdfc98.png)
  
  - Ldap el tenim a la màquina 192.168.101.77 que és el que allotja la bbdd
  - Lam el tenim a la màquina 192.168.101.61 que és el que té el servei lam.
@@ -67,8 +67,8 @@
 
 - Configurar el paquet:
 
-![Captura](https://user-images.githubusercontent.com/83337658/196234664-f4a499de-5e64-47ac-afb0-0d39e60af929.PNG)
-![Captura2](https://user-images.githubusercontent.com/83337658/196234693-c6d5283b-835a-4256-acf3-a9e617155a52.PNG)
+ ![Captura](https://user-images.githubusercontent.com/83337658/196234664-f4a499de-5e64-47ac-afb0-0d39e60af929.PNG)
+ ![Captura2](https://user-images.githubusercontent.com/83337658/196234693-c6d5283b-835a-4256-acf3-a9e617155a52.PNG)
 
 - Canviar la contrasenya per cmd: ```` ldappasswd -H ldapi:/// -Y EXTERNAL -S \ "cn=osproxy,ou=system,dc=curs,dc=asv,dc=udl,dc=cat" ````
 
