@@ -117,6 +117,8 @@ Hem treballant amb aquestes 2 màquines:
 
 - La maquina client, ens es la que es connecta com a usuari al servidor, la que inicia sesio
 
+Tambe hem treballat el concepte de **Kerberos**, que ara sabem que es un protocol de seguretat que ens dona un plus de seguretat dins de la nostra infrastructura de xarxa, mitjançant el seu funcionament (ho expliquem detalladament a la ACT2). Com a conclusió entre fer servir Kerberos i un servidor LAMP, hem plantejat que el millor es fer-los servir tots 2 alhora si es pot; perque així tenim un sistema d'usuaris + un protocol de seguretat.
+
 ***Que he consultat?***
 
 - https://es.wikipedia.org/wiki/LAMP
