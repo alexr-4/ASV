@@ -91,5 +91,43 @@ _  https://atareao.es/como/gestion-de-usuarios-y-grupos-en-linux/
 
 - Que es un servidor jupyterlab?
 
+# Week 03
+
+***Que he aprés?***
+
+En aquesta setmana hem treballat, en un enfocament plenament pràctic, sobre com plantejar un servidor LAMP:
+
+- Linux
+
+- Apache
+
+- Mysql
+
+- PHP
+
+Entenem un servidor LAMP el host d'una plataforma, on es poden connectar els clients per realitzar X tasca.  Hem apres a fer la tasca de sysadmin dins d'aquest servidor, configurant preferències del propi servidor, dels usuaris que entren dins d'aquest, i demés elements de configuració.
+
+![lamp](https://user-images.githubusercontent.com/38278207/197358218-d190718e-c7d5-4bd2-9817-c219c2537cfe.jpg)
+
+Hem treballant amb aquestes 2 màquines:
+
+<img width="1436" alt="Captura de Pantalla 2022-10-22 a las 21 04 11" src="https://user-images.githubusercontent.com/38278207/197358175-8bd46228-7ded-40a8-8755-76f0b9ce1c14.png">
+
+- La maquina server, es la que te el client, i es la que nosaltres com a admin. Es molt personalitzable
+
+- La maquina client, ens es la que es connecta com a usuari al servidor, la que inicia sesio
+
+***Que he consultat?***
+
+- https://es.wikipedia.org/wiki/LAMP
+
+- https://blog.infranetworking.com/servidor-lamp/
+
+***Quines preguntes m'han sorgit?***
+
+- Per a que serveix un servidor LAMP?
+
+- Com instal·lar-lo?
+
 
 
