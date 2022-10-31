@@ -64,6 +64,40 @@ Arguments:
 
 ## Instal·lant un client NFS
 
+Instanciem una nova màquina: 
+
+![image](https://user-images.githubusercontent.com/79162978/199067100-78879b02-1565-436c-a524-71d9db414301.png)
+
+![image](https://user-images.githubusercontent.com/79162978/199067065-16b379a0-ad50-4a34-9498-4c5eadb13cdd.png)
+
+![image](https://user-images.githubusercontent.com/79162978/199067957-b7ea8af2-dae5-4584-9ab6-774bf7eab38d.png)
+
+Ja es connecten entre si les dues màquines:: 
+
+![image](https://user-images.githubusercontent.com/79162978/199068879-f360ffbb-76e2-4311-b701-6e7f016543c4.png)
+
+# Activitat de seguiment
+
+Creem un nou disc dur: 
+
+![image](https://user-images.githubusercontent.com/79162978/199070658-70118512-0dad-4e11-ad75-a78567e2fcac.png)
+
+Formatem el xfs pel nou disc vdc i muntem el disc:
+
+![image](https://user-images.githubusercontent.com/79162978/199071112-d295e903-2619-4d7f-95f2-32b7bc65cfa3.png)
+
+Comprovem que estigui muntat: 
+
+![image](https://user-images.githubusercontent.com/79162978/199071267-07589565-d219-48f4-81d2-c22eb93ec66a.png)
+
+Veiem amb fdisk -l els diferents disc que tenim a la nostra màquina. L'últim és el nou: 
+
+![image](https://user-images.githubusercontent.com/79162978/199071544-21f81055-2a73-4910-a7df-81914c89149b.png)
+
+
+
+
+
 
 
 
