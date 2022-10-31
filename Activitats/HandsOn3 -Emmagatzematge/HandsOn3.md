@@ -49,7 +49,7 @@ Habilitarem dels serveis:
 
 Editarem l'arxiu /etc/exports per configurar els directoris que volem que estiguin disponibles per NFS i definirem permisos/protocols que podem emprar: 
 
-![image](https://user-images.githubusercontent.com/79162978/199064411-810c6578-3e29-43d7-b010-49144546be51.png)
+![image](https://user-images.githubusercontent.com/79162978/199066378-f8486194-9663-4629-bd9f-65ed90a7c084.png)
 
 Arguments:
 - /mnt/data: Es el directori a compartir
