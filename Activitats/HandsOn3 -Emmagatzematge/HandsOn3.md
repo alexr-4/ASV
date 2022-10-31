@@ -94,6 +94,18 @@ Veiem amb fdisk -l els diferents disc que tenim a la nostra màquina. L'últim �
 
 ![image](https://user-images.githubusercontent.com/79162978/199071544-21f81055-2a73-4910-a7df-81914c89149b.png)
 
+Muntem una primera partició que serà pel home i serà el /dev/vdc1:
+
+- mkfs.ext4 /dev/vdb1
+- mount /dev/vdb1 /mnt/data
+- df -h
+
+![image](https://user-images.githubusercontent.com/79162978/199073053-1153c733-72a0-48e4-b1ad-3b3c3a991283.png)
+
+Muntem una segona partició que serà pels logs i serà el /dev/vdc2: 
+
+
+
 
 
 
