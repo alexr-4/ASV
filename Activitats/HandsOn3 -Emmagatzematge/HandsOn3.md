@@ -31,4 +31,42 @@ Afegiu una nova entrada a /etc/crypttab: Aquest informació s’utiltizarà per 
 
 ![image](https://user-images.githubusercontent.com/79162978/199060935-b0489420-e921-42de-b257-e4f47f0d079b.png)
 
+## Sistema de fitxers distríbuits
+
+Instal·lem paquets: 
+
+![image](https://user-images.githubusercontent.com/79162978/199061621-7d495456-59dc-46f9-9a00-a0818dd4d27b.png)
+
+Crearem una disc, l’afegirem, formatejarem i muntarem. Assumirem que aquest punt de muntatge és /mnt/data: Farem servir el mateix dics que ja teniem, ja que era de prova i no passa res si el "reutilitzem". 
+
+Instal·lem el firewall amb la comanda de dnf install firewalld -y i el ficarem en enable i l'iniciarem: 
+
+![image](https://user-images.githubusercontent.com/79162978/199062982-d1d72168-e10c-47eb-bec3-91d9b189b39e.png)
+
+Habilitarem dels serveis: 
+
+![image](https://user-images.githubusercontent.com/79162978/199063562-f1454dbf-21dc-4652-9746-0f616a89d3a5.png)
+
+Editarem l'arxiu /etc/exports per configurar els directoris que volem que estiguin disponibles per NFS i definirem permisos/protocols que podem emprar: 
+
+![image](https://user-images.githubusercontent.com/79162978/199064411-810c6578-3e29-43d7-b010-49144546be51.png)
+
+Arguments:
+- /mnt/data: Es el directori a compartir
+    xxx.xxx.xx.xx / 24: IP de la màquina client amb la mascara de subred
+    rw: Son permisos de escritura sincronització.
+    sync: Tots els canvis en el sistema d’arxius corresponents fan commit immediatament;
+    no_root_squash: De forma predeterminada, qualsevol sol·licitud d’arxiu realitzada per l’usuari root a la màquina client es tracta com per l’usuari nobody al servidor. Si es selecciona no_root_squash, el root a la màquina client tindrà el mateix nivell d’accés als fitxers del sistema com root al servidor.
+  
+- Guardem les modiciacions i exportem els fitxers i reiniciem els serveis: 
+
+  ![image](https://user-images.githubusercontent.com/79162978/199064826-0297878f-9ac6-4e45-a36e-035133313de5.png)
+
+## Instal·lant un client NFS
+
+
+
+
+
+
 
