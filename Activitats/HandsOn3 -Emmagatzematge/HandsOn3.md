@@ -1,0 +1,2 @@
+#Xifrant discos i particions
+
