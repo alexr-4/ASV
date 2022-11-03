@@ -30,7 +30,7 @@ Creem les particions:
 
 ![image](https://user-images.githubusercontent.com/79162978/199796082-3a363c3c-55a6-430c-ac87-9a8d6e676241.png)
 
-No cal muntar res pq ja se fa amb les RAIDS. 
+No cal muntar res pq es fa després de les RAIDS. 
 
 Creem en el segon disc 3 particions per fer la Raid 5: 
 
