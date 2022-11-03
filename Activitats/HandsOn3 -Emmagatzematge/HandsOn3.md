@@ -104,7 +104,7 @@ Per fer les dues particions:
 
 Muntem una primera partició que serà pel home i serà el /dev/vdb1:
 
-- mkfs.ext4 /dev/vdb1
+- mkfs.xfs /dev/vdb1
 - mount /dev/vdb1 /mnt/data
 - df -h
 
