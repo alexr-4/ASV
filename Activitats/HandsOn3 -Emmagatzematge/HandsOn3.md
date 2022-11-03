@@ -80,31 +80,50 @@ Ja es connecten entre si les dues màquines::
 
 Creem un nou disc dur: 
 
-![image](https://user-images.githubusercontent.com/79162978/199070658-70118512-0dad-4e11-ad75-a78567e2fcac.png)
+![image](https://user-images.githubusercontent.com/79162978/199776495-cd5c5ff6-0181-4541-b11e-ada53eb837b8.png)
 
-Formatem el xfs pel nou disc vdc i muntem el disc:
+Formatem el xfs pel nou disc vdb:
 
-![image](https://user-images.githubusercontent.com/79162978/199071112-d295e903-2619-4d7f-95f2-32b7bc65cfa3.png)
+![image](https://user-images.githubusercontent.com/79162978/199778266-2d9579f6-1342-4889-8910-5588677522c9.png)
 
-Comprovem que estigui muntat: 
+Creem la carpeta: mkdir /mnt/data
 
-![image](https://user-images.githubusercontent.com/79162978/199071267-07589565-d219-48f4-81d2-c22eb93ec66a.png)
+Muntem el disc i comprovem que estigui muntat: 
+
+![image](https://user-images.githubusercontent.com/79162978/199778548-b2a45ad2-740a-41b6-bd89-f2422b86cbbe.png)
+
 
 Veiem amb fdisk -l els diferents disc que tenim a la nostra màquina. L'últim és el nou: 
 
-![image](https://user-images.githubusercontent.com/79162978/199071544-21f81055-2a73-4910-a7df-81914c89149b.png)
+![image](https://user-images.githubusercontent.com/79162978/199778748-117b7402-f66b-46f8-8147-10c10da2bff5.png)
 
-Muntem una primera partició que serà pel home i serà el /dev/vdc1:
+Per fer les dues particions: 
+
+![image](https://user-images.githubusercontent.com/79162978/199780728-0b9da3c7-8a9c-45f0-ac86-c6c0a3c30ec8.png)
+
+
+Muntem una primera partició que serà pel home i serà el /dev/vdb1:
 
 - mkfs.ext4 /dev/vdb1
 - mount /dev/vdb1 /mnt/data
 - df -h
 
-![image](https://user-images.githubusercontent.com/79162978/199073053-1153c733-72a0-48e4-b1ad-3b3c3a991283.png)
+![image](https://user-images.githubusercontent.com/79162978/199782478-6f9715fd-66c8-4b86-9f79-f7cc9d2e4440.png)
+
+![image](https://user-images.githubusercontent.com/79162978/199782597-26ef5f9f-3432-4cf4-a0b3-137ddc0469bc.png)
+
 
 Muntem una segona partició que serà pels logs i serà el /dev/vdc2: 
 
+![image](https://user-images.githubusercontent.com/79162978/199782546-8da4024d-9dea-4b00-a032-4384d76468a9.png)
 
+![image](https://user-images.githubusercontent.com/79162978/199782641-fe831a54-0c3c-4aef-9769-a4dc9d42b541.png)
+
+Fem df -h i veiem que el sistema el tenim a la partició: /dev/vda1       4.0G  974M  3.1G  24% /
+El home el tenim a: /dev/vdb1       245M   15M  231M   6% /home
+I els logs a: /dev/vdb2       245M   15M  231M   6% /var/log
+
+![image](https://user-images.githubusercontent.com/79162978/199782703-70013dc0-0a56-40a9-931a-8ba6e468581f.png)
 
 
 
