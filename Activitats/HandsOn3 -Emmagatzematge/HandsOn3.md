@@ -127,8 +127,14 @@ I els logs a: /dev/vdb2       245M   15M  231M   6% /var/log
 
 ![image](https://user-images.githubusercontent.com/79162978/199782703-70013dc0-0a56-40a9-931a-8ba6e468581f.png)
 
+Script per omplir (petar) la partició: 
+
+fallocate -l 50G big_file
+
+Si omplim la carpeta home o logs no passa res perquè l'usuari sempre pot donar més espai a la partició o esborrar fitxers, però, en el moment que omplim la partició del sistema ja no hi ha marxa enrere. El sistema queda inutilitzat i no permet fer cap acció a l'usuari, havent de forçar accions de l'administrador. 
 
 
+Enllaç interessant per solucionar el problema d'omplició de disc: https://docs.bluehosting.cl/troubleshooting/servidores/guia-para-solucionar-el-problema---la-particion-root-esta-llena.html
 
 
 
