@@ -120,7 +120,9 @@ Muntem una segona partició que serà pels logs i serà el /dev/vdc2:
 ![image](https://user-images.githubusercontent.com/79162978/199782641-fe831a54-0c3c-4aef-9769-a4dc9d42b541.png)
 
 Fem df -h i veiem que el sistema el tenim a la partició: /dev/vda1       4.0G  974M  3.1G  24% /
+
 El home el tenim a: /dev/vdb1       245M   15M  231M   6% /home
+
 I els logs a: /dev/vdb2       245M   15M  231M   6% /var/log
 
 ![image](https://user-images.githubusercontent.com/79162978/199782703-70013dc0-0a56-40a9-931a-8ba6e468581f.png)
