@@ -36,7 +36,7 @@ No cal muntar res pq es fa després de les RAIDS.
 
 Executem la comanda:
 
-'''[root@localhost ~]# fdisk /dev/vdc'''
+´´´[root@localhost ~]# fdisk /dev/vdc´´´
 
 I ho configurem de la següent manera:
 
