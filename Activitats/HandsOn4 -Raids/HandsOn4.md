@@ -58,9 +58,7 @@ Despres podem fer un mount de cada partició amb aquests directoris:
 
 <img width="1017" alt="Captura de Pantalla 2022-11-04 a las 8 40 32" src="https://user-images.githubusercontent.com/38278207/199918934-5ac2409b-ac4a-4787-a1d5-7cfb59933cc0.png">
 
-Per a que s'executi a l'inici del sistema, cal modificar el fitxer ````sudo vim /etc/fstab```` i afegim la següent línea:
-
-* Si no tenim vim, executar ````sudo yum install vim````
+Per a que s'executi a l'inici del sistema, cal modificar el fitxer ````sudo vim /etc/fstab```` (Si no tenim vim, executar ````sudo yum install vim````) i afegim la següent línea:
 
 <img width="1556" alt="Captura de Pantalla 2022-11-04 a las 8 48 50" src="https://user-images.githubusercontent.com/38278207/199920503-fbd676c6-dd59-436a-878b-90407ce693bd.png">
 
