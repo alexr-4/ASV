@@ -42,6 +42,10 @@ I ho configurem de la següent manera:
 
 <img width="1440" alt="Captura de Pantalla 2022-11-04 a las 8 21 05" src="https://user-images.githubusercontent.com/38278207/199915676-dbe6fbaf-35c4-4985-829e-d17b3c3da077.png">
 
+A continuació executem: ````[root@localhost ~]# mkfs.xfs /dev/vdc1````
+
+<img width="1440" alt="Captura de Pantalla 2022-11-04 a las 8 25 31" src="https://user-images.githubusercontent.com/38278207/199916461-d9edfca0-1554-4edc-abbb-e1cc0f761aab.png">
+
 
 **Els raids s’han de muntar al path /mnt/raid1 i /mnt/raid5 i s’hauran de muntar de forma automàtica a l’inici del sistema. S’ha de crear l’usuari Chuck i aconseguir que únicament pugui fer servir 50MB, creant un màxim de 5 fitxers.**
 
