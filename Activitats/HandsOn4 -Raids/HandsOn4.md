@@ -50,4 +50,12 @@ A continuació executem: ````[root@localhost ~]# mkfs.xfs /dev/vdc```` tants cop
 **Els raids s’han de muntar al path /mnt/raid1 i /mnt/raid5 i s’hauran de muntar de forma automàtica a l’inici del sistema. S’ha de crear l’usuari Chuck i aconseguir que únicament pugui fer servir 50MB, creant un màxim de 5 fitxers.**
 
 
+Primer cal crear els directoris raid1 i raid5 a la ubicació de /mnt
+
+````mkdir raid1 ```` & ````mkdir raid5 ````
+
+Despres podem fer un mount de cada partició amb aquests directoris:
+
+<img width="1017" alt="Captura de Pantalla 2022-11-04 a las 8 40 32" src="https://user-images.githubusercontent.com/38278207/199918934-5ac2409b-ac4a-4787-a1d5-7cfb59933cc0.png">
+
 
