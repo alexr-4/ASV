@@ -65,3 +65,7 @@ Per a que s'executi a l'inici del sistema, cal modificar el fitxer ````sudo vim 
 (les separacions entre cada variable son tabulacions 😄)
 
 Per crear usuari: Podem fer-ho amb ````useradd Chuck```` (podriem definir contrassenya amb ````passwd```` i configurar-lo millor, pero no ho hem fet en aquest cas)
+
+Per aconseguir que únicament pugui fer servir 50MB i crear maxim 5 fitxers:
+
+***TODO***
