@@ -42,7 +42,7 @@ I ho configurem de la següent manera:
 
 <img width="1440" alt="Captura de Pantalla 2022-11-04 a las 8 21 05" src="https://user-images.githubusercontent.com/38278207/199915676-dbe6fbaf-35c4-4985-829e-d17b3c3da077.png">
 
-A continuació executem: ````[root@localhost ~]# mkfs.xfs /dev/vdc1````
+A continuació executem: ````[root@localhost ~]# mkfs.xfs /dev/vdc```` tants cops com particions vulguem definir
 
 <img width="1440" alt="Captura de Pantalla 2022-11-04 a las 8 25 31" src="https://user-images.githubusercontent.com/38278207/199916461-d9edfca0-1554-4edc-abbb-e1cc0f761aab.png">
 
