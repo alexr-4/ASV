@@ -64,4 +64,6 @@ Per a que s'executi a l'inici del sistema, cal modificar el fitxer ````sudo vim 
 
 (les separacions entre cada variable son tabulacions 😄)
 
+Per crear usuari, podem fer-ho amb 
 
+````useradd Chuck```` (podriem definir contrassenya amb ````passwd```` i configurar-lo millor, pero no ho hem fet en aquest cas)
