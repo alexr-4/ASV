@@ -77,4 +77,8 @@ I completem els camps requerits:
 
 <img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 24 51" src="https://user-images.githubusercontent.com/38278207/200115231-bb3ee973-6c82-4f95-8318-7abc9cd0488b.png">
 
+Seguim executant comandes de configuració (comunicacions de connexions segures SSL TLS):
 
+<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 26 07" src="https://user-images.githubusercontent.com/38278207/200115280-1253f7ff-672e-4c2c-8002-41b41229fbb6.png">
+
+<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 26 29" src="https://user-images.githubusercontent.com/38278207/200115290-8ceac612-effe-4df4-b5a1-38e13f7109e5.png">
