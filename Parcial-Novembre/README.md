@@ -54,4 +54,27 @@ https://cv.udl.cat/portal/site/102378-I-2223/tool/30bc091b-19f7-49bd-b41a-064a53
 
 <img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 09 15" src="https://user-images.githubusercontent.com/38278207/200114640-cb20834a-ea80-4ba9-9d11-51dfc5d14645.png">
 
+- Hem editat el fitxer hosts al client, afegint el servidor. ````vim /etc/hosts````:
+
+<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 16 00" src="https://user-images.githubusercontent.com/38278207/200114889-3399e7ae-cb21-4609-9a18-a4410a684908.png">
+
+- Editem el fitxer de configuració ```vim slapd.conf```` al servidor:
+
+<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 19 35" src="https://user-images.githubusercontent.com/38278207/200115034-b0dff15b-210c-4bf1-85dd-5c7e746caf38.png">
+
+- Editem ```` vim ldap.conf ````:
+
+- Executem la següent comanda:
+
+````
+mkdir /pki
+[root@localhost openldap]# openssl req -days 500 -newkey rsa:4096 \
+>     -keyout /pki/ldapkey.pem -nodes \
+>     -sha256 -x509 -out /pki/ldapcert.pem
+````
+
+I completem els camps requerits:
+
+<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 24 51" src="https://user-images.githubusercontent.com/38278207/200115231-bb3ee973-6c82-4f95-8318-7abc9cd0488b.png">
+
 
