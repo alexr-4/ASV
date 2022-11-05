@@ -110,8 +110,8 @@ firewall-cmd --add-service={ldap,ldaps} --permanent
 firewall-cmd --reload
 ````
 
-- Generem clau publica al client ``` ssh-keygen -t ed25519  ````
-- I la enganxem al fitxer del servidor ````vim /root/.ssh/authorized_keys ```
+- Generem clau publica al client ```` ssh-keygen -t ed25519  ````
+- I la enganxem al fitxer del servidor ````vim /root/.ssh/authorized_keys ````
 
 <img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 42 31" src="https://user-images.githubusercontent.com/38278207/200116063-665d5949-5ac1-4dac-bfbc-c782d682eccf.png">
 
