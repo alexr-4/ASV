@@ -86,3 +86,14 @@ Seguim executant comandes de configuració (comunicacions de connexions segures 
 - Editem ```` vim ldap.conf ````:
 
 <img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 28 03" src="https://user-images.githubusercontent.com/38278207/200115351-53cad8fc-f318-406b-a032-d5c4516826c0.png">
+
+- Revisem el fitxer ````basedn.ldif```` i el ````users.ldif````:
+
+<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 29 39" src="https://user-images.githubusercontent.com/38278207/200115418-489ef2cc-9ca4-4e09-9f6c-f44b8cd3e262.png">
+
+<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 30 24" src="https://user-images.githubusercontent.com/38278207/200115447-022b0a50-e271-471c-8961-380ad7f79c6d.png">
+
+- Revisem demés informació:
+
+<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 31 35" src="https://user-images.githubusercontent.com/38278207/200115493-da7b3160-5975-4841-b75b-d33bb9188536.png">
+
