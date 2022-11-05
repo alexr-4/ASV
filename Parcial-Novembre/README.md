@@ -99,5 +99,25 @@ Seguim executant comandes de configuració (comunicacions de connexions segures 
 
 - Canviem password de jordi i manel, i osproxy:
 
-
 <img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 34 22" src="https://user-images.githubusercontent.com/38278207/200115597-0d3e770c-306c-498c-9084-02697cdf264c.png">
+
+- Instal·lem firewall:
+
+````
+dnf install firewalld -y
+systemctl start --now firewalld
+firewall-cmd --add-service={ldap,ldaps} --permanent
+firewall-cmd --reload
+````
+
+- Generem clau publica al client ``` ssh-keygen -t ed25519  ````
+- I la enganxem al fitxer del servidor ````vim /root/.ssh/authorized_keys ```
+
+<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 42 31" src="https://user-images.githubusercontent.com/38278207/200116063-665d5949-5ac1-4dac-bfbc-c782d682eccf.png">
+
+- i fem un restart amb ````systemctl restart sshd ````
+
+- Preparar el LDAP client:
+
+<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 43 44" src="https://user-images.githubusercontent.com/38278207/200116099-34d33ef4-bd3d-4108-adad-127341a8814c.png">
+
