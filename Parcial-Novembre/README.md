@@ -1,6 +1,8 @@
 # Examen Novembre
 
 ### Alex Ramon, Samantha Roldan, Paula Uber
+### IP SERVIDOR: 192.168.101.77
+### IP CLIENT: 192.168.101.74
 
 ## Enunciat
 
