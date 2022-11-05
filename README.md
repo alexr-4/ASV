@@ -131,5 +131,13 @@ Tambe hem treballat el concepte de **Kerberos**, que ara sabem que es un protoco
 
 - Com instal·lar-lo?
 
+# Week 06
+
+TODO
+
+***Que he aprés?***
+
+***Que he consultat?***
+
 
 
