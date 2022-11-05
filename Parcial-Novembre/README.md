@@ -31,8 +31,11 @@ https://cv.udl.cat/portal/site/102378-I-2223/tool/30bc091b-19f7-49bd-b41a-064a53
 
 - SERVER
 
+<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 10 52 26" src="https://user-images.githubusercontent.com/38278207/200113943-304d5036-f61a-4432-81f0-a2d7c02e89b3.png">
 
 - CLIENT
+
+<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 10 50 15" src="https://user-images.githubusercontent.com/38278207/200113846-649dd7ee-2c6b-40a3-a3e0-c842aa2bf49d.png">
 
 
 #### Canviar password dels usuaris
