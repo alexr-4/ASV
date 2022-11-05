@@ -62,10 +62,6 @@ https://cv.udl.cat/portal/site/102378-I-2223/tool/30bc091b-19f7-49bd-b41a-064a53
 
 <img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 19 35" src="https://user-images.githubusercontent.com/38278207/200115034-b0dff15b-210c-4bf1-85dd-5c7e746caf38.png">
 
-- Editem ```` vim ldap.conf ````:
-
-<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 28 03" src="https://user-images.githubusercontent.com/38278207/200115351-53cad8fc-f318-406b-a032-d5c4516826c0.png">
-
 - Executem la següent comanda:
 
 ````
@@ -85,5 +81,8 @@ Seguim executant comandes de configuració (comunicacions de connexions segures 
 
 <img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 26 29" src="https://user-images.githubusercontent.com/38278207/200115290-8ceac612-effe-4df4-b5a1-38e13f7109e5.png">
 
-
 <img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 27 22" src="https://user-images.githubusercontent.com/38278207/200115320-a9f33bfd-f4f0-4d04-80fc-25d985e077bf.png">
+
+- Editem ```` vim ldap.conf ````:
+
+<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 28 03" src="https://user-images.githubusercontent.com/38278207/200115351-53cad8fc-f318-406b-a032-d5c4516826c0.png">
