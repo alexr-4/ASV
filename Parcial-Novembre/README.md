@@ -27,3 +27,16 @@ https://cv.udl.cat/portal/site/102378-I-2223/tool/30bc091b-19f7-49bd-b41a-064a53
   ![image](https://user-images.githubusercontent.com/79162978/200110688-c07ca6fe-31f7-499b-81a1-24c41a4ec674.png)
   
   ![image](https://user-images.githubusercontent.com/79162978/200110702-f6390cae-a745-4ce1-b27d-06ccd056e7a6.png)
+  
+- Al servidor canviarem la password de Jordi: 
+- New password: asv01jordi
+
+  ![image](https://user-images.githubusercontent.com/79162978/200110890-5834fd23-abb9-4ce1-a036-7a7a54d24b17.png)
+
+- Canviarem també la del Manel: 
+- New password: asv01manel
+  
+  ![image](https://user-images.githubusercontent.com/79162978/200110952-0dc46456-1017-48bb-9b76-ffb15d3eca52.png)
+
+
+
