@@ -50,5 +50,8 @@ https://cv.udl.cat/portal/site/102378-I-2223/tool/30bc091b-19f7-49bd-b41a-064a53
   
 <img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 07 24" src="https://user-images.githubusercontent.com/38278207/200114582-7b3d9d66-1cca-4d72-ae5f-3207cc4decad.png">
 
+- Donem permisos de superususari a manel i jordi fent ````sudo visudo````:
+
+<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 09 15" src="https://user-images.githubusercontent.com/38278207/200114640-cb20834a-ea80-4ba9-9d11-51dfc5d14645.png">
 
 
