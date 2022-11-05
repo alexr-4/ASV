@@ -56,7 +56,8 @@ https://cv.udl.cat/portal/site/102378-I-2223/tool/30bc091b-19f7-49bd-b41a-064a53
 
 - Hem editat el fitxer hosts al client, afegint el servidor. ````vim /etc/hosts````:
 
-<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 16 00" src="https://user-images.githubusercontent.com/38278207/200114889-3399e7ae-cb21-4609-9a18-a4410a684908.png">
+<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 12 00 09" src="https://user-images.githubusercontent.com/38278207/200116665-9c9b9c7f-f69c-41c2-b48f-2f0b4840bed6.png">
+
 
 - Editem el fitxer de configuració ```vim slapd.conf```` al servidor:
 
