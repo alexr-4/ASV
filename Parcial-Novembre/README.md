@@ -122,3 +122,49 @@ firewall-cmd --reload
 
 <img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 43 44" src="https://user-images.githubusercontent.com/38278207/200116099-34d33ef4-bd3d-4108-adad-127341a8814c.png">
 
+- Executem tot això al servidor:
+
+````
+cat > /etc/sssd/sssd.conf << 'EOL'
+[sssd]
+services = nss, pam, sudo
+config_file_version = 2
+domains = default
+
+[sudo]
+
+[nss]
+
+[pam]
+offline_credentials_expiration = 60
+
+[domain/default]
+ldap_id_use_start_tls = True
+cache_credentials = True
+ldap_search_base = dc=ldap,dc=asv01,dc=udl,dc=cat
+id_provider = ldap
+auth_provider = ldap
+chpass_provider = ldap
+access_provider = ldap
+sudo_provider = ldap
+ldap_uri = ldaps://ldap.asv01.udl.cat cn=osproxy,ou=system,dc=ldap,dc=asv01,dc=udl,dc=cat
+ldap_group_search_base = ou=groups,dc=ldap,dc=asv01,dc=udl,dc=cat
+ldap_user_search_base = ou=users,dc=ldap,dc=asv01,dc=udl,dc=cat
+ldap_default_authtok = 1234
+ldap_tls_reqcert = demand
+ldap_tls_cacert = /etc/pki/tls/cacert.crt
+ldap_tls_cacertdir = /etc/pki/tls
+ldap_search_timeout = 50
+ldap_network_timeout = 60
+ldap_access_order = filter
+ldap_access_filter = (objectClass=posixAccount)
+EOL
+
+vim /etc/openldap/ldap.conf
+# Modificacions
+BASE dc=ldap,dc=asv01,dc=udl,dc=cat
+URI ldaps://ldap.asv01.udl.cat
+TLS_CACERT      /etc/pki/tls/cacert.crt
+TLS_CIPHER_SUITE HIGH:TLSv1.2:!aNULL:!eNULL
+
+
