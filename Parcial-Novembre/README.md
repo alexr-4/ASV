@@ -40,15 +40,15 @@ https://cv.udl.cat/portal/site/102378-I-2223/tool/30bc091b-19f7-49bd-b41a-064a53
 
 #### Canviar password dels usuaris
 
-- Al servidor canviarem la password de Jordi: 
-- New password: asv01jordi
+- Al servidor canviarem la password de jordi: 
+- New password: jordi
 
-  ![image](https://user-images.githubusercontent.com/79162978/200110890-5834fd23-abb9-4ce1-a036-7a7a54d24b17.png)
+<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 06 44" src="https://user-images.githubusercontent.com/38278207/200114559-78a4f257-5d94-4408-b7bd-0bdf6dc00465.png">
 
-- Canviarem també la del Manel: 
-- New password: asv01manel
+- Canviarem també la del manel: 
+- New password: manel
   
-  ![image](https://user-images.githubusercontent.com/79162978/200110952-0dc46456-1017-48bb-9b76-ffb15d3eca52.png)
+<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 07 24" src="https://user-images.githubusercontent.com/38278207/200114582-7b3d9d66-1cca-4d72-ae5f-3207cc4decad.png">
 
 
 
