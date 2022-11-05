@@ -97,3 +97,7 @@ Seguim executant comandes de configuració (comunicacions de connexions segures 
 
 <img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 31 35" src="https://user-images.githubusercontent.com/38278207/200115493-da7b3160-5975-4841-b75b-d33bb9188536.png">
 
+- Canviem password de jordi i manel, i osproxy:
+
+
+<img width="1017" alt="Captura de Pantalla 2022-11-05 a las 11 34 22" src="https://user-images.githubusercontent.com/38278207/200115597-0d3e770c-306c-498c-9084-02697cdf264c.png">
