@@ -28,6 +28,11 @@
 
 - Ara intentem crear amb la comanda sudo touch /root/a.txt : 
 
+
+--- Guia para hacer grupo de SUDOERS y crear el Schema para añadirlo al servidor::
+
+https://raduzaharia.medium.com/adding-sudoers-to-openldap-e0a6b0c4c7ab
   
+![image](https://user-images.githubusercontent.com/79162978/200890262-83f362c7-b2e9-44c3-9167-74a9b974e870.png)
 
 
