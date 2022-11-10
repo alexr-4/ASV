@@ -28,19 +28,55 @@
 
 - Ara intentem crear amb la comanda ````sudo touch /root/a.txt```` : 
 
---- Guia para hacer grupo de SUDOERS y crear el Schema para añadirlo al servidor::
-
-https://raduzaharia.medium.com/adding-sudoers-to-openldap-e0a6b0c4c7ab
   
 ![image](https://user-images.githubusercontent.com/79162978/200890262-83f362c7-b2e9-44c3-9167-74a9b974e870.png)
 
 
-# Afegir sudoers a OpenLdap:
+### SERVIDOR:
 
-- Instalar sudoers ldap schema: (Hauria d'apareixer en el OpenLdap Server, en ````/etc/ldap/schema/sudoers.ldif)
+- Ens situem a ```/etc/openldap```` i creem el fitxer ````sudoers.ldif````, i posem el següent contingut:
 
 ````
-dn: cn=sudo,cn=schema,cn=config
+dn: ou=sudoers,dc=asv01,dc=udl,dc=cat
+objectClass: organizationalUnit
+objectClass: top
+ou: sudoers
+
+dn: cn=manel,ou=sudoers,dc=asv06,dc=udl,dc=cat
+objectClass: sudoRole
+objectClass: top
+cn: manel
+sudoCommand: ALL
+sudoHost: ALL
+sudoRunAsUser: ALL
+sudoUser: manel
+sudoOrder: 2
+
+dn: cn=jordi,ou=sudoers,dc=asv06,dc=udl,dc=cat
+objectClass: sudoRole
+objectClass: top
+cn: jordi
+sudoCommand: ALL
+sudoHost: ALL
+sudoRunAsUser: ALL
+sudoUser: jordi
+sudoOrder: 2
+
+dn: cn=defaults,ou=sudoers,dc=asv06,dc=udl,dc=cat
+objectClass: sudoRole
+objectClass: top
+cn: defaults
+sudoOption: env_reset
+sudoOption: mail_badpass
+sudoOption: secure_path=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+sudoOrder: 1
+
+<img width="1017" alt="Captura de Pantalla 2022-11-10 a las 9 44 51" src="https://user-images.githubusercontent.com/38278207/201044948-8ba2c862-a4ed-4470-b66e-17af25b5dc71.png">
+
+- Ara fem un ```cd schema```i tornem a crear el ````sudoers.ldif````, posant el següent contingut:
+
+````
+dn: cn=asv01,cn=udl,cn=cat
 objectClass: olcSchemaConfig
 cn: sudo
 olcAttributeTypes: {0}( 1.3.6.1.4.1.15953.9.1.1 NAME 'sudoUser' DESC 'User(s) who may  run sudo' EQUALITY caseExactIA5Match SUBSTR caseExactIA5SubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 )
@@ -54,50 +90,14 @@ olcAttributeTypes: {7}( 1.3.6.1.4.1.15953.9.1.8 NAME 'sudoNotBefore' DESC 'Start
 olcAttributeTypes: {8}( 1.3.6.1.4.1.15953.9.1.9 NAME 'sudoNotAfter' DESC 'End of time interval for which the entry is valid' EQUALITY generalizedTimeMatch ORDERING generalizedTimeOrderingMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 )
 olcAttributeTypes: {9}( 1.3.6.1.4.1.15953.9.1.10 NAME 'sudoOrder' DESC 'an integer to order the sudoRole entries' EQUALITY integerMatch ORDERING integerOrderingMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 )
 olcObjectClasses: {0}( 1.3.6.1.4.1.15953.9.2.1 NAME 'sudoRole' DESC 'Sudoer Entries' SUP top STRUCTURAL MUST cn MAY ( sudoUser $ sudoHost $ sudoCommand $ sudoRunAs $ sudoRunAsUser $ sudoRunAsGroup $ sudoOption $ sudoOrder $ sudoNotBefore $ sudoNotAfter $ description ) )
-````
-- Registrar-nos en el OpenLdap: (el ````admin-password```` esta al fitxer ````root.ldif````)
-
-````ldapadd -D cn=config -H ldapi:/// -w admin-password -f /etc/ldap/schema/sudoers.ldif````
-
-- Crear fitcher ````sudoers.ldif````:
 
 ````
-version: 1
-dn: ou=sudoers,dc=curs,dc=asv,dc=udl,dc=cat
-objectClass: organizationalUnit
-objectClass: top
-ou: sudoers
 
-dn: cn=jordi,ou=sudoers,dc=curs,dc=asv,dc=udl,dc=cat
-objectClass: sudoRole
-objectClass: top
-cn: jordi
-sudoCommand: ALL
-sudoHost: ALL
-sudoRunAsUser: ALL
-sudoUser: jordi
-sudoOrder: 2
+<img width="1017" alt="Captura de Pantalla 2022-11-10 a las 9 49 00" src="https://user-images.githubusercontent.com/38278207/201045434-150370ac-2147-4892-9810-e302b5ed15a1.png">
 
-dn: cn=manel,ou=sudoers,dc=curs,dc=asv,dc=udl,dc=cat
-objectClass: sudoRole
-objectClass: top
-cn: manel
-sudoCommand: ALL
-sudoHost: ALL
-sudoRunAsUser: ALL
-sudoUser: manel
-sudoOrder: 3
+- A continuació executem:
 
-dn: cn=defaults,ou=sudoers,dc=curs,dc=asv,dc=udl,dc=cat
-objectClass: sudoRole
-objectClass: top
-cn: defaults
-sudoOption: env_reset
-sudoOption: mail_badpass
-sudoOption: secure_path=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
-sudoOrder: 1
-````
-
+```` ldapadd -Y EXTERNAL -H ldapi:/// -f sudoers.ldif````
 - Afegir LDIF al OpenLDAP: (````ldap-password```` és la contrasenya general de gestió LDAP)
 
 ````ldapadd -x -D cn=admin,dc=curs,dc=asv,dc=udl,dc=cat -w ldap-password -f sudoers.ldif````
@@ -105,7 +105,6 @@ sudoOrder: 1
 - Reiniciar el servei LDAP:
 ````sudo systemctl restart slapd````
 
-# En el client:
 - Per llegir les definicions de sudo, el client ha de tenir instal·lat el paquet libsss-sudo:
 ````sudo apt install libsss-sudo````
 
@@ -116,3 +115,13 @@ sudoOrder: 1
 ````sudo systemctl restart sssd````
 
 - Tancar la sessió i tornar a iniciar i comprobar que el nostre usuari de xarxa té drets sudo.
+
+### CLIENT:
+
+````cd /etc/openldap/````
+
+I afegim al final del fitxer:
+
+````SUDOERS_BASE ou=sudoers,dc=asv01,dc=udl,dc=cat````
+
+<img width="1017" alt="Captura de Pantalla 2022-11-10 a las 10 01 43" src="https://user-images.githubusercontent.com/38278207/201046897-5418261d-83ba-4efb-86d1-d7ba29460cde.png">
