@@ -26,13 +26,6 @@
   
   ![image](https://user-images.githubusercontent.com/79162978/200650143-38a9a1d6-3345-48d6-adb6-12c0f835ac12.png)
 
-- Ara intentem crear amb la comanda ````sudo touch /root/a.txt```` : 
-
-  
-![image](https://user-images.githubusercontent.com/79162978/200890262-83f362c7-b2e9-44c3-9167-74a9b974e870.png)
-
-
-
 ### SERVIDOR:
 
 - Ens situem a ````/etc/openldap```` i creem el fitxer ````sudoers.ldif````, i posem el següent contingut:
