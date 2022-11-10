@@ -113,6 +113,6 @@ sudoOrder: 1
 [sudo]
 
 - Reiniciar sssd per aplicar els canvis:
-````sudo systemctl restart sssd
+````sudo systemctl restart sssd````
 
 - Tancar la sessió i tornar a iniciar i comprobar que el nostre usuari de xarxa té drets sudo.
