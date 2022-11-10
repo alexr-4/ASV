@@ -2,9 +2,9 @@
 
 ### Paula Uber, Alex Ramon, Samantha Roldán
 
-## 192.168.101.77 (BBDD)
-## 192.168.101.74 (CLIENT)
-## 192.168.101.61 (LAM SERVER)
+### 192.168.101.77 (BBDD)
+### 192.168.101.74 (CLIENT)
+### 192.168.101.61 (LAM SERVER)
 
 - Introduïm els usuaris de Jordi i Manel dintre del sudo visudo: 
 
@@ -37,7 +37,7 @@ https://raduzaharia.medium.com/adding-sudoers-to-openldap-e0a6b0c4c7ab
 
 # Afegir sudoers a OpenLdap:
 
-- Instalar sudoers ldap schema: (Hauria d'apareixer en el OpenLdap Server, en /etc/ldap/schema/sudoers.ldif)
+- Instalar sudoers ldap schema: (Hauria d'apareixer en el OpenLdap Server, en ````/etc/ldap/schema/sudoers.ldif)
 
 ````
 dn: cn=sudo,cn=schema,cn=config
@@ -55,11 +55,11 @@ olcAttributeTypes: {8}( 1.3.6.1.4.1.15953.9.1.9 NAME 'sudoNotAfter' DESC 'End of
 olcAttributeTypes: {9}( 1.3.6.1.4.1.15953.9.1.10 NAME 'sudoOrder' DESC 'an integer to order the sudoRole entries' EQUALITY integerMatch ORDERING integerOrderingMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 )
 olcObjectClasses: {0}( 1.3.6.1.4.1.15953.9.2.1 NAME 'sudoRole' DESC 'Sudoer Entries' SUP top STRUCTURAL MUST cn MAY ( sudoUser $ sudoHost $ sudoCommand $ sudoRunAs $ sudoRunAsUser $ sudoRunAsGroup $ sudoOption $ sudoOrder $ sudoNotBefore $ sudoNotAfter $ description ) )
 ````
-- Registrar-nos en el OpenLdap: (el admin-password esta al fitcher root.ldif)
+- Registrar-nos en el OpenLdap: (el ````admin-password```` esta al fitxer ````root.ldif````)
 
 ````ldapadd -D cn=config -H ldapi:/// -w admin-password -f /etc/ldap/schema/sudoers.ldif````
 
-- Crear fitcher sudoers.ldif:
+- Crear fitcher ````sudoers.ldif````:
 
 ````
 version: 1
@@ -98,7 +98,7 @@ sudoOption: secure_path=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:
 sudoOrder: 1
 ````
 
-- Afegir LDIF al OpenLDAP: (ldap-password és la contrasenya general de gestió LDAP)
+- Afegir LDIF al OpenLDAP: (````ldap-password```` és la contrasenya general de gestió LDAP)
 
 ````ldapadd -x -D cn=admin,dc=curs,dc=asv,dc=udl,dc=cat -w ldap-password -f sudoers.ldif````
 
@@ -109,7 +109,7 @@ sudoOrder: 1
 - Per llegir les definicions de sudo, el client ha de tenir instal·lat el paquet libsss-sudo:
 ````sudo apt install libsss-sudo````
 
-- Afegir just al final de /etc/sssd/sssd.conf:
+- Afegir just al final de ````/etc/sssd/sssd.conf````:
 [sudo]
 
 - Reiniciar sssd per aplicar els canvis:
