@@ -32,9 +32,10 @@
 ![image](https://user-images.githubusercontent.com/79162978/200890262-83f362c7-b2e9-44c3-9167-74a9b974e870.png)
 
 
+
 ### SERVIDOR:
 
-- Ens situem a ```/etc/openldap```` i creem el fitxer ````sudoers.ldif````, i posem el següent contingut:
+- Ens situem a ````/etc/openldap```` i creem el fitxer ````sudoers.ldif````, i posem el següent contingut:
 
 ````
 dn: ou=sudoers,dc=asv01,dc=udl,dc=cat
@@ -70,6 +71,7 @@ sudoOption: env_reset
 sudoOption: mail_badpass
 sudoOption: secure_path=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
 sudoOrder: 1
+````
 
 <img width="1017" alt="Captura de Pantalla 2022-11-10 a las 9 44 51" src="https://user-images.githubusercontent.com/38278207/201044948-8ba2c862-a4ed-4470-b66e-17af25b5dc71.png">
 
