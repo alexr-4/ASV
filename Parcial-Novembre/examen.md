@@ -6,10 +6,6 @@
 ### 192.168.101.74 (CLIENT)
 ### 192.168.101.61 (LAM SERVER)
 
-- Introduïm els usuaris de Jordi i Manel dintre del sudo visudo: 
-
-  ![image](https://user-images.githubusercontent.com/79162978/200648345-57f479cd-febd-4324-9210-bae548c61e8c.png)
-
 - Canviem la pass de Jordi: 
 
   ![image](https://user-images.githubusercontent.com/79162978/200648828-f4000d9b-63d7-4417-b0fd-f729c7c3f951.png)
