@@ -73,7 +73,7 @@ sudoOrder: 1
 
 <img width="1017" alt="Captura de Pantalla 2022-11-10 a las 9 44 51" src="https://user-images.githubusercontent.com/38278207/201044948-8ba2c862-a4ed-4470-b66e-17af25b5dc71.png">
 
-- Ara fem un ```cd schema```i tornem a crear el ````sudoers.ldif````, posant el següent contingut:
+- Ara fem un ````cd schema```i tornem a crear el ````sudoers.ldif````, posant el següent contingut:
 
 ````
 dn: cn=asv01,cn=udl,cn=cat
