@@ -100,20 +100,21 @@ olcObjectClasses: {0}( 1.3.6.1.4.1.15953.9.2.1 NAME 'sudoRole' DESC 'Sudoer Entr
 - A continuació executem:
 
 ```` ldapadd -Y EXTERNAL -H ldapi:/// -f sudoers.ldif````
-- Afegir LDIF al OpenLDAP: (````ldap-password```` és la contrasenya general de gestió LDAP)
+
+- Afegir LDIF al OpenLDAP: (````ldap-password```` és la contrasenya general de gestió LDAP):
 
 ````ldapadd -x -D cn=admin,dc=curs,dc=asv,dc=udl,dc=cat -w ldap-password -f sudoers.ldif````
 
 - Reiniciar el servei LDAP:
+
 ````sudo systemctl restart slapd````
 
 - Per llegir les definicions de sudo, el client ha de tenir instal·lat el paquet libsss-sudo:
+
 ````sudo apt install libsss-sudo````
 
-- Afegir just al final de ````/etc/sssd/sssd.conf````:
-[sudo]
-
 - Reiniciar sssd per aplicar els canvis:
+
 ````sudo systemctl restart sssd````
 
 - Tancar la sessió i tornar a iniciar i comprobar que el nostre usuari de xarxa té drets sudo.
@@ -122,7 +123,7 @@ olcObjectClasses: {0}( 1.3.6.1.4.1.15953.9.2.1 NAME 'sudoRole' DESC 'Sudoer Entr
 
 ````cd /etc/openldap/````
 
-I afegim al final del fitxer ````ldap.conf``:
+I afegim al final del fitxer ````ldap.conf````:
 
 ````SUDOERS_BASE ou=sudoers,dc=asv01,dc=udl,dc=cat````
 
@@ -131,4 +132,3 @@ I afegim al final del fitxer ````ldap.conf``:
 ### PROVA FINAL:
 
 <img width="1017" alt="Captura de Pantalla 2022-11-10 a las 10 13 00" src="https://user-images.githubusercontent.com/38278207/201049247-0347843d-b5bd-4dea-8d95-7b23faea3d97.png">
-
