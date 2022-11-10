@@ -124,3 +124,6 @@ I afegim al final del fitxer ````ldap.conf````:
 ### PROVA FINAL:
 
 <img width="1017" alt="Captura de Pantalla 2022-11-10 a las 10 13 00" src="https://user-images.githubusercontent.com/38278207/201049247-0347843d-b5bd-4dea-8d95-7b23faea3d97.png">
+
+![image](https://user-images.githubusercontent.com/79162978/201158023-e196e6fe-7964-4041-aa37-8309970a190c.png)
+
