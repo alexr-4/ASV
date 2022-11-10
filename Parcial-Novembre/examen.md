@@ -38,12 +38,13 @@
 - Ens situem a ````/etc/openldap```` i creem el fitxer ````sudoers.ldif````, i posem el següent contingut:
 
 ````
-dn: ou=sudoers,dc=asv01,dc=udl,dc=cat
+version: 1
+dn: ou=sudoers,dc=curs,dc=asv01,dc=udl,dc=cat
 objectClass: organizationalUnit
 objectClass: top
 ou: sudoers
 
-dn: cn=manel,ou=sudoers,dc=asv06,dc=udl,dc=cat
+dn: cn=manel,ou=sudoers,dc=curs,dc=asv06,dc=udl,dc=cat
 objectClass: sudoRole
 objectClass: top
 cn: manel
@@ -53,7 +54,7 @@ sudoRunAsUser: ALL
 sudoUser: manel
 sudoOrder: 2
 
-dn: cn=jordi,ou=sudoers,dc=asv06,dc=udl,dc=cat
+dn: cn=jordi,ou=sudoers,dc=curs,dc=asv06,dc=udl,dc=cat
 objectClass: sudoRole
 objectClass: top
 cn: jordi
@@ -63,7 +64,7 @@ sudoRunAsUser: ALL
 sudoUser: jordi
 sudoOrder: 2
 
-dn: cn=defaults,ou=sudoers,dc=asv06,dc=udl,dc=cat
+dn: cn=defaults,ou=sudoers,dc=curs,dc=asv06,dc=udl,dc=cat
 objectClass: sudoRole
 objectClass: top
 cn: defaults
@@ -78,7 +79,7 @@ sudoOrder: 1
 - Ara fem un ````cd schema````i tornem a crear el ````sudoers.ldif````, posant el següent contingut:
 
 ````
-dn: cn=asv01,cn=udl,cn=cat
+dn: cn=curs,cn=asv01,cn=udl,cn=cat
 objectClass: olcSchemaConfig
 cn: sudo
 olcAttributeTypes: {0}( 1.3.6.1.4.1.15953.9.1.1 NAME 'sudoUser' DESC 'User(s) who may  run sudo' EQUALITY caseExactIA5Match SUBSTR caseExactIA5SubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 )
@@ -92,7 +93,6 @@ olcAttributeTypes: {7}( 1.3.6.1.4.1.15953.9.1.8 NAME 'sudoNotBefore' DESC 'Start
 olcAttributeTypes: {8}( 1.3.6.1.4.1.15953.9.1.9 NAME 'sudoNotAfter' DESC 'End of time interval for which the entry is valid' EQUALITY generalizedTimeMatch ORDERING generalizedTimeOrderingMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 )
 olcAttributeTypes: {9}( 1.3.6.1.4.1.15953.9.1.10 NAME 'sudoOrder' DESC 'an integer to order the sudoRole entries' EQUALITY integerMatch ORDERING integerOrderingMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 )
 olcObjectClasses: {0}( 1.3.6.1.4.1.15953.9.2.1 NAME 'sudoRole' DESC 'Sudoer Entries' SUP top STRUCTURAL MUST cn MAY ( sudoUser $ sudoHost $ sudoCommand $ sudoRunAs $ sudoRunAsUser $ sudoRunAsGroup $ sudoOption $ sudoOrder $ sudoNotBefore $ sudoNotAfter $ description ) )
-
 ````
 
 <img width="1017" alt="Captura de Pantalla 2022-11-10 a las 9 49 00" src="https://user-images.githubusercontent.com/38278207/201045434-150370ac-2147-4892-9810-e302b5ed15a1.png">
@@ -122,8 +122,13 @@ olcObjectClasses: {0}( 1.3.6.1.4.1.15953.9.2.1 NAME 'sudoRole' DESC 'Sudoer Entr
 
 ````cd /etc/openldap/````
 
-I afegim al final del fitxer:
+I afegim al final del fitxer ````ldap.conf``:
 
 ````SUDOERS_BASE ou=sudoers,dc=asv01,dc=udl,dc=cat````
 
 <img width="1017" alt="Captura de Pantalla 2022-11-10 a las 10 01 43" src="https://user-images.githubusercontent.com/38278207/201046897-5418261d-83ba-4efb-86d1-d7ba29460cde.png">
+
+### PROVA FINAL:
+
+<img width="1017" alt="Captura de Pantalla 2022-11-10 a las 10 13 00" src="https://user-images.githubusercontent.com/38278207/201049247-0347843d-b5bd-4dea-8d95-7b23faea3d97.png">
+
