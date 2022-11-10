@@ -32,12 +32,12 @@
 
 ````
 version: 1
-dn: ou=sudoers,dc=curs,dc=asv01,dc=udl,dc=cat
+dn: ou=sudoers,dc=curs,dc=asv,dc=udl,dc=cat
 objectClass: organizationalUnit
 objectClass: top
 ou: sudoers
 
-dn: cn=manel,ou=sudoers,dc=curs,dc=asv06,dc=udl,dc=cat
+dn: cn=manel,ou=sudoers,dc=curs,dc=asv,dc=udl,dc=cat
 objectClass: sudoRole
 objectClass: top
 cn: manel
@@ -47,7 +47,7 @@ sudoRunAsUser: ALL
 sudoUser: manel
 sudoOrder: 2
 
-dn: cn=jordi,ou=sudoers,dc=curs,dc=asv06,dc=udl,dc=cat
+dn: cn=jordi,ou=sudoers,dc=curs,dc=asv,dc=udl,dc=cat
 objectClass: sudoRole
 objectClass: top
 cn: jordi
@@ -55,9 +55,9 @@ sudoCommand: ALL
 sudoHost: ALL
 sudoRunAsUser: ALL
 sudoUser: jordi
-sudoOrder: 2
+sudoOrder: 3
 
-dn: cn=defaults,ou=sudoers,dc=curs,dc=asv06,dc=udl,dc=cat
+dn: cn=defaults,ou=sudoers,dc=curs,dc=asv,dc=udl,dc=cat
 objectClass: sudoRole
 objectClass: top
 cn: defaults
