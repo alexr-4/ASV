@@ -26,8 +26,7 @@
   
   ![image](https://user-images.githubusercontent.com/79162978/200650143-38a9a1d6-3345-48d6-adb6-12c0f835ac12.png)
 
-- Ara intentem crear amb la comanda sudo touch /root/a.txt : 
-
+- Ara intentem crear amb la comanda ````sudo touch /root/a.txt```` : 
 
 --- Guia para hacer grupo de SUDOERS y crear el Schema para añadirlo al servidor::
 
@@ -37,7 +36,10 @@ https://raduzaharia.medium.com/adding-sudoers-to-openldap-e0a6b0c4c7ab
 
 
 # Afegir sudoers a OpenLdap:
+
 - Instalar sudoers ldap schema: (Hauria d'apareixer en el OpenLdap Server, en /etc/ldap/schema/sudoers.ldif)
+
+````
 dn: cn=sudo,cn=schema,cn=config
 objectClass: olcSchemaConfig
 cn: sudo
@@ -52,11 +54,14 @@ olcAttributeTypes: {7}( 1.3.6.1.4.1.15953.9.1.8 NAME 'sudoNotBefore' DESC 'Start
 olcAttributeTypes: {8}( 1.3.6.1.4.1.15953.9.1.9 NAME 'sudoNotAfter' DESC 'End of time interval for which the entry is valid' EQUALITY generalizedTimeMatch ORDERING generalizedTimeOrderingMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 )
 olcAttributeTypes: {9}( 1.3.6.1.4.1.15953.9.1.10 NAME 'sudoOrder' DESC 'an integer to order the sudoRole entries' EQUALITY integerMatch ORDERING integerOrderingMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 )
 olcObjectClasses: {0}( 1.3.6.1.4.1.15953.9.2.1 NAME 'sudoRole' DESC 'Sudoer Entries' SUP top STRUCTURAL MUST cn MAY ( sudoUser $ sudoHost $ sudoCommand $ sudoRunAs $ sudoRunAsUser $ sudoRunAsGroup $ sudoOption $ sudoOrder $ sudoNotBefore $ sudoNotAfter $ description ) )
-
+````
 - Registrar-nos en el OpenLdap: (el admin-password esta al fitcher root.ldif)
-ldapadd -D cn=config -H ldapi:/// -w admin-password -f /etc/ldap/schema/sudoers.ldif
+
+````ldapadd -D cn=config -H ldapi:/// -w admin-password -f /etc/ldap/schema/sudoers.ldif````
 
 - Crear fitcher sudoers.ldif:
+
+````
 version: 1
 dn: ou=sudoers,dc=curs,dc=asv,dc=udl,dc=cat
 objectClass: organizationalUnit
@@ -91,21 +96,23 @@ sudoOption: env_reset
 sudoOption: mail_badpass
 sudoOption: secure_path=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
 sudoOrder: 1
+````
 
 - Afegir LDIF al OpenLDAP: (ldap-password és la contrasenya general de gestió LDAP)
-ldapadd -x -D cn=admin,dc=curs,dc=asv,dc=udl,dc=cat -w ldap-password -f sudoers.ldif
+
+````ldapadd -x -D cn=admin,dc=curs,dc=asv,dc=udl,dc=cat -w ldap-password -f sudoers.ldif````
 
 - Reiniciar el servei LDAP:
-sudo systemctl restart slapd
+````sudo systemctl restart slapd````
 
 # En el client:
 - Per llegir les definicions de sudo, el client ha de tenir instal·lat el paquet libsss-sudo:
-sudo apt install libsss-sudo
+````sudo apt install libsss-sudo````
 
 - Afegir just al final de /etc/sssd/sssd.conf:
 [sudo]
 
 - Reiniciar sssd per aplicar els canvis:
-sudo systemctl restart sssd
+````sudo systemctl restart sssd
 
 - Tancar la sessió i tornar a iniciar i comprobar que el nostre usuari de xarxa té drets sudo.
