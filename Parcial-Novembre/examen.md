@@ -118,7 +118,7 @@ olcObjectClasses: {0}( 1.3.6.1.4.1.15953.9.2.1 NAME 'sudoRole' DESC 'Sudoer Entr
 
 I afegim al final del fitxer ````ldap.conf````:
 
-````SUDOERS_BASE ou=sudoers,dc=asv01,dc=udl,dc=cat````
+````SUDOERS_BASE ou=sudoers,dc=asv,dc=udl,dc=cat````
 
 <img width="1017" alt="Captura de Pantalla 2022-11-10 a las 10 01 43" src="https://user-images.githubusercontent.com/38278207/201046897-5418261d-83ba-4efb-86d1-d7ba29460cde.png">
 
