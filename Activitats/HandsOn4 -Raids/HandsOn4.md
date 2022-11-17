@@ -53,14 +53,18 @@ A continuació executem: ````[root@localhost ~]# mkfs.xfs /dev/vdc```` tants cop
 
   ![image](https://user-images.githubusercontent.com/79162978/202512578-33da577d-77a1-4ed2-ad77-a29517ae92aa.png)
  
- MD1
- 
+### MD1
+- Amb la comanda  ````  mdadm --create --verbose /dev/md1 --level=1 --raid-devices=2 /dev/vdb1 /dev/vdb2 ```` passarem el nom de la raid, el nivell de la raid i els discs que té assignats que seran 2 devices amb els noms de /dev/vdb1 i /dev/vdb2:
+
   ![image](https://user-images.githubusercontent.com/79162978/202515785-adecf70c-49e3-42f5-9a54-497972dfb943.png)
   
   ![image](https://user-images.githubusercontent.com/79162978/202516203-53464a0f-490b-4f9a-981f-a9dff42690e7.png)
 
-MD5
+### MD5
+- Fem la mateixa comanda per el MD5: 
 
   ![image](https://user-images.githubusercontent.com/79162978/202516411-9d7eb8c8-2e88-4725-8c92-55cf9f640ecf.png)
 
- 
+- Per afeguir als directoris les raid i muntarles allà: 
+
+![image](https://user-images.githubusercontent.com/79162978/202517868-5a704781-0a64-47ff-a7bd-e51602e213b4.png)
