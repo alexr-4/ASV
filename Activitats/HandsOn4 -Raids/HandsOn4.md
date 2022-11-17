@@ -68,3 +68,12 @@ A continuació executem: ````[root@localhost ~]# mkfs.xfs /dev/vdc```` tants cop
 - Per afeguir als directoris les raid i muntarles allà: 
 
 ![image](https://user-images.githubusercontent.com/79162978/202517868-5a704781-0a64-47ff-a7bd-e51602e213b4.png)
+
+- Crear l'usuari Chuck: 
+
+Ellaços d'interès: 
+
+https://fortinux.gitbooks.io/humble_tips/content/administrar_gnulinux/tutorial_configurando_un_sistema_raid_en_gnulinux.html
+https://jesusfernandeztoledo.com/raid-1-en-linux/
+https://discord.com/channels/@me/1023942680528556074/1042860172059619369
+https://discord.com/channels/@me/1023942680528556074/1042860206561968218
