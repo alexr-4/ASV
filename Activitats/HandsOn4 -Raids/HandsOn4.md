@@ -89,6 +89,10 @@ A continuació executem: ````[root@localhost ~]# mkfs.xfs /dev/vdc```` tants cop
 
   ![image](https://user-images.githubusercontent.com/79162978/203121003-cc59b663-bcf3-43e2-8105-76a67efed986.png)
   
+- Fem la comprovació: 
+
+ ![image](https://user-images.githubusercontent.com/79162978/203121474-286564a0-d1c5-406c-9edb-33124c4a9298.png)
+
 
 # Ellaços d'interès: 
 
