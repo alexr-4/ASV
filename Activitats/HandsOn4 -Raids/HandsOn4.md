@@ -69,7 +69,7 @@ A continuació executem: ````[root@localhost ~]# mkfs.xfs /dev/vdc```` tants cop
 
 ![image](https://user-images.githubusercontent.com/79162978/202517868-5a704781-0a64-47ff-a7bd-e51602e213b4.png)
 
-- Crear l'usuari Chuck: useradd Chuck
+- Crear l'usuari Chuck: ```` useradd Chuck ````
 
 - Afegim permisos de usrquota:
 
@@ -77,7 +77,7 @@ A continuació executem: ````[root@localhost ~]# mkfs.xfs /dev/vdc```` tants cop
    
 - Fem un reboot.
 
-- Fem la comanda xfs_quota per establir els limits de 5 fitxer: xfs_quota -x -c "limit isoft=5 ihard=5 Chuck" /mnt/raid5/
+- Fem la comanda xfs_quota per establir els limits de 5 fitxer: ```` xfs_quota -x -c "limit isoft=5 ihard=5 Chuck" /mnt/raid5/ ````
   
 - Li donem perimisos al Chuck per fer fitxers: 
  
@@ -85,7 +85,7 @@ A continuació executem: ````[root@localhost ~]# mkfs.xfs /dev/vdc```` tants cop
  
  ![image](https://user-images.githubusercontent.com/79162978/203120268-31354088-c0bf-436e-b4c4-4d4bbb2f9cdc.png)
 
-- Establim el límit de capacitat dels fitxer: 
+- Establim el límit de capacitat dels fitxer amb la comanda ```` vim /etc/fstab ````  :
 
   ![image](https://user-images.githubusercontent.com/79162978/203121003-cc59b663-bcf3-43e2-8105-76a67efed986.png)
   
