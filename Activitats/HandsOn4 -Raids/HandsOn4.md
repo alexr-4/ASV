@@ -69,9 +69,28 @@ A continuació executem: ````[root@localhost ~]# mkfs.xfs /dev/vdc```` tants cop
 
 ![image](https://user-images.githubusercontent.com/79162978/202517868-5a704781-0a64-47ff-a7bd-e51602e213b4.png)
 
-- Crear l'usuari Chuck: 
+- Crear l'usuari Chuck: useradd Chuck
 
-Ellaços d'interès: 
+- Afegim permisos de usrquota:
+
+   ![image](https://user-images.githubusercontent.com/79162978/203118792-b8d9ae45-ecc1-405f-bb1a-68bf5e0cdf6c.png)
+   
+- Fem un reboot.
+
+- Fem la comanda xfs_quota per establir els limits de 5 fitxer: xfs_quota -x -c "limit isoft=5 ihard=5 Chuck" /mnt/raid5/
+  
+- Li donem perimisos al Chuck per fer fitxers: 
+ 
+ ![image](https://user-images.githubusercontent.com/79162978/203119949-8e89658a-a621-447c-bb95-a7cdbec33593.png)
+ 
+ ![image](https://user-images.githubusercontent.com/79162978/203120268-31354088-c0bf-436e-b4c4-4d4bbb2f9cdc.png)
+
+- Establim el límit de capacitat dels fitxer: 
+
+  ![image](https://user-images.githubusercontent.com/79162978/203121003-cc59b663-bcf3-43e2-8105-76a67efed986.png)
+  
+
+# Ellaços d'interès: 
 
 https://fortinux.gitbooks.io/humble_tips/content/administrar_gnulinux/tutorial_configurando_un_sistema_raid_en_gnulinux.html
 https://jesusfernandeztoledo.com/raid-1-en-linux/
