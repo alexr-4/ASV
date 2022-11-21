@@ -81,17 +81,17 @@ A continuació executem: ````[root@localhost ~]# mkfs.xfs /dev/vdc```` tants cop
   
 - Li donem perimisos al Chuck per fer fitxers: 
  
- ![image](https://user-images.githubusercontent.com/79162978/203119949-8e89658a-a621-447c-bb95-a7cdbec33593.png)
+   ![image](https://user-images.githubusercontent.com/79162978/203119949-8e89658a-a621-447c-bb95-a7cdbec33593.png)
  
- ![image](https://user-images.githubusercontent.com/79162978/203120268-31354088-c0bf-436e-b4c4-4d4bbb2f9cdc.png)
+   ![image](https://user-images.githubusercontent.com/79162978/203120268-31354088-c0bf-436e-b4c4-4d4bbb2f9cdc.png)
 
 - Establim el límit de capacitat dels fitxer amb la comanda ```` vim /etc/fstab ````  :
 
-  ![image](https://user-images.githubusercontent.com/79162978/203121003-cc59b663-bcf3-43e2-8105-76a67efed986.png)
+   ![image](https://user-images.githubusercontent.com/79162978/203121003-cc59b663-bcf3-43e2-8105-76a67efed986.png)
   
 - Fem la comprovació: 
 
- ![image](https://user-images.githubusercontent.com/79162978/203121474-286564a0-d1c5-406c-9edb-33124c4a9298.png)
+   ![image](https://user-images.githubusercontent.com/79162978/203121474-286564a0-d1c5-406c-9edb-33124c4a9298.png)
 
 
 # Ellaços d'interès: 
