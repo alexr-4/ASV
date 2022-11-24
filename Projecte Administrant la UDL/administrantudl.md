@@ -5,7 +5,7 @@
 
 El nostre servidor LDAP es trobarà a la màquina amb IP: 192.168.101.77
 
-### La base de dades LDAP ha d’estar en una partició diferent del Sistema Operatiu.
+### La base de dades LDAP ha d’estar en una partició diferent del Sistema Operatiu:
 
 Primerament configurarem un disc dur nou que contindrà la partició de la BBDD: 
 
@@ -26,9 +26,11 @@ Primerament configurarem un disc dur nou que contindrà la partició de la BBDD:
  
  	![image](https://user-images.githubusercontent.com/79162978/203840006-3668d09f-d697-4d18-a06b-2a2088c099cb.png)
 
-## Únicament el root podrà accedir per SSH emprant PUBKEY: 
+### Únicament el root podrà accedir per SSH emprant PUBKEY: 
 
 ![image](https://user-images.githubusercontent.com/79162978/203841545-6b08c028-9aed-4d20-9f99-b4c0334cf2cc.png)
+
+### Cada alumne de la classe d’ASV ha de tenir el seu compte amb permisos de sudo: 
 
 
 
