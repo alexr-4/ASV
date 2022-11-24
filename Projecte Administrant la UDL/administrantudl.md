@@ -3,6 +3,22 @@
 
 ## Servidor LDAP
 
+El nostre servidor LDAP es trobarà a la màquina amb IP: 192.168.101.77
+
+Primerament configurarem un disc dur nou que contindrà la partició de la BBDD: 
+
+- Farem la comanda ```` lsblk ```` per veure els discs que té la màquina i seguidament farem la comanda mkfs.xfs /dev/vdb per executar el disc: 
+
+	![image](https://user-images.githubusercontent.com/79162978/203837076-a7040b97-418b-46dd-acd6-3bb9edd3bea0.png)
+
+- A continuació, crearem el directori que contindrà el disc dur muntat: 
+
+	![image](https://user-images.githubusercontent.com/79162978/203837002-3f8630c3-fda9-4f24-9789-1d94de54e886.png)
+
+
+- Per veure on és la bbdd:  ```` less /var/lib/openldap/ ```` 
+- 
+
 VM1 : Servidor LDAP (ldap-server.udl.cat)
 – dc=udl,dc=cat
 – Únicament root pot accedir per SSH utilitzant PUBKEY.
