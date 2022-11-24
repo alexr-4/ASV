@@ -10,14 +10,22 @@ Primerament configurarem un disc dur nou que contindrà la partició de la BBDD:
 - Farem la comanda ```` lsblk ```` per veure els discs que té la màquina i seguidament farem la comanda mkfs.xfs /dev/vdb per executar el disc: 
 
 	![image](https://user-images.githubusercontent.com/79162978/203837076-a7040b97-418b-46dd-acd6-3bb9edd3bea0.png)
-
-- A continuació, crearem el directori que contindrà el disc dur muntat: 
-
-	![image](https://user-images.githubusercontent.com/79162978/203837002-3f8630c3-fda9-4f24-9789-1d94de54e886.png)
-
-
+	
 - Per veure on és la bbdd:  ```` less /var/lib/openldap/ ```` 
-- 
+
+- A continuació, crearem una carpeta a ```` mkdir /tmp/ldap ```` per fer una copia del que conté les dades de la carpeta openldap ```` cp -r /var/lib/openldap/ /tmp/ldap ````. La copia és necessaria per no perdre les dades a l'hora de muntar el disc dur al directori que conté les dades.
+
+- Muntarem el directori amb la comanda ```` mount /dev/vdb /var/lib/openldap/ ````
+
+	![image](https://user-images.githubusercontent.com/79162978/203839728-bec71e9d-1d84-47f0-9262-820d1d7bb3f4.png)
+
+- Revisarem que estiguin dintre les dades, veiem que les hem perdudes, per tant, copiarem tot lo que tenim a la carpeta temporal cap a la carpeta que ens interesa: 
+ ````  cp -r /tmp/ldap/ /var/lib/openldap/   ````
+ 
+ 	![image](https://user-images.githubusercontent.com/79162978/203840006-3668d09f-d697-4d18-a06b-2a2088c099cb.png)
+
+
+
 
 VM1 : Servidor LDAP (ldap-server.udl.cat)
 – dc=udl,dc=cat
