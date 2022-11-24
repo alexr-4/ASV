@@ -5,7 +5,7 @@
 
 El nostre servidor LDAP es trobarà a la màquina amb IP: 192.168.101.77
 
-#### La base de dades LDAP ha d’estar en una partició diferent del Sistema Operatiu.
+### La base de dades LDAP ha d’estar en una partició diferent del Sistema Operatiu.
 
 Primerament configurarem un disc dur nou que contindrà la partició de la BBDD: 
 
@@ -31,13 +31,21 @@ Primerament configurarem un disc dur nou que contindrà la partició de la BBDD:
 
 VM1 : Servidor LDAP (ldap-server.udl.cat)
 – dc=udl,dc=cat
+
 – Únicament root pot accedir per SSH utilitzant PUBKEY.
+
 – Cada alumne de la classe d’ASV ha de tenir el seu compte amb permisos de sudo.
+
 – La base de dades únicament acceptarà connexions TLS.
+
 – S’inclourà un servei LAM per mantenir i gestionar els comptes.
+
 – El servei LAM únicament podrà ser accessible per SSL.
+
 – Els certificats TLS i SSL hauran de ser self-signed.
-– La base de dades LDAP ha d’estar en una partició diferent del Sistema Operatiu.
+
+– La base de dades LDAP ha d’estar en una partició diferent del Sistema Operatiu. -
+
 
 ## Servidor NFS
 
