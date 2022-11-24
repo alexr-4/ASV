@@ -44,7 +44,7 @@ VM1 : Servidor LDAP (ldap-server.udl.cat)
 
 – Els certificats TLS i SSL hauran de ser self-signed.
 
---> HECHO --> ~~La base de dades LDAP ha d’estar en una partició diferent del Sistema Operatiu. 
+--> HECHO --> ~~La base de dades LDAP ha d’estar en una partició diferent del Sistema Operatiu.~~
 
 
 ## Servidor NFS
