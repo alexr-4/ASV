@@ -49,23 +49,54 @@ A continuació executem: ````[root@localhost ~]# mkfs.xfs /dev/vdc```` tants cop
 
 **Els raids s’han de muntar al path /mnt/raid1 i /mnt/raid5 i s’hauran de muntar de forma automàtica a l’inici del sistema. S’ha de crear l’usuari Chuck i aconseguir que únicament pugui fer servir 50MB, creant un màxim de 5 fitxers.**
 
+- Primerament muntarem el raid1 i el raid5, però per fer-ho, necessitem instalar ```` yum install -y mdadm ```` :
 
-Primer cal crear els directoris raid1 i raid5 a la ubicació de /mnt
+  ![image](https://user-images.githubusercontent.com/79162978/202512578-33da577d-77a1-4ed2-ad77-a29517ae92aa.png)
+ 
+### MD1
+- Amb la comanda  ````  mdadm --create --verbose /dev/md1 --level=1 --raid-devices=2 /dev/vdb1 /dev/vdb2 ```` passarem el nom de la raid, el nivell de la raid i els discs que té assignats que seran 2 devices amb els noms de /dev/vdb1 i /dev/vdb2:
 
-````mkdir raid1 ```` & ````mkdir raid5 ````
+  ![image](https://user-images.githubusercontent.com/79162978/202515785-adecf70c-49e3-42f5-9a54-497972dfb943.png)
+  
+  ![image](https://user-images.githubusercontent.com/79162978/202516203-53464a0f-490b-4f9a-981f-a9dff42690e7.png)
 
-Despres podem fer un mount de cada partició amb aquests directoris:
+### MD5
+- Fem la mateixa comanda per el MD5: 
 
-<img width="1017" alt="Captura de Pantalla 2022-11-04 a las 8 40 32" src="https://user-images.githubusercontent.com/38278207/199918934-5ac2409b-ac4a-4787-a1d5-7cfb59933cc0.png">
+  ![image](https://user-images.githubusercontent.com/79162978/202516411-9d7eb8c8-2e88-4725-8c92-55cf9f640ecf.png)
 
-Per a que s'executi a l'inici del sistema, cal modificar el fitxer ````sudo vim /etc/fstab```` (Si no tenim vim, executar ````sudo yum install vim````) i afegim la següent línea:
+- Per afeguir als directoris les raid i muntarles allà: 
 
-<img width="1556" alt="Captura de Pantalla 2022-11-04 a las 8 48 50" src="https://user-images.githubusercontent.com/38278207/199920503-fbd676c6-dd59-436a-878b-90407ce693bd.png">
+![image](https://user-images.githubusercontent.com/79162978/202517868-5a704781-0a64-47ff-a7bd-e51602e213b4.png)
 
-(les separacions entre cada variable son tabulacions 😄)
+- Crear l'usuari Chuck: ```` useradd Chuck ````
 
-Per crear usuari: Podem fer-ho amb ````useradd Chuck```` (podriem definir contrassenya amb ````passwd```` i configurar-lo millor, pero no ho hem fet en aquest cas)
+- Afegim permisos de usrquota:
 
-Per aconseguir que únicament pugui fer servir 50MB i crear maxim 5 fitxers:
+   ![image](https://user-images.githubusercontent.com/79162978/203118792-b8d9ae45-ecc1-405f-bb1a-68bf5e0cdf6c.png)
+   
+- Fem un reboot.
 
-***TODO***
+- Fem la comanda xfs_quota per establir els limits de 5 fitxer: ```` xfs_quota -x -c "limit isoft=5 ihard=5 Chuck" /mnt/raid5/ ````
+  
+- Li donem perimisos al Chuck per fer fitxers: 
+ 
+   ![image](https://user-images.githubusercontent.com/79162978/203119949-8e89658a-a621-447c-bb95-a7cdbec33593.png)
+ 
+   ![image](https://user-images.githubusercontent.com/79162978/203120268-31354088-c0bf-436e-b4c4-4d4bbb2f9cdc.png)
+
+- Establim el límit de capacitat dels fitxer amb la comanda ```` vim /etc/fstab ````  :
+
+   ![image](https://user-images.githubusercontent.com/79162978/203121003-cc59b663-bcf3-43e2-8105-76a67efed986.png)
+  
+- Fem la comprovació: 
+
+   ![image](https://user-images.githubusercontent.com/79162978/203121474-286564a0-d1c5-406c-9edb-33124c4a9298.png)
+
+
+# Ellaços d'interès: 
+
+https://fortinux.gitbooks.io/humble_tips/content/administrar_gnulinux/tutorial_configurando_un_sistema_raid_en_gnulinux.html
+https://jesusfernandeztoledo.com/raid-1-en-linux/
+https://discord.com/channels/@me/1023942680528556074/1042860172059619369
+https://discord.com/channels/@me/1023942680528556074/1042860206561968218
