@@ -5,6 +5,8 @@
 
 El nostre servidor LDAP es trobarà a la màquina amb IP: 192.168.101.77
 
+#### La base de dades LDAP ha d’estar en una partició diferent del Sistema Operatiu.
+
 Primerament configurarem un disc dur nou que contindrà la partició de la BBDD: 
 
 - Farem la comanda ```` lsblk ```` per veure els discs que té la màquina i seguidament farem la comanda mkfs.xfs /dev/vdb per executar el disc: 
