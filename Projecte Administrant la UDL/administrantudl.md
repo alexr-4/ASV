@@ -22,14 +22,15 @@ Els directoris home dels usuaris estaran en una RAID5 o en una RAID10.
 Script:
 homes=$(ldapsearch -b ou=users,dc=asv,dc=udl,dc=cat -D cn=osproxy,ou=system,dc=curs,dc=asv,dc=udl,dc=cat -W -x | grep uid: )
 
-echo $homes
+```` echo $homes
 let n=0;
 for home in $homes
 	let p=n%2
 	if [ $p -eq 1 ] ; then
 		mkhomedir_helper ${home}
 	fi
-	let n=n+1
+	let n=n+1 
+````
 
 ## Client
 
