@@ -19,6 +19,18 @@ Els directoris home dels usuaris estaran en una RAID5 o en una RAID10.
 - Únicament root pot accedir per SSH utilitzant doble factor de verificació (password + codi).
 - Configurarem un servei de dades al núvol utilitzant owncloud.
 
+Script:
+homes=$(ldapsearch -b ou=users,dc=asv,dc=udl,dc=cat -D cn=osproxy,ou=system,dc=curs,dc=asv,dc=udl,dc=cat -W -x | grep uid: )
+
+echo $homes
+let n=0;
+for home in $homes
+	let p=n%2
+	if [ $p -eq 1 ] ; then
+		mkhomedir_helper ${home}
+	fi
+	let n=n+1
+
 ## Client
 
 Els directoris /home es muntaran sota demanda, únicament quan l’usuari accedeixi al sistema.
