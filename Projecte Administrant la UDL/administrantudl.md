@@ -26,13 +26,16 @@ Primerament configurarem un disc dur nou que contindrà la partició de la BBDD:
  
  	![image](https://user-images.githubusercontent.com/79162978/203840006-3668d09f-d697-4d18-a06b-2a2088c099cb.png)
 
+## Únicament el root podrà accedir per SSH emprant PUBKEY: 
+
+![image](https://user-images.githubusercontent.com/79162978/203841545-6b08c028-9aed-4d20-9f99-b4c0334cf2cc.png)
 
 
 
 VM1 : Servidor LDAP (ldap-server.udl.cat)
-– dc=udl,dc=cat
+~~dc=udl,dc=cat~~
 
-– Únicament root pot accedir per SSH utilitzant PUBKEY.
+~~Únicament root pot accedir per SSH utilitzant PUBKEY.~~
 
 – Cada alumne de la classe d’ASV ha de tenir el seu compte amb permisos de sudo.
 
