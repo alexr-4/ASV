@@ -169,7 +169,7 @@ dd if=/dev/urandom of=keyfile bs=1024 count=4
 cryptsetup luksAddKey /dev/vdb keyfile
 echo "/dev/mapper/privateDisk /mnt/private xfs defaults 1 2" >> /etc/fstab
 echo "privateDisk /dev/vdb keyfile1 luks" >> /etc/crypttab
-
+```
 
 We study the distributred file system -> we able to share files and directories with a lot of users.
 
