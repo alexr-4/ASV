@@ -133,11 +133,90 @@ Tambe hem treballat el concepte de **Kerberos**, que ara sabem que es un protoco
 
 # Week 06
 
-TODO
-
 ***Que he aprés?***
+
+In this week, me have seen a lot of deep concepts of a linux operative system. We think it's important to know the file system:
+
+<img width="1436" alt="Captura de Pantalla 2022-11-27 a las 17 50 05" src="https://user-images.githubusercontent.com/38278207/204148875-0c46b736-97de-4f1d-8b13-f8adb0ece917.png">
+
+That is so diferent In comparison of a Windows system. Really, we have been working in most of this directories becasuse the configuration of a lot of services of the VM, needs to have a big kndowedge of this directories.
+
+Also, we have seen how to create a new disk and put it in the VM, and, inside, create partitions; a RAID system. Some interesting commands:
+
+```
+$ mkfs.xfs /dev/vdb #Formatar en xfs -> $ fdisk -l 
+$ mount /dev/vdb /mnt/data/ #Muntar el disc al punt de muntatge
+$ df -h #Observar el nou disc muntant
+$ fdisk -l
+reboot
+$ vi /etc/fstab
+
+```
+
+Another interessting point is how to encrypt the discs; we can do it with the LUKS tool. To access the password decryption of the device, the user must provide a pass phrase or an authentication key
+
+We must follow the next steps:
+
+```
+dnf install cryptsetup -y
+cryptsetup luksFormat /dev/vdb
+cryptsetup luksOpen /dev/vdb privateDisk
+mkfs.xfs /dev/mapper/privateDisk
+mkdir -p /mnt/private
+mount /dev/mapper/privateDisk /mnt/private/
+df -h
+dd if=/dev/urandom of=keyfile bs=1024 count=4
+cryptsetup luksAddKey /dev/vdb keyfile
+echo "/dev/mapper/privateDisk /mnt/private xfs defaults 1 2" >> /etc/fstab
+echo "privateDisk /dev/vdb keyfile1 luks" >> /etc/crypttab
+
+
+We study the distributred file system -> we able to share files and directories with a lot of users.
+
+For do it, we need to install an NFS server:
+```
+yum  install nfs-utils -y
+setsebool -P nfs_export_all_ro=1 nfs_export_all_rw=1 
+firewall-cmd --permanent --add-service nfs
+firewall-cmd --reload
+
+systemctl enable rpcbind
+systemctl enable nfs-server
+systemctl start rpcbind
+systemctl start nfs
+
+vi /etc/exports
+/mnt/data xxx.xxx.xx.xx/24(rw,sync,no_root_squash)
+
+exportfs -avr
+systemctl restart rpcbind
+systemctl restart nfs
+```
+Also wee must install a NFS client:
+
+```
+yum install nfs-utils -y
+systemctl enable rpcbind
+systemctl start rpcbind
+
+
+mkdir /mnt/data
+mount -t nfs -o rw ip-servidor:/mnt/data/ /mnt/data
+echo  ip-servidor:/mnt/data/ /mnt/data nfs rw,sync,hard,intr 0 >> /etc/fstab
+```
+
+For follow the command steps more correctly -> watch de theory:
+
+https://cv.udl.cat/portal/site/102378-I-2223/tool/51aae730-7529-4b62-8711-ca50fe7babce?panel=Main
+
 
 ***Que he consultat?***
 
+- https://man7.org/linux/man-pages/man8/mount.8.html
+- https://www.dell.com/support/kbdoc/es-es/000131456/los-tipos-y-las-definiciones-de-ubuntu-linux-particiones-y-directorios-explicados
 
+***Quines preguntes m'han sorgit?***
+ 
+- Per que esta tot tan dividit en un sistema linux? per que hi ha tantes particions?
+- Per a que serveix un servidor NFS?
 
