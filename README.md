@@ -135,6 +135,8 @@ Tambe hem treballat el concepte de **Kerberos**, que ara sabem que es un protoco
 
 ***Que he aprés?***
 
+**FILE SYSTEM, NFS, AND STORAGE**
+
 In this week, me have seen a lot of deep concepts of a linux operative system. We think it's important to know the file system:
 
 <img width="1436" alt="Captura de Pantalla 2022-11-27 a las 17 50 05" src="https://user-images.githubusercontent.com/38278207/204148875-0c46b736-97de-4f1d-8b13-f8adb0ece917.png">
@@ -212,13 +214,46 @@ For follow the command steps more correctly -> watch de theory:
 https://cv.udl.cat/portal/site/102378-I-2223/tool/51aae730-7529-4b62-8711-ca50fe7babce?panel=Main
 
 
+**A RAID SYSTEM**
+
+A disk array is a disk storage system that contains multiple disk drives.
+We have seen a 3 diferent RAIDs system:
+
+- RAID 0
+
++ SPEED
++ The information is writed in 2 discs in a alternative way
++ BANDWITH
+
+:( If one discs fails -> information is distributred in another discs
+
+
+- RAID 1
+
++ The information is writed in 2 discs simultanelly
++ If one discs fails -> no problem. The information pass to another dics
+
+:( Performance
+
+
+- RAID 5
+
++ We able to have x discs in the RAID (3 is the minim) -> 1 disc is the backup
++ Performance
++ If one disc fail -> we can change this disc
+
+:( If 2 discs fails in the same time -> wee loss information
+
+For see this threory more elaborately:
+
+https://cv.udl.cat/portal/site/102378-I-2223/tool/51aae730-7529-4b62-8711-ca50fe7babce?panel=Main
+
+
+
 ***Que he consultat?***
 
-- https://man7.org/linux/man-pages/man8/mount.8.html
-- https://www.dell.com/support/kbdoc/es-es/000131456/los-tipos-y-las-definiciones-de-ubuntu-linux-particiones-y-directorios-explicados
+- https://hardzone.es/tutoriales/montaje/raid-discos-duros/
 
 ***Quines preguntes m'han sorgit?***
  
-- Per que esta tot tan dividit en un sistema linux? per que hi ha tantes particions?
-- Per a que serveix un servidor NFS?
-
+- per a que serveix un sistema raid?
