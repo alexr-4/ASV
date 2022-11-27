@@ -222,7 +222,9 @@ We have seen a 3 diferent RAIDs system:
 - RAID 0
 
 ✅ SPEED
+
 ✅ The information is writed in 2 discs in a alternative way
+
 ✅ BANDWITH
 
 ⛔️ If one discs fails -> information is distributred in another discs
@@ -231,6 +233,7 @@ We have seen a 3 diferent RAIDs system:
 - RAID 1
 
 ✅ The information is writed in 2 discs simultanelly
+
 ✅ If one discs fails -> no problem. The information pass to another dics
 
 ⛔️ Performance
@@ -239,7 +242,9 @@ We have seen a 3 diferent RAIDs system:
 - RAID 5
 
 ✅ We able to have x discs in the RAID (3 is the minim) -> 1 disc is the backup
+
 ✅ Performance
+
 ✅ If one disc fail -> we can change this disc
 
 ⛔️ If 2 discs fails in the same time -> wee loss information
