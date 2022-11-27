@@ -221,33 +221,32 @@ We have seen a 3 diferent RAIDs system:
 
 - RAID 0
 
-+ SPEED
-+ The information is writed in 2 discs in a alternative way
-+ BANDWITH
+✅ SPEED
+✅ The information is writed in 2 discs in a alternative way
+✅ BANDWITH
 
-:( If one discs fails -> information is distributred in another discs
+⛔️ If one discs fails -> information is distributred in another discs
 
 
 - RAID 1
 
-+ The information is writed in 2 discs simultanelly
-+ If one discs fails -> no problem. The information pass to another dics
+✅ The information is writed in 2 discs simultanelly
+✅ If one discs fails -> no problem. The information pass to another dics
 
-:( Performance
+⛔️ Performance
 
 
 - RAID 5
 
-+ We able to have x discs in the RAID (3 is the minim) -> 1 disc is the backup
-+ Performance
-+ If one disc fail -> we can change this disc
+✅ We able to have x discs in the RAID (3 is the minim) -> 1 disc is the backup
+✅ Performance
+✅ If one disc fail -> we can change this disc
 
-:( If 2 discs fails in the same time -> wee loss information
+⛔️ If 2 discs fails in the same time -> wee loss information
 
 For see this threory more elaborately:
 
 https://cv.udl.cat/portal/site/102378-I-2223/tool/51aae730-7529-4b62-8711-ca50fe7babce?panel=Main
-
 
 
 ***Que he consultat?***
@@ -256,4 +255,4 @@ https://cv.udl.cat/portal/site/102378-I-2223/tool/51aae730-7529-4b62-8711-ca50fe
 
 ***Quines preguntes m'han sorgit?***
  
-- per a que serveix un sistema raid?
+- In what situations we need a RAID system?
