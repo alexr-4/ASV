@@ -174,6 +174,7 @@ echo "privateDisk /dev/vdb keyfile1 luks" >> /etc/crypttab
 We study the distributred file system -> we able to share files and directories with a lot of users.
 
 For do it, we need to install an NFS server:
+
 ```
 yum  install nfs-utils -y
 setsebool -P nfs_export_all_ro=1 nfs_export_all_rw=1 
@@ -192,6 +193,7 @@ exportfs -avr
 systemctl restart rpcbind
 systemctl restart nfs
 ```
+
 Also wee must install a NFS client:
 
 ```
