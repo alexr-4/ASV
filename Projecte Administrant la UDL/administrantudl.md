@@ -87,7 +87,8 @@ Primerament configurarem un disc dur nou que contindrà la partició de la BBDD:
 	
 
 	![image](https://user-images.githubusercontent.com/79162978/204336214-2abdc1d9-cf45-4e18-864e-288aeecf0c31.png)
-
+	
+- Afegirem al firewall tant la connexió http com la https: 
 
 	![image](https://user-images.githubusercontent.com/79162978/204335832-f6f2409d-8bba-4d2d-97e2-19ee9a73561f.png)
 
