@@ -68,6 +68,8 @@ Primerament configurarem un disc dur nou que contindrà la partició de la BBDD:
 - Comprovem la versió instal·lada
 
 	 ```` php -v ````
+	 
+	 ![image](https://user-images.githubusercontent.com/79162978/204309820-119705e8-38a4-46c2-84c3-e6baa22d54c1.png)
 
 
 
