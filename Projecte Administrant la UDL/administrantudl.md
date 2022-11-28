@@ -77,6 +77,20 @@ Primerament configurarem un disc dur nou que contindrà la partició de la BBDD:
 	 ```` php -v ````
 	 
 	 ![image](https://user-images.githubusercontent.com/79162978/204309820-119705e8-38a4-46c2-84c3-e6baa22d54c1.png)
+	 
+- Per arrancar el servei LAM, hem de tenir el firewall configurat: 
+
+	![image](https://user-images.githubusercontent.com/79162978/204336001-3bb401ef-d3dd-47b1-b680-3b39bfd21bd0.png)
+	
+	
+	![image](https://user-images.githubusercontent.com/79162978/204336094-63373e21-05bf-477e-a3c6-a3f70e0c05b1.png)
+	
+
+	![image](https://user-images.githubusercontent.com/79162978/204336214-2abdc1d9-cf45-4e18-864e-288aeecf0c31.png)
+
+
+	![image](https://user-images.githubusercontent.com/79162978/204335832-f6f2409d-8bba-4d2d-97e2-19ee9a73561f.png)
+
 
 
 
