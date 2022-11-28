@@ -32,6 +32,42 @@ Primerament configurarem un disc dur nou que contindrà la partició de la BBDD:
 
 ### Cada alumne de la classe d’ASV ha de tenir el seu compte amb permisos de sudo: 
 
+### S’inclourà un servei LAM per mantenir i gestionar els comptes:
+
+- Instal·lem el dimoni httpd:
+
+ 	```` dnf install httpd -y ````
+
+- Activem el dimoni per iniciar cada cop que el sistema arranqui:
+
+ 	```` systemctl enable httpd ````
+
+- Arranquem i comprovem l’estat del dimoni:
+
+	 ```` systemctl start httpd ````
+	
+	 ```` systemctl status httpd ````
+
+	![image](https://user-images.githubusercontent.com/79162978/204309150-c4fc15ab-bad8-4f26-b844-bb740cbbe48b.png)
+
+
+- Instal·lació de la versió 7.4 de php.
+
+ 	```` dnf module list php ````
+
+- PHP 7.2 és el per defecte. Per modificar-ho:
+
+ 	```` dnf module reset php ````
+ 	```` dnf module install php:7.4 -y ````
+
+- Per instal·lar extensions de PHP
+
+	 ```` dnf install php-curl php-zip -y ````
+
+- Comprovem la versió instal·lada
+
+	 ```` php -v ````
+
 
 
 VM1 : Servidor LDAP (ldap-server.udl.cat)
