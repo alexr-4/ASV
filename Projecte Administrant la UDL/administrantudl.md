@@ -58,6 +58,7 @@ Primerament configurarem un disc dur nou que contindrà la partició de la BBDD:
 - PHP 7.2 és el per defecte. Per modificar-ho:
 
  	```` dnf module reset php ````
+	
  	```` dnf module install php:7.4 -y ````
 
 - Per instal·lar extensions de PHP
