@@ -34,6 +34,13 @@ Primerament configurarem un disc dur nou que contindrà la partició de la BBDD:
 
 ### S’inclourà un servei LAM per mantenir i gestionar els comptes:
 
+- Instal·lem el lam de la URL https://www.ldap-account-manager.org/lamcms/releases i amb la comanda stfp passem a la maquina el fitxer descarregat: 
+
+	![image](https://user-images.githubusercontent.com/79162978/204330370-0e4b7dcb-443a-4a57-a5ae-6e78cbfde90c.png)
+
+- Dintre de la maquina, fem la comanda ```` rpm -i nom de l'arxiu copiat ```` 
+
+
 - Instal·lem el dimoni httpd:
 
  	```` dnf install httpd -y ````
@@ -74,6 +81,7 @@ Primerament configurarem un disc dur nou que contindrà la partició de la BBDD:
 
 
 VM1 : Servidor LDAP (ldap-server.udl.cat)
+
 ~~dc=udl,dc=cat~~
 
 ~~Únicament root pot accedir per SSH utilitzant PUBKEY.~~
