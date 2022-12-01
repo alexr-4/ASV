@@ -130,6 +130,8 @@ VM1 : Servidor LDAP (ldap-server.udl.cat)
 
 	
 ### Únicament root pot accedir per SSH utilitzant doble factor de verificació (password + codi).
+![image](https://user-images.githubusercontent.com/83337658/205112244-57aed6a5-68be-4cc0-9a8d-6931e12e497e.png)
+
 
 - Per veure el fitxer de configuració ```` vim /etc/ssh/sshd_config ````, haurem de canviar les següents linies: 
 
