@@ -115,7 +115,7 @@ VM1 : Servidor LDAP (ldap-server.udl.cat)
 
 ## Servidor NFS
 
-- Els directoris home dels usuaris estaran en una RAID5 o en una RAID10.
+### Els directoris home dels usuaris estaran en una RAID5 o en una RAID10.
 	- Configurem els tres discos de la màquina: (''''mkfs.xfs /dev/vdb'''', ''''mkfs.xfs /dev/vdc'''', ''''mkfs.xfs /dev/vdd''''):
 	![image](https://user-images.githubusercontent.com/83337658/203839115-2c98f88e-7b4c-4299-92c2-3356d8226c2c.png)
 	- inslatar el mdadm: ''''yum install -y mdadm''''
@@ -136,8 +136,8 @@ VM1 : Servidor LDAP (ldap-server.udl.cat)
 
 
 
-- Únicament root pot accedir per SSH utilitzant doble factor de verificació (password + codi).
-- Configurarem un servei de dades al núvol utilitzant owncloud.
+### Únicament root pot accedir per SSH utilitzant doble factor de verificació (password + codi).
+### Configurarem un servei de dades al núvol utilitzant owncloud.
 
 Script:
 homes=$(ldapsearch -b ou=users,dc=asv,dc=udl,dc=cat -D cn=osproxy,ou=system,dc=curs,dc=asv,dc=udl,dc=cat -W -x | grep uid: )
@@ -154,6 +154,6 @@ for home in $homes
 
 ## Client
 
-Els directoris /home es muntaran sota demanda, únicament quan l’usuari accedeixi al sistema.
+### Els directoris /home es muntaran sota demanda, únicament quan l’usuari accedeixi al sistema.
 
 ## 
