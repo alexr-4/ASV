@@ -105,7 +105,7 @@ VM1 : Servidor LDAP (ldap-server.udl.cat)
 
 – La base de dades únicament acceptarà connexions TLS.
 
-– S’inclourà un servei LAM per mantenir i gestionar els comptes.
+~~S’inclourà un servei LAM per mantenir i gestionar els comptes.~~
 
 – El servei LAM únicament podrà ser accessible per SSL.
 
