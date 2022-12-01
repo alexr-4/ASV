@@ -144,9 +144,14 @@ VM1 : Servidor LDAP (ldap-server.udl.cat)
 - Seguidament farem google-authenticator i a la primera pregunta li direm que si: 
 ![image](https://user-images.githubusercontent.com/83337658/205114538-366182e8-3646-434f-b63b-c773d96c5582.png)
 ![image](https://user-images.githubusercontent.com/83337658/205114876-661cfae0-a860-4ec0-8f04-298c46b264ef.png)
-
-
-
+- Descargar Google Autenticator en el móvil, escanear QR e insertar codigos en la terminal:
+![image](https://user-images.githubusercontent.com/83337658/205115847-571320a4-23f6-4eb8-88c3-ba1b66500aca.png)
+- Entrem al: nano /etc/ssh/sshd_config
+![image](https://user-images.githubusercontent.com/83337658/205116206-6d20883f-4ca6-4263-bfba-057f6c1c0780.png)
+- Entrem al: nano /etc/pam.d/sshd
+![image](https://user-images.githubusercontent.com/83337658/205117262-303293b3-3c47-43de-b0f5-25cf10e619bf.png)
+- Entrar al: nano /etc/ssh/sshd_config
+![image](https://user-images.githubusercontent.com/83337658/205118654-fcc6ee34-5c8d-4062-a056-dc20a606c422.png)
 
 
 ### Configurarem un servei de dades al núvol utilitzant owncloud.
