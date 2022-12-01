@@ -131,10 +131,11 @@ VM1 : Servidor LDAP (ldap-server.udl.cat)
 	
 ### Únicament root pot accedir per SSH utilitzant doble factor de verificació (password + codi).
 
-Per veure el fitxer de configuració ```` vim /etc/ssh/sshd_config ````
+- Per veure el fitxer de configuració ```` vim /etc/ssh/sshd_config ````, haurem de canviar les següents linies: 
 
-Se li ha d'assignar al root una password amb ````passwd```` --> 1234
-Després fem un ````systemctl restart sshd```` per reiniciar el sistema. 
+
+- Se li ha d'assignar al root una password amb ````passwd```` --> 1234
+- Després fem un ````systemctl restart sshd```` per reiniciar el sistema. 
 
 ### Configurarem un servei de dades al núvol utilitzant owncloud.
 
