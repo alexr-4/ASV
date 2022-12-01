@@ -153,6 +153,7 @@ VM1 : Servidor LDAP (ldap-server.udl.cat)
 ![image](https://user-images.githubusercontent.com/83337658/205120657-f8c7616b-94c5-4c24-bc89-cd7be6615e29.png)
 - En otra cmd entrar a la maquina:
 ![image](https://user-images.githubusercontent.com/83337658/205120859-1961691b-8456-482f-ab6c-952022648b23.png)
+- Para activarlo:
 
 
 
