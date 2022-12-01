@@ -143,6 +143,7 @@ VM1 : Servidor LDAP (ldap-server.udl.cat)
 
 - Seguidament farem google-authenticator i a la primera pregunta li direm que si: 
 ![image](https://user-images.githubusercontent.com/83337658/205114538-366182e8-3646-434f-b63b-c773d96c5582.png)
+![image](https://user-images.githubusercontent.com/83337658/205114876-661cfae0-a860-4ec0-8f04-298c46b264ef.png)
 
 
 
