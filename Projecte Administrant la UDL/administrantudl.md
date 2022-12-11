@@ -105,7 +105,7 @@ VM1 : Servidor LDAP (ldap-server.udl.cat)
 
 ~~Únicament root pot accedir per SSH utilitzant PUBKEY.~~
 
-– Cada alumne de la classe d’ASV ha de tenir el seu compte amb permisos de sudo.
+~~Cada alumne de la classe d’ASV ha de tenir el seu compte amb permisos de sudo.~~
 
 – La base de dades únicament acceptarà connexions TLS.
 
@@ -153,6 +153,7 @@ VM1 : Servidor LDAP (ldap-server.udl.cat)
 - Entrem al: nano /etc/ssh/sshd_config
 ![image](https://user-images.githubusercontent.com/83337658/205116206-6d20883f-4ca6-4263-bfba-057f6c1c0780.png)
 - Entrem al: nano /etc/pam.d/sshd
+
 ![image](https://user-images.githubusercontent.com/83337658/205659406-5ae0d913-a542-4423-bd37-8844b11274e7.png)
 ![image](https://user-images.githubusercontent.com/83337658/205120657-f8c7616b-94c5-4c24-bc89-cd7be6615e29.png)
 - En otra cmd entrar a la maquina:
