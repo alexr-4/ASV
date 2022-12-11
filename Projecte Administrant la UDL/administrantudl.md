@@ -24,7 +24,7 @@ Primerament configurarem un disc dur nou que contindrà la partició de la BBDD:
 - Revisarem que estiguin dintre les dades, veiem que les hem perdudes, per tant, copiarem tot lo que tenim a la carpeta temporal cap a la carpeta que ens interesa: 
  ````  cp -r /tmp/ldap/ /var/lib/openldap/   ````
  
- 	![image](https://user-images.githubusercontent.com/79162978/203840006-3668d09f-d697-4d18-a06b-2a2088c099cb.png)
+ ![image](https://user-images.githubusercontent.com/79162978/203840006-3668d09f-d697-4d18-a06b-2a2088c099cb.png)
 
 ### Únicament el root podrà accedir per SSH emprant PUBKEY: 
 
