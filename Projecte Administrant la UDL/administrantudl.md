@@ -19,30 +19,29 @@ Primerament configurarem un disc dur nou que contindrà la partició de la BBDD:
 
 - Muntarem el directori amb la comanda ```` mount /dev/vdb /var/lib/openldap/ ````
 
-	![image](https://user-images.githubusercontent.com/79162978/203839728-bec71e9d-1d84-47f0-9262-820d1d7bb3f4.png)
+   ![image](https://user-images.githubusercontent.com/79162978/203839728-bec71e9d-1d84-47f0-9262-820d1d7bb3f4.png)
 
 - Revisarem que estiguin dintre les dades, veiem que les hem perdudes, per tant, copiarem tot lo que tenim a la carpeta temporal cap a la carpeta que ens interesa: 
- ````  cp -r /tmp/ldap/ /var/lib/openldap/   ````
+    ````  cp -r /tmp/ldap/ /var/lib/openldap/   ````
  
- ![image](https://user-images.githubusercontent.com/79162978/203840006-3668d09f-d697-4d18-a06b-2a2088c099cb.png)
+    ![image](https://user-images.githubusercontent.com/79162978/203840006-3668d09f-d697-4d18-a06b-2a2088c099cb.png)
 
 ### Únicament el root podrà accedir per SSH emprant PUBKEY: 
 
-![image](https://user-images.githubusercontent.com/79162978/203841545-6b08c028-9aed-4d20-9f99-b4c0334cf2cc.png)
+   ![image](https://user-images.githubusercontent.com/79162978/203841545-6b08c028-9aed-4d20-9f99-b4c0334cf2cc.png)
 
 ### Cada alumne de la classe d’ASV ha de tenir el seu compte amb permisos de sudo: 
 
-![image](https://user-images.githubusercontent.com/79162978/205706006-6a529db1-3975-44b8-96c5-72bc46a54057.png)
+   ![image](https://user-images.githubusercontent.com/79162978/205706006-6a529db1-3975-44b8-96c5-72bc46a54057.png)
 
 
 ### S’inclourà un servei LAM per mantenir i gestionar els comptes:
 
 - Instal·lem el lam de la URL https://www.ldap-account-manager.org/lamcms/releases i amb la comanda stfp passem a la maquina el fitxer descarregat: 
 
-	![image](https://user-images.githubusercontent.com/79162978/204330370-0e4b7dcb-443a-4a57-a5ae-6e78cbfde90c.png)
+   ![image](https://user-images.githubusercontent.com/79162978/204330370-0e4b7dcb-443a-4a57-a5ae-6e78cbfde90c.png)
 
 - Dintre de la maquina, fem la comanda ```` rpm -i nom de l'arxiu copiat ```` 
-
 
 - Instal·lem el dimoni httpd:
 
