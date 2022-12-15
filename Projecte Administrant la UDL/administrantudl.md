@@ -182,4 +182,24 @@ for home in $homes
 
 ### Els directoris /home es muntaran sota demanda, únicament quan l’usuari accedeixi al sistema.
 
-## 
+## TODO ALEX
+
+Seguirem el següent esquema per tal de desenvolupar l'apartat; es a la maquina client on instal·larem el servei autofs:
+
+<img width="1440" alt="Captura de Pantalla 2022-12-15 a las 9 17 50" src="https://user-images.githubusercontent.com/38278207/207808553-649aed57-3bdc-4ccf-a509-a7e562f4d3e0.png">
+
+- Per instal·lar, provar amb les següents comandes:
+
+
+```
+apt-get install autofs
+yum install autofs
+dnf -y install autofs
+```
+
+- El fitxer de configuració principal es al ```/etc/auto.master``` i es alli on haurem de afegir la següent línea:
+
+```
+/home/* -fstype=nfs 192.168.101.131:/mnt/homes/*
+```
+
