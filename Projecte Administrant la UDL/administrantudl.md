@@ -199,7 +199,9 @@ dnf -y install autofs
 
 - Iniciem el servei amb el següent comando:
 
-sudo systemctl enable --now autofs```
+```
+sudo systemctl enable --now autofs
+```
 
 - El fitxer de configuració principal es al ```/etc/auto.master``` i es alli on haurem de afegir la següent línea:
 
