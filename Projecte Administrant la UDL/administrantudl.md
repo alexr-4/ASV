@@ -120,15 +120,21 @@ VM1 : Servidor LDAP (ldap-server.udl.cat)
 ## Servidor NFS
 
 ### Els directoris home dels usuaris estaran en una RAID5 o en una RAID10.
-	- Configurem els tres discos de la màquina: (''''mkfs.xfs /dev/vdb'''', ''''mkfs.xfs /dev/vdc'''', ''''mkfs.xfs /dev/vdd''''):
+
+- Configurem els tres discos de la màquina: (''''mkfs.xfs /dev/vdb'''', ''''mkfs.xfs /dev/vdc'''', ''''mkfs.xfs /dev/vdd''''):
+
 	![image](https://user-images.githubusercontent.com/83337658/203839115-2c98f88e-7b4c-4299-92c2-3356d8226c2c.png)
-	- inslatar el mdadm: ''''yum install -y mdadm''''
-	- fer: ''''mdadm --create --verbose /dev/md5 --level=5 --raid-devices=3 /dev/vdb /dev/vdc /dev/vdd'''':
+- inslatar el mdadm: ''''yum install -y mdadm''''
+- fer: ''''mdadm --create --verbose /dev/md5 --level=5 --raid-devices=3 /dev/vdb /dev/vdc /dev/vdd'''':
+	
 	![image](https://user-images.githubusercontent.com/83337658/203839753-4f2fe590-b75f-494d-bdf3-1309c4f46e97.png)
-	- muntem la raid 5 al punt de muntatge /mnt/home: ''''mount /mnt/home/ /dev/md5'''', ''''mkfs.xfs /dev/md5'''', ''''mount /dev/md5 /mnt/home/''''
+
+- muntem la raid 5 al punt de muntatge /mnt/home: ''''mount /mnt/home/ /dev/md5'''', ''''mkfs.xfs /dev/md5'''', ''''mount /dev/md5 /mnt/home/''''
 
 	![image](https://user-images.githubusercontent.com/83337658/203841870-6b43e0bc-e5eb-4523-a878-b7da0ea42765.png)
-	- amb ''''blkid'''' busquem la raid i la enganchem a '''''vi /etc/fstab'''':
+
+- amb ''''blkid'''' busquem la raid i la enganchem a '''''vi /etc/fstab'''':
+	
 	![image](https://user-images.githubusercontent.com/83337658/203841964-bc5d3915-baee-4fdf-b37e-660576766c2c.png)
 	![image](https://user-images.githubusercontent.com/83337658/203842635-7edec2d4-ad10-42e8-a183-b91d6b2cf480.png)
 
@@ -146,20 +152,28 @@ VM1 : Servidor LDAP (ldap-server.udl.cat)
 	![image](https://user-images.githubusercontent.com/83337658/205113200-8d442f73-2195-4b34-868f-63735ef2989a.png)
 
 - Seguidament farem google-authenticator i a la primera pregunta li direm que si: 
-![image](https://user-images.githubusercontent.com/83337658/205114538-366182e8-3646-434f-b63b-c773d96c5582.png)
-![image](https://user-images.githubusercontent.com/83337658/205114876-661cfae0-a860-4ec0-8f04-298c46b264ef.png)
+
+	![image](https://user-images.githubusercontent.com/83337658/205114538-366182e8-3646-434f-b63b-c773d96c5582.png)
+	![image](https://user-images.githubusercontent.com/83337658/205114876-661cfae0-a860-4ec0-8f04-298c46b264ef.png)
+
 - Descargar Google Autenticator en el móvil, escanear QR e insertar codigos en la terminal:
-![image](https://user-images.githubusercontent.com/83337658/205115847-571320a4-23f6-4eb8-88c3-ba1b66500aca.png)
+
+	![image](https://user-images.githubusercontent.com/83337658/205115847-571320a4-23f6-4eb8-88c3-ba1b66500aca.png)
+	
 - Entrem al: nano /etc/ssh/sshd_config
-![image](https://user-images.githubusercontent.com/83337658/205116206-6d20883f-4ca6-4263-bfba-057f6c1c0780.png)
+
+	![image](https://user-images.githubusercontent.com/83337658/205116206-6d20883f-4ca6-4263-bfba-057f6c1c0780.png)
+	
 - Entrem al: nano /etc/pam.d/sshd
 
-![image](https://user-images.githubusercontent.com/83337658/205659406-5ae0d913-a542-4423-bd37-8844b11274e7.png)
-![image](https://user-images.githubusercontent.com/83337658/205120657-f8c7616b-94c5-4c24-bc89-cd7be6615e29.png)
+	![image](https://user-images.githubusercontent.com/83337658/205659406-5ae0d913-a542-4423-bd37-8844b11274e7.png)
+	![image](https://user-images.githubusercontent.com/83337658/205120657-f8c7616b-94c5-4c24-bc89-cd7be6615e29.png)
+	
 - En otra cmd entrar a la maquina:
-![image](https://user-images.githubusercontent.com/83337658/205120859-1961691b-8456-482f-ab6c-952022648b23.png)
-- Para activarlo:
 
+	![image](https://user-images.githubusercontent.com/83337658/205120859-1961691b-8456-482f-ab6c-952022648b23.png)
+	
+- Para activarlo:
 
 
 
