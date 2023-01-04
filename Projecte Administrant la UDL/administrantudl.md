@@ -121,19 +121,19 @@ VM1 : Servidor LDAP (ldap-server.udl.cat)
 
 ### Els directoris home dels usuaris estaran en una RAID5 o en una RAID10.
 
-- Configurem els tres discos de la màquina: (''''mkfs.xfs /dev/vdb'''', ''''mkfs.xfs /dev/vdc'''', ''''mkfs.xfs /dev/vdd''''):
+- Configurem els tres discos de la màquina: (```` mkfs.xfs /dev/vdb ````, ```` mkfs.xfs /dev/vdc ````, ```` mkfs.xfs /dev/vdd ````)
 
 	![image](https://user-images.githubusercontent.com/83337658/203839115-2c98f88e-7b4c-4299-92c2-3356d8226c2c.png)
-- inslatar el mdadm: ''''yum install -y mdadm''''
-- fer: ''''mdadm --create --verbose /dev/md5 --level=5 --raid-devices=3 /dev/vdb /dev/vdc /dev/vdd'''':
+- inslatar el mdadm: ```` yum install -y mdadm ````
+- fer: ```` mdadm --create --verbose /dev/md5 --level=5 --raid-devices=3 /dev/vdb /dev/vdc /dev/vdd ````
 	
 	![image](https://user-images.githubusercontent.com/83337658/203839753-4f2fe590-b75f-494d-bdf3-1309c4f46e97.png)
 
-- muntem la raid 5 al punt de muntatge /mnt/home: ''''mount /mnt/home/ /dev/md5'''', ''''mkfs.xfs /dev/md5'''', ''''mount /dev/md5 /mnt/home/''''
+- muntem la raid 5 al punt de muntatge /mnt/home: ```` mount /mnt/home/ /dev/md5 ````, ```` mkfs.xfs /dev/md5 ````, ```` mount /dev/md5 /mnt/home/ ````
 
 	![image](https://user-images.githubusercontent.com/83337658/203841870-6b43e0bc-e5eb-4523-a878-b7da0ea42765.png)
 
-- amb ''''blkid'''' busquem la raid i la enganchem a '''''vi /etc/fstab'''':
+- amb ```` blkid ```` busquem la raid i la enganchem a ```` vi /etc/fstab ````:
 	
 	![image](https://user-images.githubusercontent.com/83337658/203841964-bc5d3915-baee-4fdf-b37e-660576766c2c.png)
 	![image](https://user-images.githubusercontent.com/83337658/203842635-7edec2d4-ad10-42e8-a183-b91d6b2cf480.png)
@@ -145,8 +145,8 @@ VM1 : Servidor LDAP (ldap-server.udl.cat)
 
 	![image](https://user-images.githubusercontent.com/83337658/205112244-57aed6a5-68be-4cc0-9a8d-6931e12e497e.png)
 
-- Se li ha d'assignar al root una password amb ````passwd```` --> 1234
-- Després fem un ````systemctl restart sshd```` per reiniciar el sistema. 
+- Se li ha d'assignar al root una password amb ```` passwd ```` --> 1234
+- Després fem un ```` systemctl restart sshd ```` per reiniciar el sistema. 
 - I tornarem a autentificar per descarregar el paquet de google-authenticator: 
 
 	![image](https://user-images.githubusercontent.com/83337658/205113200-8d442f73-2195-4b34-868f-63735ef2989a.png)
