@@ -3,6 +3,8 @@
 
 ## Servidor LDAP
 
+Des de la Universitat de Lleida ens han contractat perquè creem un sistema d'administració que sigui segur i amb el que puguin treballar tant professors com alumnes. Per començar a dissenyar aquest sistema, iniciarem amb la creació d'un Servidor LDAP (Protocol lleuger d'accés a directoris). Aquest tipus de servidor ens permetrà establir un protocol de tipus client-servidor per poder accedir a un servei de directori, és a dir, a un espai que tindrà base de dades i una estructura d'informació segura i estable. 
+
 El nostre servidor LDAP es trobarà a la màquina amb IP: 192.168.101.77
 
 ### La base de dades LDAP ha d’estar en una partició diferent del Sistema Operatiu:
@@ -97,27 +99,12 @@ Primerament configurarem un disc dur nou que contindrà la partició de la BBDD:
 	![image](https://user-images.githubusercontent.com/79162978/204335832-f6f2409d-8bba-4d2d-97e2-19ee9a73561f.png)
 
 
-
-
-VM1 : Servidor LDAP (ldap-server.udl.cat)
-
-~~dc=udl,dc=cat~~
-
-~~Únicament root pot accedir per SSH utilitzant PUBKEY.~~
-
-~~Cada alumne de la classe d’ASV ha de tenir el seu compte amb permisos de sudo.~~
-
-– La base de dades únicament acceptarà connexions TLS.
-
-~~S’inclourà un servei LAM per mantenir i gestionar els comptes.~~
-
-– El servei LAM únicament podrà ser accessible per SSL.
-
-– Els certificats TLS i SSL hauran de ser self-signed.
-
-~~La base de dades LDAP ha d’estar en una partició diferent del Sistema Operatiu.~~
-
 ## Servidor NFS
+
+Per poder interconectar els equips dintre de la xarxa local de la UDL, necesitarem tenir un Servidor amb el protocol NFS (Network File System) que serà el nostre Sistema d'arxius de xarxa. Aquest protcol permetrà que els diferents equips puguin conectar-se a través d'autentificació segura entre ells i poder accedir als arxius que es trobin en un altre sistema. 
+
+Protegirem la informació dels discos durs agrupant-los en una RAID 5. 
+En una matriu RAID 5 amb tres o més unitats, les dades i la paritat es distribueixen per totes les unitats. Les dades es processen en dues unitats i la informació de paritat s'emmagatzema en la tercera. En cas de pèrdua d'una de les unitats de dades, la informació de paritat garanteix la nova creació de les dades perdudes. 
 
 ### Els directoris home dels usuaris estaran en una RAID5 o en una RAID10.
 
@@ -173,9 +160,6 @@ VM1 : Servidor LDAP (ldap-server.udl.cat)
 
 	![image](https://user-images.githubusercontent.com/83337658/205120859-1961691b-8456-482f-ab6c-952022648b23.png)
 	
-- Para activarlo:
-
-
 
 ### Configurarem un servei de dades al núvol utilitzant owncloud.
 
@@ -195,8 +179,6 @@ for home in $homes
 ## Client
 
 ### Els directoris /home es muntaran sota demanda, únicament quan l’usuari accedeixi al sistema.
-
-## TODO ALEX
 
 Seguirem el següent esquema per tal de desenvolupar l'apartat; es a la maquina client on instal·larem el servei autofs:
 
@@ -223,3 +205,24 @@ sudo systemctl enable --now autofs
 /home/* -fstype=nfs 192.168.101.131:/mnt/homes/*
 ```
 
+## Manteniment
+
+### Grafana
+
+L'aplicació web de Grafana és una eina de motorització que la farem servir com administradors i la podran fer servir els professors com a eina de seguiment de l'alumnat. 
+
+#### Grafana com Administradors
+
+Grafana funciona amb servidor apache 2.0, fet que ens facilita la integració de l'eina amb els nostres servidors amb sistema apache. Amb aquesta eina podrem fer seguiment dels logs i així anticipar i corregir errors de forma més eficaç, ja que ens permetrà veure la informació a través de gràfiques i escollir quins punts ens interessa controlar.
+
+La finalitat serà crear diferents "Dashboards" (panells gràfics amb mètriques) per tal d'organitzar els logs i crear alertes per preveure errors.
+
+No només ens podrà servir amb els logs, sinó també per controlar la capacitat dels discos durs, creant alertes per quan superin X GB d'almacematge.
+
+Ens servirà per tenir control de l'accés i l'ús que es fa dintre dels servidors, a través de la vinculació de la BBDD amb Grafana, podent crear dashboards pel control dels usuaris.
+
+#### Grafana com a professors
+
+Crearem usuaris amb permisos especials i els permetrem veure i accedir a la informació que ells tinguin permisos per veure. D'aquesta manera, cada professor podrà organitzar i gestionar les seves assignatures, amb els seus grups d'alumnes i fer seguiment de les diferents dades, com per exemple: assistència, treballs entregats, exàmens que han realitzat, notes i avaluacions. Els professors també podran crear-se alertes quan un alumne deixi d'assistir a classe X vegades, quan no es presenti a exàmens, quan no entregui activitats, quan en fer la mitja de l'assignatura estigui suspès, etc.
+
+## Plantilla
