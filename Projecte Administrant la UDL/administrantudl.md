@@ -211,11 +211,23 @@ sudo systemctl enable --now autofs
 
 ### Grafana
 
-L'aplicació web de Grafana és una eina de motorització que la farem servir com administradors i la podran fer servir els professors com a eina de seguiment de l'alumnat. 
+L'aplicació web de Grafana és una eina de motorització que la farem servir com a administradors per estalviar costos i identificar problemes que podrien succeir en el futur. Per a nosaltres és molt important perquè en producció, la inactivitat és inacceptable, ja que interrompria el fluxe de treball pels usuaris i ens faria perdre ingressos i reputació.
+
+Inclourem amb Grafana un grup d'usuaris de tipus professor per tal que puguin fer servir l'eina per fer seguiment de l'alumnat.
 
 #### Grafana com Administradors
 
 Grafana funciona amb servidor apache 2.0, fet que ens facilita la integració de l'eina amb els nostres servidors amb sistema apache. Amb aquesta eina podrem fer seguiment dels logs i així anticipar i corregir errors de forma més eficaç, ja que ens permetrà veure la informació a través de gràfiques i escollir quins punts ens interessa controlar.
+
+Per fer una bona gestió dels logs, farem servir el servei Loki, que és el servei principal que s'encarrega d'emmagatzemar els logs i executar les querys sobre ells. A part, està dividit en multiples components que podrem configurar de forma independent. 
+Loki no indexa el contingut del registre, sino que indexa les marques de temps i un cojunt d'etiquetes per un fluxe de registre. Fa que el index sigui més petit, lo que simplifica les operiacons i redueix el cost. 
+
+Exemple: 
+
+Visualitzariem en un panell els logs amb les alertes configurades i vinculariem les dades en un panell gràfic, podent veure en una simple ullada la informació que més ens interessa. 
+
+	![image](https://user-images.githubusercontent.com/79162978/211264024-8fbb565c-8019-4250-9876-92eb64f25778.png)
+
 
 La finalitat serà crear diferents "Dashboards" (panells gràfics amb mètriques) per tal d'organitzar els logs i crear alertes per preveure errors.
 
