@@ -269,8 +269,8 @@ Tornarem a través del menú esquerre lateral a Instancies --> VMs, i crearem un
   ![image](https://user-images.githubusercontent.com/79162978/211300037-a6f81a2a-b9c1-4a94-a1be-494d9671bb78.png) 
 
 - 1 -> Trobem la plantilla que ens interesa, tenim un buscador que és útil quan tenim moltes i no és una plantilla recent.
-- 2 -> Assignem un nom a la màquina que es crearà amb la plantilla. 
-- 3 -> Farem click sobre crear per obtindre la nova màquina amb la configuració base de la plantilla i tota la estructura d'informació. 
+- 2 -> Assignem un nom a la nova màquina que es crearà fent servir la plantilla. 
+- 3 -> Farem click sobre crear per obtindre la nova màquina amb la configuració i estructura que inclou la plantilla. Les dades d'emmagatzematge, disc i memoria no cal cambiar-les, ja que venen per defecte amb la plantilla.  
 
   ![image](https://user-images.githubusercontent.com/79162978/211300724-a0a87d5e-655e-4b2d-ba9f-52e048a7e4c1.png)
  
