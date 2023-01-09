@@ -247,3 +247,19 @@ Crearem usuaris amb permisos especials i els permetrem veure i accedir a la info
 
 
 ## Plantilla
+
+Per crear una plantilla que qualsevol pugui fer servir en OpenNebula, primerament, apagarem la màquina desitjada i un cop estigui en estat "POWEROFF", clicarem sobre l'icona de guardar: 
+
+  ![image](https://user-images.githubusercontent.com/79162978/211297982-646bf78b-7956-4faa-af1d-a25893c7d44e.png)
+
+En el quadre de diàleg que se'ns obrirà, ficarem el nom que volguem i aleshores guardarem: 
+
+  ![image](https://user-images.githubusercontent.com/79162978/211298276-ebfeef21-9fd3-4809-ba3c-4dbc10c5f20e.png)
+
+Seguidament, en el menú esquerre lateral, desplegarem Templates i farem click sobre VMs, on trobarem el template guardat: 
+
+  ![image](https://user-images.githubusercontent.com/79162978/211298464-da9e67a9-ff18-4dbe-bf2c-14a3c24ecc18.png)
+
+Ara haurem de canviar els permissos d'ús i accés, pemetent que qualsevol persona pertanyent al grup d'users pugui usar, gestionar i administrar la plantilla de la màquina: 
+
+  
