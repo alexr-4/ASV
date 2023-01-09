@@ -262,4 +262,6 @@ Seguidament, en el menú esquerre lateral, desplegarem Templates i farem click s
 
 Ara haurem de canviar els permissos d'ús i accés, pemetent que qualsevol persona pertanyent al grup d'users pugui usar, gestionar i administrar la plantilla de la màquina: 
 
+  ![image](https://user-images.githubusercontent.com/79162978/211299095-2dbe2f16-d223-4c55-8a91-2ed7dd5785d8.png)
+
   
