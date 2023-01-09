@@ -34,6 +34,8 @@ Primerament configurarem un disc dur nou que contindrà la partició de la BBDD:
 
 ### Cada alumne de la classe d’ASV ha de tenir el seu compte amb permisos de sudo: 
 
+Per tal de poder afegir cada alumne i establir els permisos sudo, farem servir el servei LAM per mantenir i gestionar els comptes. En el següent punt, explicarem com incloure aquest servei dintre del servidor LDAP i com configurar-ho. 
+
    ![image](https://user-images.githubusercontent.com/79162978/205706006-6a529db1-3975-44b8-96c5-72bc46a54057.png)
    
    ![image](https://user-images.githubusercontent.com/79162978/206912411-e12106e6-b7f0-4721-a621-6d83d86c56a2.png)
