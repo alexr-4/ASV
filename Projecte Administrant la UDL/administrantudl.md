@@ -226,8 +226,13 @@ Seguirem el següent tutorial per fer la instal·lació de OnwCloud: https://www
 
   ![image](https://user-images.githubusercontent.com/79162978/211313921-19da2463-8371-4aa6-9bea-4351881f4951.png)
 
-  ```` wget https://download.owncloud.org/community/owncloud-complete-20210721.tar.bz2 ````
-
+  ```` wget https://download.owncloud.com/server/stable/owncloud-complete-latest.tar.bz2 ````
+  
+  Creem la següen ruta /var/www/html i copiem allà les dades descompreses: 
+  
+  ```` tar -jxf owncloud-complete-latest.tar.bz2 -C /var/www/html ````
+  
+  ![image](https://user-images.githubusercontent.com/79162978/211338797-c5a3fd7b-0bb5-466f-8f55-16bc6d295234.png)
 
 
 
