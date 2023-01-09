@@ -182,44 +182,51 @@ Seguirem el següent tutorial per fer la instal·lació de OnwCloud: https://www
 
 - Pas 1 -> Instal·lació extensions addicionals PHP
 
-```` dnf install php-curl php-gd php-intl php-json php-ldap php-mbstring php-mysqlnd php-xml php-zip php-opcache -y ````
+  ```` dnf install php-curl php-gd php-intl php-json php-ldap php-mbstring php-mysqlnd php-xml php-zip php-opcache -y ````
 
   ![image](https://user-images.githubusercontent.com/79162978/211303500-22d97859-c022-4d7d-9286-fef5b97470fe.png)
 
 - Pas 2 -> Instal·lació Mysql i creació BBDD para OwnCloud
 
-```` dnf install mysql-server -y ```` 
-```` systemctl start mysqld.service ````
-```` systemctl status mysqld ````
-```` systemctl enable mysqld ````
+  ```` dnf install mysql-server -y ```` 
+  ```` systemctl start mysqld.service ````
+  ```` systemctl status mysqld ````
+  ```` systemctl enable mysqld ````
 
   ![image](https://user-images.githubusercontent.com/79162978/211305346-7a0433c7-9fb3-4ef4-b65f-9c63051ecc4e.png)
   
-Para iniciar la consola de mysql: 
+  Per iniciar la consola de mysql:  ```` mysql ````
 
-```` mysql ````
+  Crear un usuari amb privilegis: 
 
+  ```` create user asv01@localhost identified by 'asv01'; ````
 
-Crear un usuario con privilegios: 
+  ```` GRANT ALL PRIVILEGES ON *.* TO asv01@localhost; ````
 
-```` create user asv01@localhost identified by 'asv01'; ````
-
-```` GRANT ALL PRIVILEGES ON *.* TO asv01@localhost; ````
-
-```` FLUSH PRIVILEGES; ````
+  ```` FLUSH PRIVILEGES; ````
 
   ![image](https://user-images.githubusercontent.com/79162978/211310964-77456b37-d578-4a74-b4dd-6d9e999494bf.png)
 
-Saldremos con \q para logearnos en la BBDD con el usuario que hemos creado: 
-
-```` mysql -u asv01 -p ````
+  Sortirem amb \q per logejar en la BBDD amb l'usuari que hem creat:  ```` mysql -u asv01 -p ````
 
   ![image](https://user-images.githubusercontent.com/79162978/211311188-89eca3db-36d7-40b9-bdec-20c9f1cc440d.png)
 
   
+  Creem la BBDD de OwnCloud: ```` CREATE DATABASE owncloud_db; ```` i sortim ```` \q ````
 
+  ![image](https://user-images.githubusercontent.com/79162978/211311534-070e1136-4f28-453e-bf8a-a5b3a579d1bd.png)
 
+- Pas 3 -> Instal·lació OwnCloud in Rocky Linux
 
+  ```` yum install wget -y ````
+  
+  ![image](https://user-images.githubusercontent.com/79162978/211312350-d9108b41-6855-4af8-a46a-3727f836581b.png)
+
+  ```` yum install bzip2 -y ````
+
+  ![image](https://user-images.githubusercontent.com/79162978/211313921-19da2463-8371-4aa6-9bea-4351881f4951.png)
+
+  ```` wget https://download.owncloud.org/community/owncloud-complete-20210721.tar.bz2 ````
 
 
 
