@@ -219,8 +219,12 @@ Inclourem amb Grafana un grup d'usuaris de tipus professor per tal que puguin fe
 
 Grafana funciona amb servidor apache 2.0, fet que ens facilita la integració de l'eina amb els nostres servidors amb sistema apache. Amb aquesta eina podrem fer seguiment dels logs i així anticipar i corregir errors de forma més eficaç, ja que ens permetrà veure la informació a través de gràfiques i escollir quins punts ens interessa controlar.
 
+Desplegarem l'eina a través del servidor Nginx, servei que ens permetrà allotjar Grafana en HTTP a través de proxy invers i fer seguiment del caché, balancejant la carrega de dades. 
+
 Per fer una bona gestió dels logs, farem servir el servei Loki, que és el servei principal que s'encarrega d'emmagatzemar els logs i executar les querys sobre ells. A part, està dividit en multiples components que podrem configurar de forma independent. 
 Loki no indexa el contingut del registre, sino que indexa les marques de temps i un cojunt d'etiquetes per un fluxe de registre. Fa que el index sigui més petit, lo que simplifica les operiacons i redueix el cost. 
+
+La finalitat serà crear diferents "Dashboards" (panells gràfics amb mètriques) per tal d'organitzar els logs i crear alertes per preveure errors.
 
 Exemple: 
 
@@ -228,15 +232,18 @@ Visualitzariem en un panell els logs amb les alertes configurades i vinculariem 
 
    ![image](https://user-images.githubusercontent.com/79162978/211264024-8fbb565c-8019-4250-9876-92eb64f25778.png)
 
+L'eina de Grafana no només ens podrà servir amb els logs, sinó també per controlar la seguretat del sistema, la seguretat de la xarxa, la capacitat i estat dels discos durs, l'estat del servei nginx i del servidor apache:
 
-La finalitat serà crear diferents "Dashboards" (panells gràfics amb mètriques) per tal d'organitzar els logs i crear alertes per preveure errors.
+   ![image](https://user-images.githubusercontent.com/79162978/211281123-1c830613-ea7c-4fda-ac97-df30c5a91cb2.png)
 
-No només ens podrà servir amb els logs, sinó també per controlar la capacitat dels discos durs, creant alertes per quan superin X GB d'almacematge.
 
-Ens servirà per tenir control de l'accés i l'ús que es fa dintre dels servidors, a través de la vinculació de la BBDD amb Grafana, podent crear dashboards pel control dels usuaris.
+A part, podrem tenir control de l'accés i l'ús que es fa dintre dels servidors, a través de la vinculació de la BBDD amb Grafana, podent crear dashboards pel control dels usuaris.
 
 #### Grafana com a professors
 
 Crearem usuaris amb permisos especials i els permetrem veure i accedir a la informació que ells tinguin permisos per veure. D'aquesta manera, cada professor podrà organitzar i gestionar les seves assignatures, amb els seus grups d'alumnes i fer seguiment de les diferents dades, com per exemple: assistència, treballs entregats, exàmens que han realitzat, notes i avaluacions. Els professors també podran crear-se alertes quan un alumne deixi d'assistir a classe X vegades, quan no es presenti a exàmens, quan no entregui activitats, quan en fer la mitja de l'assignatura estigui suspès, etc.
+
+  ![image](https://user-images.githubusercontent.com/79162978/211284346-d9346971-f9c3-47f9-89f7-2e5266f5f84c.png)
+
 
 ## Plantilla
