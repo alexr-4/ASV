@@ -234,6 +234,23 @@ Seguirem el següent tutorial per fer la instal·lació de OnwCloud: https://www
   
   ![image](https://user-images.githubusercontent.com/79162978/211338797-c5a3fd7b-0bb5-466f-8f55-16bc6d295234.png)
 
+- Pas 4 -> Configurar Apache al Host OwnCloud
+
+  Instal·lem el dimoni httpd: ```` dnf install httpd -y ````
+
+  Activem el dimoni per iniciar cada cop que el sistema arranqui: ```` systemctl enable httpd ````
+
+  Arranquem i comprovem l’estat del dimoni:
+
+  ```` systemctl start httpd ````
+  ```` systemctl status httpd ````
+ 
+  Creem el fitxer de configuració:  ```` vi /etc/httpd/conf.d/owncloud.conf ````
+  
+  Copiem el següent text: 
+  
+  ![image](https://user-images.githubusercontent.com/79162978/211342473-c6aef83b-1495-43b0-8c2d-db469b1e916e.png)
+
 
 
 
