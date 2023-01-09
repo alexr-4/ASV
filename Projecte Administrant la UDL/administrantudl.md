@@ -178,6 +178,53 @@ for home in $homes
 	let n=n+1 
 ````
 
+Seguirem el següent tutorial per fer la instal·lació de OnwCloud: https://www.tecmint.com/install-owncloud-rocky-linux/
+
+- Pas 1 -> Instal·lació extensions addicionals PHP
+
+```` dnf install php-curl php-gd php-intl php-json php-ldap php-mbstring php-mysqlnd php-xml php-zip php-opcache -y ````
+
+  ![image](https://user-images.githubusercontent.com/79162978/211303500-22d97859-c022-4d7d-9286-fef5b97470fe.png)
+
+- Pas 2 -> Instal·lació Mysql i creació BBDD para OwnCloud
+
+```` dnf install mysql-server -y ```` 
+```` systemctl start mysqld.service ````
+```` systemctl status mysqld ````
+```` systemctl enable mysqld ````
+
+  ![image](https://user-images.githubusercontent.com/79162978/211305346-7a0433c7-9fb3-4ef4-b65f-9c63051ecc4e.png)
+  
+Para iniciar la consola de mysql: 
+
+```` mysql ````
+
+
+Crear un usuario con privilegios: 
+
+```` create user asv01@localhost identified by 'asv01'; ````
+
+```` GRANT ALL PRIVILEGES ON *.* TO asv01@localhost; ````
+
+```` FLUSH PRIVILEGES; ````
+
+  ![image](https://user-images.githubusercontent.com/79162978/211310964-77456b37-d578-4a74-b4dd-6d9e999494bf.png)
+
+Saldremos con \q para logearnos en la BBDD con el usuario que hemos creado: 
+
+```` mysql -u asv01 -p ````
+
+  ![image](https://user-images.githubusercontent.com/79162978/211311188-89eca3db-36d7-40b9-bdec-20c9f1cc440d.png)
+
+  
+
+
+
+
+
+
+
+
 ## Client
 
 ### Els directoris /home es muntaran sota demanda, únicament quan l’usuari accedeixi al sistema.
@@ -246,7 +293,7 @@ Crearem usuaris amb permisos especials i els permetrem veure i accedir a la info
   ![image](https://user-images.githubusercontent.com/79162978/211284346-d9346971-f9c3-47f9-89f7-2e5266f5f84c.png)
 
 
-## Plantilla
+## Plantilla OpenNebula
 
 Per crear una plantilla que qualsevol pugui fer servir en OpenNebula, primerament, apagarem la màquina desitjada i un cop estigui en estat "POWEROFF", clicarem sobre l'icona de guardar: 
 
