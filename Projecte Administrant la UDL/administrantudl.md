@@ -260,8 +260,7 @@ Seguidament, en el menú esquerre lateral, desplegarem Templates i farem click s
 
   ![image](https://user-images.githubusercontent.com/79162978/211298464-da9e67a9-ff18-4dbe-bf2c-14a3c24ecc18.png)
 
-Ara haurem de canviar els permissos d'ús i accés, pemetent que qualsevol persona pertanyent al grup d'users pugui usar, gestionar i administrar la plantilla de la màquina: 
+Ara haurem de canviar els permisos d'ús i accés, pemetent que qualsevol persona pertanyent al grup d'users pugui fer servir i gestionar la plantilla de la màquina: 
 
-  ![image](https://user-images.githubusercontent.com/79162978/211299095-2dbe2f16-d223-4c55-8a91-2ed7dd5785d8.png)
+  ![image](https://user-images.githubusercontent.com/79162978/211299749-6f5fd981-aa69-4de9-8e1b-2504a599c251.png)
 
-  
