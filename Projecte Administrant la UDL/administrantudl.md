@@ -236,37 +236,46 @@ Seguirem el següent tutorial per fer la instal·lació de OnwCloud: https://www
 
 - Pas 4 -> Configurar Apache al Host OwnCloud
 
-  Instal·lem el dimoni httpd: ```` dnf install httpd -y ````
+  -Instal·lem el dimoni httpd: ```` dnf install httpd -y ````
 
-  Activem el dimoni per iniciar cada cop que el sistema arranqui: ```` systemctl enable httpd ````
+  -Activem el dimoni per iniciar cada cop que el sistema arranqui: ```` systemctl enable httpd ````
 
-  Arranquem i comprovem l’estat del dimoni:
+  -Arranquem i comprovem l’estat del dimoni:
 
   ```` systemctl start httpd ````
   ```` systemctl status httpd ````
 
-  Instal·lació de PHP: ```` dnf module list php ````
+  -Instal·lació de PHP: ```` dnf module list php ````
 
-  PHP 7.2 és el per defecte. Per modificar-ho:
+  -PHP 7.2 és el per defecte. Per modificar-ho:
 
   ```` dnf module reset php -y ````
 	
   ```` dnf module install php:7.4 -y ````
 
-  Per instal·lar extensions de PHP: ```` dnf install php-curl php-zip -y ````
+  -Per instal·lar extensions de PHP: ```` dnf install php-curl php-zip -y ````
 
-  Comprovem la versió instal·lada: ```` php -v ````
+  -Comprovem la versió instal·lada: ```` php -v ````
  
-  Creem el fitxer de configuració:  ```` vi /etc/httpd/conf.d/owncloud.conf ````
+  -Creem el fitxer de configuració:  ```` vi /etc/httpd/conf.d/owncloud.conf ````
   
-  Copiem el següent text: 
+  -Copiem el següent text: 
   
   ![image](https://user-images.githubusercontent.com/79162978/211342473-c6aef83b-1495-43b0-8c2d-db469b1e916e.png)
 
-  Reiniciem el dimoni: ```` systemctl restart httpd ````
+  -Reiniciem el dimoni: ```` systemctl restart httpd ````
   
-  Configurem SELinux: ```` setsebool -P httpd_unified 1 ````
+  -Configurem SELinux: ```` setsebool -P httpd_unified 1 ````
 
+  -Obrim al navegador http://192.168.101.131/owncloud/ : 
+
+  ![image](https://user-images.githubusercontent.com/79162978/211346473-5d860e02-187a-47a6-b9c4-951ba417e169.png)
+
+  -Reiniciem php: 
+
+  ![image](https://user-images.githubusercontent.com/79162978/211346307-110e2981-917d-4be7-86ea-5d9a95f58a6e.png)
+
+  Continua sortint l'error, tot i tenint instal·lats els paquets. 
 
 ## Client
 
