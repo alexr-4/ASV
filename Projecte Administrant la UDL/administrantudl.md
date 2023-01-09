@@ -244,6 +244,18 @@ Seguirem el següent tutorial per fer la instal·lació de OnwCloud: https://www
 
   ```` systemctl start httpd ````
   ```` systemctl status httpd ````
+
+  Instal·lació de PHP: ```` dnf module list php ````
+
+  PHP 7.2 és el per defecte. Per modificar-ho:
+
+  ```` dnf module reset php -y ````
+	
+  ```` dnf module install php:7.4 -y ````
+
+  Per instal·lar extensions de PHP: ```` dnf install php-curl php-zip -y ````
+
+  Comprovem la versió instal·lada: ```` php -v ````
  
   Creem el fitxer de configuració:  ```` vi /etc/httpd/conf.d/owncloud.conf ````
   
@@ -251,7 +263,9 @@ Seguirem el següent tutorial per fer la instal·lació de OnwCloud: https://www
   
   ![image](https://user-images.githubusercontent.com/79162978/211342473-c6aef83b-1495-43b0-8c2d-db469b1e916e.png)
 
-
+  Reiniciem el dimoni: ```` systemctl restart httpd ````
+  
+  Configurem SELinux: ```` setsebool -P httpd_unified 1 ````
 
 
 ## Client
