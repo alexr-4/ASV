@@ -226,7 +226,7 @@ Exemple:
 
 Visualitzariem en un panell els logs amb les alertes configurades i vinculariem les dades en un panell gràfic, podent veure en una simple ullada la informació que més ens interessa. 
 
-	![image](https://user-images.githubusercontent.com/79162978/211264024-8fbb565c-8019-4250-9876-92eb64f25778.png)
+   ![image](https://user-images.githubusercontent.com/79162978/211264024-8fbb565c-8019-4250-9876-92eb64f25778.png)
 
 
 La finalitat serà crear diferents "Dashboards" (panells gràfics amb mètriques) per tal d'organitzar els logs i crear alertes per preveure errors.
