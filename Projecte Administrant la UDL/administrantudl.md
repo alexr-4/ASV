@@ -271,11 +271,15 @@ Seguirem el següent tutorial per fer la instal·lació de OnwCloud: https://www
 
   ![image](https://user-images.githubusercontent.com/79162978/211346473-5d860e02-187a-47a6-b9c4-951ba417e169.png)
 
-  -Reiniciem php: 
+  -Fiquem enable php:7.4 ```` dnf module enable php:7.4 ```` i reiniciem php: 
 
   ![image](https://user-images.githubusercontent.com/79162978/211346307-110e2981-917d-4be7-86ea-5d9a95f58a6e.png)
+  
+  -Continua sense funcionar: 
+  
+  ![image](https://user-images.githubusercontent.com/79162978/211348072-a4be86c3-335a-4ca2-a362-6ec918931f4e.png)
 
-  Continua sortint l'error, tot i tenint instal·lats els paquets. 
+  
 
 ## Client
 
